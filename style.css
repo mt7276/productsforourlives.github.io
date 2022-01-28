@@ -176,6 +176,25 @@ html, body {
   padding-left: 15px;
 }
 
+.red{
+  color:#ff0000 ;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  padding-left: 15px;
+  right: 0;
+  background: #111;
+  height: auto;
+  /* width: 100vw; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+}
+
 
 
 
@@ -224,6 +243,13 @@ html, body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+}
+
+.cardvidlink {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  padding-bottom: 0px;
 }
 
 /* Clear floats after the columns */
