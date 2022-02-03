@@ -6,20 +6,30 @@
 
       <loc>http://www.productsforourlives.com/</loc>
 
-      <lastmod>2022-01-12</lastmod>
+      <lastmod>2022-02-02</lastmod>
 
-      <!--<changefreq>monthly</changefreq>
-      <priority>0.8</priority>-->
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.productsforourlives.com/index.html</loc>
+
+      <lastmod>2022-02-02</lastmod>
+
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
 
    </url>
    <url>
 
       <loc>http://www.productsforourlives.com/nightvision.html</loc>
 
-      <lastmod>2022-01-12</lastmod>
+      <lastmod>2022-02-02</lastmod>
 
-      <!--<changefreq>monthly</changefreq>
-      <priority>0.8</priority>-->
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
 
    </url>
    
@@ -27,10 +37,10 @@
 
       <loc>http://www.productsforourlives.com/blog.html</loc>
 
-      <lastmod>2022-01-12</lastmod>
+      <lastmod>2022-02-02</lastmod>
 
-      <!--<changefreq>monthly</changefreq>
-      <priority>0.8</priority>-->
+      -<changefreq>weekly</changefreq>
+      <priority>1.0</priority>
 
    </url>
    
