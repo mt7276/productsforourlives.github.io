@@ -12,7 +12,7 @@
       <priority>1.0</priority>
 
    </url>
-   <url>
+   <!--<url>
 
       <loc>https://www.productsforourlives.com/index.html</loc>
 
@@ -21,7 +21,7 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
 
-   </url>
+   </url>-->
    <url>
 
       <loc>https://www.productsforourlives.com/nightvision.html</loc>
@@ -44,7 +44,7 @@
 
    </url>
    
-   <url>
+   <!--<url>
 
       <loc>https://www.productsforourlives.com/robots.txt</loc>
 
@@ -53,7 +53,7 @@
       <!--<changefreq>monthly</changefreq>
       <priority>0.8</priority>-->
 
-   </url>
+   </url>-->
   
 
 </urlset>
