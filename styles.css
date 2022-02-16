@@ -1,82 +1,3 @@
-/* =================================================================== 
- * Main Stylesheet
- * Template Ver. 1.0.0
- * 10-07-2020
- * ------------------------------------------------------------------
- *
- * TOC:
- * # settings and variables
- *      ## fonts
- *      ## colors
- *      ## vertical spacing and typescale
- *      ## grid variables
- *  # normalize
- *  # basic/base setup styles
- *      ## media
- *      ## typography resets
- *      ## links
- *      ## inputs
- *  # Grid v3.0.0
- *      ## medium screen devices
- *      ## tablets
- *      ## mobile devices
- *      ## small mobile devices <= 400px
- *  # block grids
- *      ## block grids - medium screen devices
- *      ## block grids - tablets
- *      ## block grids - mobile devices 
- *      ## block grids - small mobile devices <= 400px
- *  # MISC
- *  # custom grid, block grid STACK breakpoints
- *  # base style overrides
- *      ## links
- *  # typography & general theme styles
- *      ## lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## spacing
- *  # preloader
- *      ## page loaded
- *  # forms
- *      ## style placeholder text
- *      ## change autocomplete styles in Chrome 
- *  # buttons
- *  # additional components
- *      ## additional typo styles
- *      ## skillbars
- *      ## alert box
- *      ## pagination
- *  # common and reusable styles
- *      ## animation stuff
- *      ## close button for search & mobile nav
- *      ## bricks masonry
- *      ## masonry entries
- *  # site header
- *      ## header logo
- *      ## main navigation
- *      ## header-toggle
- *      ## header-search
- *      ## search triggers
- *  # hero
- *      ## hero slider
- *      ## hero social
- *      ## hero slider nav arrows
- *  # content wrap
- *      ## pageheader
- *      ## content media
- *      ## content entry header
- *      ## content primary
- *  # footer
- *      ## footer main
- *      ## footer bottom
- *      ## go top
- *  # blog styles and blog components
- *      ## blog comments 
- *
- * ------------------------------------------------------------------ */
-
-
 /* ===================================================================
  * # settings and variables
  *
@@ -4929,26 +4850,26 @@ body.search-is-visible {
  * ## footer bottom
  * ------------------------------------------------------------------- */
 
-/* copyright
+/* cr
  * -------------------------------------- */
-.ss-copyright {
+.ss-cr {
     color: var(--color-gray-8);
 }
 
-.ss-copyright span {
+.ss-cr span {
     display: inline-block;
     font-size: calc(var(--text-size) * 0.7222);
     line-height: var(--vspace-0_75);
 }
 
-.ss-copyright span::after {
+.ss-cr span::after {
     content: "|";
     display: inline-block;
     padding: 0 1rem 0 1.2rem;
     color: rgba(0, 0, 0, 0.2);
 }
 
-.ss-copyright span:last-child::after {
+.ss-cr span:last-child::after {
     display: none;
 }
 
