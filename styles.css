@@ -5187,6 +5187,10 @@ body.search-is-visible {
     }
 }
 
+.productheader{
+    padding-top: 20px;
+}
+
 .companyname{
     width: 291px;
     color: red;
