@@ -54,7 +54,15 @@
       <priority>1.0</priority>
 
    </url>   
-   
+   <url>
+
+      <loc>https://www.productsforourlives.com/about</loc>
+
+      <lastmod>2022-03-05</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+
+   </url>
    
   
 
