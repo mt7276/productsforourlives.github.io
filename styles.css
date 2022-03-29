@@ -5337,7 +5337,10 @@ body.search-is-visible {
     width: 100%;
 }
  
-
+.landrbigcard{
+    padding-right: 8vw;
+    padding-left: 8vw;
+}
 
 
 
