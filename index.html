@@ -3,10 +3,10 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Products for Our Lives.</title>
+    <title>Products For Our Lives.</title>
     <meta name="description" content="The products we use every day shape our world. Our goal is to let you in on some of the different products we use to add joy in our lives.">
     <meta name="author" content="Michael">
-    <link rel="canonical" href="https://www.productsforourlives.com/" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FYC8MWDDS"></script>
     <script>
@@ -34,12 +34,13 @@
 
     <!-- CSS
     ================================================== -->
-    
-    <link rel="stylesheet" href="min-css.css">
+    <link rel="stylesheet" href="vendor.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- script
     ================================================== -->
-    
+    <script src="modernizr.js"></script>
+    <script defer src="all.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -59,9 +60,11 @@
     <header class="s-header s-header--opaque">
 
         <!-- <div class="s-header__logo"> -->
-            <a  href="https://www.productsforourlives.com/">
-                <h4 class="companyname">Products For Our Lives</h4>
-            </a>
+            <div class="topname s-header__logo">
+                <a  href="index.html">
+                    <strong class="blue">Products For Our Lives</strong>
+                </a>
+            </div>
         <!-- </div> -->
 
         <div class="row s-header__navigation">            
@@ -70,24 +73,24 @@
                 <h3 class="s-header__nav-heading h6">Navigate to</h3>
 
                 <ul class="s-header__nav">
-                    <li class="current"><a href="https://www.productsforourlives.com/" title="">Home</a></li>
+                    <li class="current"><a href="index.html#" title="">Home</a></li>
                     
-                    <li><a href="https://www.productsforourlives.com/blog" title="">Blog</a></li>
+                    <li><a href="blog.html" title="">Blog</a></li>
                     <li class="has-children">
                         <a href="#0" title="">Knowledge</a>
                         <ul class="sub-menu">
-                            <li ><a href="https://www.productsforourlives.com/night-vision-thermal-history">Night Vision/Thermal Imaging</a></li>
-                            <li><a href="https://www.productsforourlives.com/evolution-of-radar-guns">Radar Guns</a></li>
+                            <li ><a href="nightvision.html">Night Vision/Thermal Imaging</a></li>
+                            <li><a href="radarguns.html">Radar Guns</a></li>
                         </ul>
                     </li>
-                    <li class="has-children">
+                    <!-- <li class="has-children">
                         <a href="#0" title="">Shop</a>
                         <ul class="sub-menu">
-                            <li><a href="https://www.productsforourlives.com/night-vision-thermal-imaging">Night Vision/Thermal Imaging</a></li>
-                            <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors">Radar Guns</a></li>
+                            <li><a href="nightvisionproduct.html">Night Vision/Thermal Imaging</a></li>
+                            <li><a href="radargunsproduct.html">Radar Guns</a></li>
                         </ul>
-                    </li>
-                    <li><a href="https://www.productsforourlives.com/about" title="">About</a></li>
+                    </li> -->
+                    <li><a href="about.html" title="">About</a></li>
                 </ul><!-- end s-header__nav -->
 
                 <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
@@ -98,6 +101,16 @@
         <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>        
 
     </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section >
+
+      
+
+    </section> 
+
 
     <!-- content
     ================================================== -->
@@ -172,14 +185,14 @@
                     </div>
                     <article class="brick entry" data-aos="fade-up">
                         <div class="entry__thumb ">
-                            <a href="https://www.productsforourlives.com/evolution-of-radar-guns" class="thumb-link">
+                            <a href="radarguns.html" class="thumb-link">
                                 <img src="evolution.jpg" class="indexcardimage" alt="Baseball radar gun evolution image">
                             </a>
                         </div> <!-- end entry__thumb -->
     
                         <div class="entry__text">
                             <div class="entry__header">
-                                <h4 class="entry__title"><a href="https://www.productsforourlives.com/evolution-of-radar-guns">Evolution of the Radar Gun</a></h4>                                
+                                <h4 class="entry__title"><a href="radarguns.html">Evolution of the Radar Gun</a></h4>                                
                                 
                             </div>
                             <div class="entry__excerpt">
@@ -187,19 +200,19 @@
                                    Read about the technology, invention and the evolution of the sports radar gun. 
                                 </p>
                             </div>
-                            <a class="entry__more-link" href="https://www.productsforourlives.com/evolution-of-radar-guns">Read Here</a>
+                            <a class="entry__more-link" href="radarguns.html">Read Here</a>
                         </div> <!-- end entry__text -->
                     </article>
-                    <article class="brick entry" data-aos="fade-up">
+                    <!-- <article class="brick entry" data-aos="fade-up">
                         <div class="entry__thumb">
-                            <a href="https://www.productsforourlives.com/radar-guns-speed-sensors" class="thumb-link">
+                            <a href="radargunsproduct.html" class="thumb-link">
                                 <img src="pitcher.jpg" class="indexcardimage" alt="Baseball pitcher throwing baseball. Image for radar gun and speed sensor page">
                             </a>
-                        </div> <!-- end entry__thumb -->
+                        </div> 
     
                         <div class="entry__text">
                             <div class="entry__header">
-                                <h4 class="entry__title"><a href="https://www.productsforourlives.com/radar-guns-speed-sensors">Shop Radar Guns and Speed Sensors</a></h4>                                
+                                <h4 class="entry__title"><a href="radargunsproduct.html">Shop Radar Guns and Speed Sensors</a></h4>                                
                                 
                             </div>
                             <div class="entry__excerpt">
@@ -209,9 +222,9 @@
                                     Not sure what you need? Be sure to read our on page buying guide.
                                 </p>
                             </div>
-                            <a class="entry__more-link" href="https://www.productsforourlives.com/radar-guns-speed-sensors">Shop</a>
-                        </div> <!-- end entry__text -->
-                    </article>
+                            <a class="entry__more-link" href="radargunsproduct.html">Shop</a>
+                        </div> 
+                    </article> -->
                 </div>
 
                 <div>
@@ -226,16 +239,16 @@
                         <span></span>
                         <!-- <span></span> -->
                     </div>
-                    <article class="brick entry" data-aos="fade-up" >
+                    <article class="brick entry" data-aos="fade-up">
                         <div class="entry__thumb">
-                            <a href="https://www.productsforourlives.com/blog" class="thumb-link">
+                            <a href="blog.html" class="thumb-link">
                                 <img src="nvblog.jpg" class="indexcardimage" alt="Blog image talking about night vision monocular. ">
                             </a>
                         </div> <!-- end entry__thumb -->
     
                         <div class="entry__text">
                             <div class="entry__header">
-                                <h4 class="entry__title"><a href="https://www.productsforourlives.com/blog">First Week With Night Vision - Post</a></h4>                                
+                                <h4 class="entry__title"><a href="blog.html">First Week With Night Vision - Post</a></h4>                                
                                 
                             </div>
                             <div class="entry__excerpt">
@@ -244,12 +257,12 @@
                                     night vision monocular.
                                 </p>
                             </div>
-                            <a class="entry__more-link" href="https://www.productsforourlives.com/blog">Read Here</a>
+                            <a class="entry__more-link" href="blog.html">Read Here</a>
                         </div> <!-- end entry__text -->
                     </article>
                     <article class="brick entry" data-aos="fade-up">
                         <div class="entry__thumb">
-                            <a href="https://www.productsforourlives.com/night-vision-thermal-history" class="thumb-link">
+                            <a href="nightvision.html" class="thumb-link">
                                 <img src="nvhistory.jpg" class="indexcardimage" alt="Moon in night sky. Photo by Noah Silliman">
                             </a>
                         </div> <!-- end entry__thumb -->
@@ -257,7 +270,7 @@
                         <div class="entry__text">
                             <div class="entry__header">
                                 <h4 class="entry__title">
-                                    <a href="https://www.productsforourlives.com/night-vision-thermal-history">History of Night Vision/Thermal Imaging Devices</a></h4>                                
+                                    <a href="nightvision.html">History of Night Vision/Thermal Imaging Devices</a></h4>                                
                                 
                             </div>
                             <div class="entry__excerpt">
@@ -266,20 +279,20 @@
                                     page to learn more.
                                 </p>
                             </div>
-                            <a class="entry__more-link" href="https://www.productsforourlives.com/night-vision-thermal-history">Read Here</a>
+                            <a class="entry__more-link" href="nightvision.html">Read Here</a>
                         </div> <!-- end entry__text -->
                     </article>
-                    <article class="brick entry" data-aos="fade-up">
+                    <!-- <article class="brick entry" data-aos="fade-up">
                         <div class="entry__thumb">
-                            <a href="https://www.productsforourlives.com/night-vision-thermal-imaging" class="thumb-link">
+                            <a href="nightvisionproduct" class="thumb-link">
                                 <img src="nvshop.jpg" class="indexcardimage" alt="Man with  night vision. Photo by R.Louis Mac.
                                 ">
                             </a>
-                        </div> <!-- end entry__thumb -->
+                        </div> 
     
                         <div class="entry__text">
                             <div class="entry__header">
-                                <h4 class="entry__title"><a href="https://www.productsforourlives.com/night-vision-thermal-imaging">Shop Great Night Vision and Thermal Imaging Devices</a></h4>                                
+                                <h4 class="entry__title"><a href="nightvisionproduct">Shop Great Night Vision and Thermal Imaging Devices</a></h4>                                
                                 
                             </div>
                             <div class="entry__excerpt">
@@ -289,15 +302,15 @@
                                     guide on the page.
                                 </p>
                             </div>
-                            <a class="entry__more-link" href="https://www.productsforourlives.com/night-vision-thermal-imaging">Shop</a>
-                        </div> <!-- end entry__text -->
-                    </article>
+                            <a class="entry__more-link" href="nightvisionproduct.html">Shop</a>
+                        </div> 
+                    </article> -->
                 </div>
             </div>
         </div>
     </section> <!-- end s-content -->
 
-   
+
     <!-- footer
     ================================================== -->
     <footer class="s-footer">
@@ -323,10 +336,10 @@
                     <h5>Site Links</h5>
 
                     <ul>
-                        <li><a href="https://www.productsforourlives.com/">Home</a></li>
-                        <li><a href="https://www.productsforourlives.com/blog">Blog</a></li>
-                        <li><a href="https://www.productsforourlives.com/night-vision-thermal-history">Night Vision/Thermal</a></li>
-                        <li><a href="https://www.productsforourlives.com/evolution-of-radar-guns">Radar Guns</a></li>                        
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="nightvision.html">Night Vision/Thermal</a></li>
+                        <li><a href="radarguns.html">Radar Guns</a></li>                        
                     </ul>
 
                 </div> <!-- end s-footer__site-links -->    
@@ -335,9 +348,9 @@
                     <h5>Site Links Cont.</h5>
 
                     <ul>
-                        <li><a href="https://www.productsforourlives.com/night-vision-thermal-imaging">Night/Thermal Product</a></li>
-                        <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors">Radar Guns Product</a></li> 
-                        <li><a href="https://www.productsforourlives.com/about">About/Disclosure</a></li>                        
+                        <!-- <li><a href="nightvisionproduct.html">Night/Thermal Product</a></li>
+                        <li><a href="radargunsproduct.html">Radar Guns Product</a></li>  -->
+                        <li><a href="about.html">About/Disclosure</a></li>                        
                     </ul>
 
                 </div>             
@@ -358,12 +371,9 @@
 
     <!-- Java Script
     ================================================== -->
-    
-    
     <script src="jquery-3.5.0.min.js"></script>
     <script src="plugins.js"></script>
     <script src="main.js"></script>
-    <script src="modernizr.js"></script>
 </body>
 
 </html>
