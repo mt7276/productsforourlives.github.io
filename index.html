@@ -1,379 +1,202 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
 
     <meta charset="utf-8">
-    <title>Products For Our Lives.</title>
-    <meta name="description" content="The products we use every day shape our world. Our goal is to let you in on some of the different products we use to add joy in our lives.">
+    <title>Best Products for Everyday Life – Reviews & Buying Guides</title>
+    <meta name="description" content="Find the best products for everyday life! Explore reviews, buying guides, and expert insights to help you make informed purchasing decisions.">
+    <meta name="keywords" content="best products, product reviews, buying guides, technology, home essentials">
     <meta name="author" content="Michael">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Open Graph Meta Tags (for Social Sharing) -->
+    <meta property="og:title" content="Best Products for Everyday Life – Reviews & Buying Guides">
+    <meta property="og:description" content="Find the best products for everyday life! Explore reviews, buying guides, and expert insights to help you make informed purchasing decisions.">
+    <meta property="og:image" content="https://www.productsforourlives.com/featured-image.jpg">
+    <meta property="og:url" content="https://www.productsforourlives.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FYC8MWDDS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-    
         gtag('config', 'G-5FYC8MWDDS');   
-        function getblog (){
-            $.ajax({
-                type:'post',
-                url:'C:/Users/scrat/Desktop/ProductsForOurLives/test.txt',
-                data: '',
-                dataType: 'json',
-                success: function(response, status, xhr){
-                    var res = response;
-                }
-            });
-        };         
-      </script>
+    </script>
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SEO Friendly CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="vendor.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
-    <!-- script
-    ================================================== -->
-    <script src="modernizr.js"></script>
-    <script defer src="all.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> 
-    <link rel="manifest" href="site.webmanifest">
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Products For Our Lives",
+        "url": "https://www.productsforourlives.com",
+        "logo": "https://www.productsforourlives.com/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://twitter.com/yourpage",
+            "https://www.instagram.com/yourpage"
+        ]
+    }
+    </script>
 
 </head>
-
 <body id="top">
+    <header>
+        <div class="container">
+            <h1>Products for Our Lives</h1>
+            <h2>High-Performance Night Vision, Radar Guns & Walkie Talkies for Every Adventure</h2>
+            <p>Explore top-rated night vision devices, precision sports radar guns, and long-range walkie-talkies designed for outdoor enthusiasts, professionals, and tactical use. Find cutting-edge technology that enhances visibility, accuracy, and communication in any environment.</p>
 
-
-  
-    <!-- header
-    ================================================== -->
-    <header class="s-header s-header--opaque">
-
-        <!-- <div class="s-header__logo"> -->
-            <div class="topname s-header__logo">
-                <a  href="index.html">
-                    <strong class="blue">Products For Our Lives</strong>
-                </a>
-            </div>
-        <!-- </div> -->
-
-        <div class="row s-header__navigation">            
-            <nav class="s-header__nav-wrap">
-
-                <h3 class="s-header__nav-heading h6">Navigate to</h3>
-
-                <ul class="s-header__nav">
-                    <li class="current"><a href="https://www.productsforourlives.com/#" title="">Home</a></li>
-                    
-                    <li><a href="https://www.productsforourlives.com/blog" title="">Blog</a></li>
-                    <li class="has-children">
-                        <a href="#0" title="">Knowledge</a>
-                        <ul class="sub-menu">
-                            <li ><a href="https://www.productsforourlives.com/night-vision-thermal-history">Night Vision/Thermal Imaging</a></li>
-                            <li><a href="https://www.productsforourlives.com/evolution-of-radar-guns">Radar Guns</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li class="has-children">
-                        <a href="#0" title="">Shop</a>
-                        <ul class="sub-menu">
-                            <li><a href="nightvisionproduct.html">Night Vision/Thermal Imaging</a></li>
-                            <li><a href="radargunsproduct.html">Radar Guns</a></li>
-                        </ul>
-                    </li> -->
-                    <li><a href="about.html" title="">About</a></li>
-                </ul><!-- end s-header__nav -->
-
-                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
-
-            </nav> <!-- end s-header__nav-wrap -->
-        </div> <!-- end s-header__navigation -->
-
-        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>        
-
-    </header> <!-- end s-header -->
-
-
-    <!-- hero
-    ================================================== -->
-    <section >
-
-      
-
-    </section> 
-
-
-    <!-- content
-    ================================================== -->
-    <section class="s-pageheader">
-        <h1 class="textaligncenter namecolor">Products for Our Lives</h1>
-       
+            <nav class="site-map">
+                <ul>
+                    <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+                    <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+                    <li><a href="https://www.productsforourlives.com/long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+                    <li><a href="https://www.productsforourlives.com/night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+                    <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+                    <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Personal Introduction Section -->
+    <section class="personal-intro">
+        <h2>Products for Our Lives</h2>
+        <p>With the hectic lives we all live, it's important to take time to bond with those we care about. We all know how great it is to unplug and unwind. 
+        Sometimes, though, when you want to unplug from the world, adding a little tech to the equation can truly enhance the experience. 
+        Whether it's electronic gadgets or the latest advancements in product design, finding the right tools can turn great moments into unforgettable ones.</p>
     </section>
-    <section class="s-content small-padding-top">
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+        <h1>Discover the Best Products for Everyday Life</h1>
+        <p>Your trusted source for product reviews, comparisons, and expert recommendations.</p>
+        <a href="/products" class="cta-button">Explore Top Picks</a>
+    </section> -->
 
-        <div class="row">
-            <div class="column large-12">
-
-                <article class="s-content__entry format-standard">
-
-                    <!-- <div class="s-content__entry-header small-margin-top">
-                        <h1 class="s-content__title s-content__title--post namecolor" >Products for Our Lives</h1>
-                    </div>  -->
-
-                    <div class="s-content__primary">
-
-                        <div class="s-content__entry-content">
-
-                            <p class="lead">
-                            
-                            With the hectic lives we all live, it is important to take time to bond with those we care about. We all know how great it is 
-                            to unplug and unwind. Sometimes though, when you want to unplug from the world, adding a little tech to the equation can really 
-                            enhance the experience. Whether it be electronic or the newest technology in the way something is made, finding the right products
-                            can make awesome experiences even better.<br/><br/>
-  
-                            
-
-                            Please check out our blog page for some great stories, our knowledge section to learn more about the products,
-                            as well as our shop section where you can find our top picks along with other great items to choose from.
-                            </p>  
+    <!-- Main Content -->
+    <section class="content">
+        <h2>Top Categories & Buying Guides</h2>
     
-                            <p>
-                                You can check out our YouTube channel by clicking
-                                 <a href="https://www.youtube.com/channel/UC-cPUFgOypjIoUeI7c74n0g" target="_blank" class="red">Products For Our Lives</a>. 
-                                
-                            </p>               
-    
-                           
-
-                        </div> <!-- end s-entry__entry-content -->                       
-                        
-
-                    </div> <!-- end s-content__primary -->
-                </article> <!-- end entry -->
-
-            </div> <!-- end column -->
-        </div> <!-- end row -->       
+        <div class="content-articles">
             
-        </div> <!-- end comments-wrap -->
+            <!-- Long Range Walkie Talkies Section -->
+            <article>
+                <a href="https://www.productsforourlives.com/long-range-walkie-talkies" class="image-link">
+                    <img src="images/familyWalkieTalkie.jpg" alt="Best long-range walkie talkies buying guide" loading="lazy">
+                </a>
+                <h3>Long-Range Walkie Talkies</h3>
+                <p>Discover the best long-range walkie-talkies for clear, reliable communication – Reviews & Buying Guides.</p>
+                <a href="https://www.productsforourlives.com/long-range-walkie-talkies">Read More</a>
+            </article>
+    
+            <!-- Radar Guns Section -->
+            <article>
+                <a href="https://www.productsforourlives.com/radar-guns-speed-sensors" class="image-link">
+                    <img src="images/pitcher.jpg" alt="Baseball radar gun evolution and buying guide" loading="lazy">
+                </a>
+                <h3>Evolution of the Radar Gun</h3>
+                <p>Find the best radar guns and speed sensors – Expert Reviews & Buying Guide.</p>
+                <a href="https://www.productsforourlives.com/radar-guns-speed-sensors">Read More</a>
+            </article>
+    
+            <!-- Night Vision & Thermal Imaging Section -->
+            <article>
+                <a href="https://www.productsforourlives.com/night-vision-thermal-imaging" class="image-link">
+                    <img src="images/nvshop.jpg" alt="Best night vision & thermal imaging devices buying guide" loading="lazy">
+                </a>
+                <h3>Night Vision & Thermal Imaging</h3>
+                <p>Explore the best night vision & thermal imaging gear – Reviews & Buying Guides.</p>
+                <a href="https://www.productsforourlives.com/night-vision-thermal-imaging">Read More</a>
+            </article>
+    
+        </div>
+    </section>
+    
 
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Readers Say</h2>
 
-    </section> <!-- end s-content -->
-    
-    <section class="s-content s-content--no-top-padding">
-        <div class="s-bricks no-top-padding">
-            <div class="masonry">
-                <div>
-                    <h3 class="index-head">Radar Guns / Speed Sensors</h3>
-                    <hr class="divider">
-                </div>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"The buying guides helped me pick the perfect night vision gear for camping!"</p>
+                <strong>- Emily R.</strong>
+            </div>
 
-                <div class="bricks-wrapper h-group zero-m-top">
-                    <div class="grid-sizer"></div>
-                    <div class="lines">
-                        <span></span>
-                        <span></span>
-                        <!-- <span></span> -->
-                    </div>
-                    <article class="brick entry" data-aos="fade-up">
-                        <div class="entry__thumb ">
-                            <a href="radarguns.html" class="thumb-link">
-                                <img src="evolution.jpg" class="indexcardimage" alt="Baseball radar gun evolution image">
-                            </a>
-                        </div> <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h4 class="entry__title"><a href="radarguns.html">Evolution of the Radar Gun</a></h4>                                
-                                
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                   Read about the technology, invention and the evolution of the sports radar gun. 
-                                </p>
-                            </div>
-                            <a class="entry__more-link" href="radarguns.html">Read Here</a>
-                        </div> <!-- end entry__text -->
-                    </article>
-                    <!-- <article class="brick entry" data-aos="fade-up">
-                        <div class="entry__thumb">
-                            <a href="radargunsproduct.html" class="thumb-link">
-                                <img src="pitcher.jpg" class="indexcardimage" alt="Baseball pitcher throwing baseball. Image for radar gun and speed sensor page">
-                            </a>
-                        </div> 
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h4 class="entry__title"><a href="radargunsproduct.html">Shop Radar Guns and Speed Sensors</a></h4>                                
-                                
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                    Check out our top picks and more on our radar gun product page. You will find options in all price ranges
-                                    and sizes. Along with radar guns, you will find speed sensors, speed tracking baseballs and softballs.
-                                    Not sure what you need? Be sure to read our on page buying guide.
-                                </p>
-                            </div>
-                            <a class="entry__more-link" href="radargunsproduct.html">Shop</a>
-                        </div> 
-                    </article> -->
-                </div>
-
-                <div>
-                    <h3 class="index-head">Night Vision / Thermal Imaging</h3>
-                    <hr class="divider">
-                </div>
-                
-                <div class="bricks-wrapper h-group zero-m-top">
-                    <div class="grid-sizer"></div>
-                    <div class="lines">
-                        <span></span>
-                        <span></span>
-                        <!-- <span></span> -->
-                    </div>
-                    <article class="brick entry" data-aos="fade-up">
-                        <div class="entry__thumb">
-                            <a href="blog.html" class="thumb-link">
-                                <img src="nvblog.jpg" class="indexcardimage" alt="Blog image talking about night vision monocular. ">
-                            </a>
-                        </div> <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h4 class="entry__title"><a href="blog.html">First Week With Night Vision - Post</a></h4>                                
-                                
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                    Night vision technology has added a lot of adventure to my life. Go read about the first adventures with my sons 
-                                    night vision monocular.
-                                </p>
-                            </div>
-                            <a class="entry__more-link" href="blog.html">Read Here</a>
-                        </div> <!-- end entry__text -->
-                    </article>
-                    <article class="brick entry" data-aos="fade-up">
-                        <div class="entry__thumb">
-                            <a href="nightvision.html" class="thumb-link">
-                                <img src="nvhistory.jpg" class="indexcardimage" alt="Moon in night sky. Photo by Noah Silliman">
-                            </a>
-                        </div> <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h4 class="entry__title">
-                                    <a href="nightvision.html">History of Night Vision/Thermal Imaging Devices</a></h4>                                
-                                
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                    Night vision and thermal imaging technology have been around for years. Check out the night vision and thermal imaging history 
-                                    page to learn more.
-                                </p>
-                            </div>
-                            <a class="entry__more-link" href="nightvision.html">Read Here</a>
-                        </div> <!-- end entry__text -->
-                    </article>
-                    <!-- <article class="brick entry" data-aos="fade-up">
-                        <div class="entry__thumb">
-                            <a href="nightvisionproduct" class="thumb-link">
-                                <img src="nvshop.jpg" class="indexcardimage" alt="Man with  night vision. Photo by R.Louis Mac.
-                                ">
-                            </a>
-                        </div> 
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h4 class="entry__title"><a href="nightvisionproduct">Shop Great Night Vision and Thermal Imaging Devices</a></h4>                                
-                                
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                    See our top picks for night vision and thermal imaging devices as well as many other options. You are sure to
-                                    find something to suit your needs. If you are looking for some help deciding, be sure to check out our buying 
-                                    guide on the page.
-                                </p>
-                            </div>
-                            <a class="entry__more-link" href="nightvisionproduct.html">Shop</a>
-                        </div> 
-                    </article> -->
-                </div>
+            <div class="testimonial">
+                <p>"I love the detailed reviews. Made choosing the right radar gun easy!"</p>
+                <strong>- Mike D.</strong>
             </div>
         </div>
-    </section> <!-- end s-content -->
+    </section>
 
 
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer">
+    <!-- Related Blog Posts -->
+    <section class="related-posts">
+        <h2>Related Articles</h2>
+        <ul>
+            <li><a href="https://www.productsforourlives/blogs/night-vision-adventure">Night Vision Adventure</a></li>
+            <li><a href="https://www.productsforourlives/blogs/how-a-radar-gun-helped-my-son">Backyard Pitching Practice</a></li>
+        </ul>
+    </section>
 
-        <div class="s-footer__main">
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Products For Our Lives. All rights reserved.</p>
+        <p>Affiliate Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
 
-            <div class="row">
+        <!-- Navigation Links -->
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+                <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+                <li><a href="https://www.productsforourlives.com/long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+                <li><a href="https://www.productsforourlives.com/night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+                <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+                <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+                <!--<li><a href="/home">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>-->
+            </ul>
+        </nav>
 
-                <div class="column large-3 medium-6 tab-12 s-footer__info">
+        <!-- Contact Information -->
+        <!-- <p>Contact us: <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a></p>
+        <p>Follow us: 
+            <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com/yourpage" target="_blank">Twitter</a> | 
+            <a href="https://www.instagram.com/yourpage" target="_blank">Instagram</a>
+        </p> -->
 
-                    <h5>About Our Site</h5>
+        <!-- Schema Markup for Local SEO -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://www.productsforourlives.com",
+            "@type": "Organization",
+            "name": "Products For Our Lives",
+            "url": "https://www.productsforourlives.com/",
+            "logo": "https://www.productsforourlives.com/favicon.ico",
+            "sameAs": []
+        }
+        </script>
+    </footer>
 
-                    <p>
-                    Affiliate disclosure: As an Amazon Associate, 
-                    I earn commissions from qualifying purchases 
-                    at no cost to you from Amazon.com.
-                    </p>
-
-                </div> <!-- end s-footer__info -->
-
-                <div class="column large-2 medium-3 tab-6 s-footer__site-links">
-
-                    <h5>Site Links</h5>
-
-                    <ul>
-                        <li><a href="https://www.productsforourlives.com/">Home</a></li>
-                        <li><a href="https://www.productsforourlives.com/blog">Blog</a></li>
-                        <li><a href="https://www.productsforourlives.com/night-vision-thermal-history">Night Vision/Thermal</a></li>
-                        <li><a href="https://www.productsforourlives.com/evolution-of-radar-guns">Radar Guns</a></li>                        
-                    </ul>
-
-                </div> <!-- end s-footer__site-links -->    
-                <div class="column large-2 medium-3 tab-6 s-footer__site-links">
-
-                    <h5>Site Links Cont.</h5>
-
-                    <ul>
-                        <!-- <li><a href="nightvisionproduct.html">Night/Thermal Product</a></li>
-                        <li><a href="radargunsproduct.html">Radar Guns Product</a></li>  -->
-                        <li><a href="about.html">About/Disclosure</a></li>                        
-                    </ul>
-
-                </div>             
-
-            </div> <!-- end row -->
-
-        </div> <!-- end s-footer__main -->        
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
-                </a>
-            </div> <!-- end ss-go-top -->
-        </div> <!-- end s-footer__bottom -->
-
-   </footer> <!-- end s-footer -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="jquery-3.5.0.min.js"></script>
+    <!-- SEO Best Practice: Load Scripts at the End -->
+    <!-- <script src="jquery-3.5.0.min.js"></script>
     <script src="plugins.js"></script>
-    <script src="main.js"></script>
-</body>
+    <script src="main.js"></script> -->
 
+</body>
 </html>
