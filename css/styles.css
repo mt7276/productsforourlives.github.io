@@ -1,0 +1,1224 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #eef1f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #0056b3, #00408a);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar - Fixes List Stacking */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #003366;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+/* Ensure Navigation List is Horizontal */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Links */
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: white;
+  background: #28a745;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-item {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-item h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Footer - Now Matches Header */
+footer {
+  background: linear-gradient(135deg, #0056b3, #00408a);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Navigation */
+.footer-nav {
+  margin-top: 15px;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #f8f9fa;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Contact & Social Media */
+footer p {
+  margin: 8px 0;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Make navigation stack for mobile */
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Content Section */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Article Section */
+.content-articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.content-articles article {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-articles article:hover {
+  transform: translateY(-5px);
+}
+
+/* Clickable Images */
+.content-articles article a.image-link {
+  display: block;
+}
+
+.content-articles article img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content-articles article img:hover {
+  opacity: 0.8;
+}
+
+/* Article Titles */
+.content-articles article h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #333;
+}
+
+/* Article Paragraphs */
+.content-articles article p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Read More Links */
+.content-articles article a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.content-articles article a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 900px) {
+  .content-articles {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .content-articles article {
+      max-width: 90%;
+  }
+}
+
+/* === Testimonials Section - Side by Side Layout === */
+.testimonials {
+  background: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+/* Heading */
+.testimonials h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Testimonials Flexbox - Forces Side by Side */
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* Prevent stacking */
+}
+
+/* Individual Testimonial Box */
+.testimonial {
+  flex: 1;
+  background: white;
+  border-left: 5px solid #007bff;
+  font-style: italic;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* Ensuring Testimonials Stay Same Height */
+.testimonial p {
+  font-size: 1.2rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* Author Styling */
+.testimonial strong {
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+/* Responsive: Stack on Small Screens */
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-wrap: wrap;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+}
+
+
+
+/* === Related Blog Posts Section === */
+.related-posts {
+  text-align: center;
+  padding: 40px 20px;
+  background: #eef1f6;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-posts h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.related-posts ul li {
+  margin: 10px 0;
+}
+
+.related-posts ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.related-posts ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials, .related-posts {
+    padding: 30px 15px;
+  }
+}
+
+/* === Informational Section Styling === */
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content article {
+  text-align: left;
+  line-height: 1.7;
+  color: #333;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0056b3;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  position: relative;
+  font-size: 1.1rem;
+  color: #333;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+/* Bullet Icon */
+.content ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* CTA Button Styling */
+.content a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.content a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.content-articles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.content-articles article {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-articles article:hover {
+  transform: translateY(-5px);
+}
+
+/* Ensuring Images Are the Same Size */
+.content-articles article a.image-link {
+  display: block;
+}
+
+.content-articles article img {
+  width: 100%;  /* Ensures all images take up the full width of the container */
+  height: 200px; /* Sets a fixed height for uniformity */
+  object-fit: cover; /* Ensures images fill the space without stretching */
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 900px) {
+  .content-articles {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .content-articles article {
+      max-width: 90%;
+  }
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .content {
+      padding: 25px;
+  }
+  
+  .content h2 {
+      font-size: 1.8rem;
+  }
+
+  .content h3 {
+      font-size: 1.4rem;
+  }
+
+  .content p, 
+  .content ul li {
+      font-size: 1rem;
+  }
+}
+
+/* === Comparison Table - Responsive Design === */
+.comparison-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Table Header */
+.comparison-table thead {
+  background-color: #0056b3;
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Table Headers & Cells */
+.comparison-table th,
+.comparison-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Alternating Row Colors */
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #e8f0ff;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Product Name Links */
+.comparison-table .product-name a {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.comparison-table .product-name a:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+/* Price Styling */
+.comparison-table .price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Images */
+.comparison-table img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.comparison-table img:hover {
+  transform: scale(1.1);
+}
+
+/* === Fully Responsive Table for Small Screens === */
+@media (max-width: 900px) {
+  .comparison-table {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .comparison-table thead {
+      display: none; /* Hide Headers */
+  }
+
+  .comparison-table tbody,
+  .comparison-table tr {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .comparison-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      font-size: 1rem;
+  }
+
+  .comparison-table td:last-child {
+      border-bottom: none;
+  }
+
+  /* Add Labels for Mobile */
+  .comparison-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #0056b3;
+      text-align: left;
+      flex: 1;
+      margin-right: 10px;
+  }
+
+  /* Center Images & Make them smaller on Mobile */
+  .comparison-table td img {
+      display: block;
+      max-width: 80px;
+      margin: 5px auto;
+  }
+}
+
+/* Personal Introduction Section */
+.personal-intro {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.personal-intro h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.personal-intro p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .personal-intro {
+      padding: 20px;
+  }
+
+  .personal-intro h2 {
+      font-size: 1.6rem;
+  }
+
+  .personal-intro p {
+      font-size: 1rem;
+  }
+}
+
+/* === Buyer's Guide Section Styling === */
+.buyers-guide {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* Headings */
+.buyers-guide h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buyers-guide h3 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  color: #007bff;
+  border-left: 5px solid #007bff;
+  padding-left: 12px;
+}
+
+/* Paragraphs */
+.buyers-guide p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+.buyers-guide ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.buyers-guide ul li {
+  position: relative;
+  font-size: 1.1rem;
+  color: #333;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+/* Custom Icons for List Items */
+.buyers-guide ul li::before {
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Specific Emoji Icons */
+.buyers-guide ul li:nth-child(1)::before { content: "📡"; }
+.buyers-guide ul li:nth-child(2)::before { content: "🌲"; }
+.buyers-guide ul li:nth-child(3)::before { content: "🏙"; }
+.buyers-guide ul li:nth-child(4)::before { content: "⛰"; }
+.buyers-guide ul li:nth-child(5)::before { content: "🌄"; }
+.buyers-guide ul li:nth-child(6)::before { content: "🔋"; }
+.buyers-guide ul li:nth-child(7)::before { content: "💦"; }
+.buyers-guide ul li:nth-child(8)::before { content: "🏗"; }
+.buyers-guide ul li:nth-child(9)::before { content: "📻"; }
+.buyers-guide ul li:nth-child(10)::before { content: "🎙"; }
+.buyers-guide ul li:nth-child(11)::before { content: "⚠"; }
+
+/* Links */
+.buyers-guide a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.buyers-guide a:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .buyers-guide {
+      padding: 20px;
+  }
+  
+  .buyers-guide h2 {
+      font-size: 1.8rem;
+  }
+
+  .buyers-guide h3 {
+      font-size: 1.4rem;
+  }
+
+  .buyers-guide p,
+  .buyers-guide ul li {
+      font-size: 1rem;
+  }
+}
+
+/* === Product Section Styling === */
+#products {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Product Articles */
+.product {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* Ensure Images are Properly Sized */
+/* Product image container */
+.product figure {
+  width: 100%;
+  height: 180px;       /* Fixed height to keep cards uniform */
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;       /* Helps center the image */
+  justify-content: center;
+  align-items: center;
+}
+
+.product figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Show the full image, maintaining aspect ratio */
+}
+
+.guyers-guide .product figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.buyers-guide .product img {
+  width: 100%;
+  max-width: 250px;  
+  height: 180px;      
+  /*object-fit: cover; */
+  border-radius: 8px;
+} 
+
+/* Product Content */
+.product div {
+  padding: 10px 0;
+}
+
+/* Product Headings */
+.product h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+  text-align: center;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Product Features List */
+.product ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product ul li {
+  font-size: 0.95rem;
+  color: #333;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.product ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Pricing */
+.product p strong {
+  font-size: 1.1rem;
+  color: #28a745;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Fixes */
+@media (max-width: 900px) {
+  #products {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .product img {
+    max-width: 200px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product {
+    padding: 15px;
+  }
+
+  .product h2 {
+    font-size: 1.2rem;
+  }
+
+  .product img {
+    max-width: 180px;
+    height: 140px;
+  }
+}
+
+/* === FAQ Section Styling === */
+.faq-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* FAQ Heading */
+.faq-section h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* FAQ Questions */
+.faq-section h3 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  color: #007bff;
+  border-left: 5px solid #007bff;
+  padding-left: 12px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* FAQ Question Hover Effect */
+.faq-section h3:hover {
+  color: #004080;
+}
+
+/* FAQ Answers */
+.faq-section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  display: none; /* Hidden by default for accordion effect */
+}
+
+/* FAQ Container */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* Expand FAQ Answers when Active */
+.faq-item.active p {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+      padding: 20px;
+  }
+
+  .faq-section h2 {
+      font-size: 1.8rem;
+  }
+
+  .faq-section h3 {
+      font-size: 1.4rem;
+  }
+
+  .faq-section p {
+      font-size: 1rem;
+  }
+}
+
+/* === Blog Header Styling (Only Affects This Section) === */
+.blog-header {
+  background: linear-gradient(135deg, #0048a5, #002f6c); /* More depth with a gradient */
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure Header Text is Readable & Well-Spaced */
+.blog-header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffdd57; /* Slightly different color for contrast */
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* === Blog Header Styling (Optimized for Less Height) === */
+.blog-header {
+  background: linear-gradient(135deg, #0048a5, #002f6c); /* Darker gradient for a sleek look */
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 15px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Adjust Title & Subtitle for a More Compact Look */
+.blog-header h1 {
+  font-size: 2rem; /* Reduced font size */
+  font-weight: bold;
+  margin-bottom: 5px; /* Less margin */
+}
+
+.blog-header h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* Less space */
+  color: #ffdd57;
+}
+
+.blog-header p {
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Blog Navigation Bar (Now Slimmer) === */
+.site-map {
+  margin-top: 15px;
+}
+
+.site-map ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+
+.site-map ul li a {
+  background: #002f6c;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 14px; /* Smaller buttons */
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.site-map ul li a:hover {
+  background: #ffdd57;
+  color: #002f6c;
+  transform: translateY(-2px);
+}
+
+/* === Responsive Design for Mobile === */
+@media (max-width: 768px) {
+  .blog-header {
+      padding: 20px 10px; /* Further reduced padding */
+  }
+
+  .blog-header h1 {
+      font-size: 1.6rem;
+  }
+
+  .blog-header h2 {
+      font-size: 1.2rem;
+  }
+
+  .blog-header p {
+      font-size: 0.95rem;
+  }
+
+  .site-map ul {
+      flex-direction: column;
+      gap: 8px;
+  }
+
+  .site-map ul li a {
+      display: block;
+      text-align: center;
+      padding: 7px 12px;
+  }
+}
+
+/* Buy Button Styling */
+.buy-button {
+  display: inline-block;
+  text-align: center;
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #ff9900; /* Amazon color */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button:hover {
+  background: #e68a00; /* Darker Amazon orange */
+  transform: translateY(-3px);
+}
+
+/* Ensure buttons align well inside products */
+.product div {
+  text-align: center;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .buy-button {
+    width: 100%; /* Full width on smaller screens */
+    display: block;
+    padding: 14px;
+  }
+}
+/* Buy Button inside Comparison Table */
+.comparison-table .buy-button {
+  background: #ff9900; /* Amazon Orange */
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.comparison-table .buy-button:hover {
+  background: #e68a00; /* Darker Amazon Orange */
+}
+
+/* Centering buy buttons inside the table */
+.comparison-table .buy {
+  text-align: center;
+}
