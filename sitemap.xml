@@ -5,7 +5,7 @@
    <url>
 
       <loc>https://www.productsforourlives.com/</loc>
-      <lastmod>2022-11-15</lastmod>
+      <lastmod>2025-03-06</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
 
@@ -14,7 +14,7 @@
    <url>
 
       <loc>https://www.productsforourlives.com/blog</loc>
-      <lastmod>2022-11-15</lastmod>
+      <lastmod>2025-03-06</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
 
@@ -22,8 +22,8 @@
    
    <url>
 
-      <loc>https://www.productsforourlives.com/night-vision-thermal</loc>
-      <lastmod>2022-11-15</lastmod>
+      <loc>https://www.productsforourlives.com/night-vision-thermal-imaging</loc>
+      <lastmod>2025-03-06</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
 
@@ -34,7 +34,7 @@
    <url>
 
       <loc>https://www.productsforourlives.com/radar-guns-speed-sensors</loc>
-      <lastmod>2022-11-15</lastmod>
+      <lastmod>2025-03-06</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -42,7 +42,7 @@
    <url>
 
       <loc>https://www.productsforourlives.com/long-range-walkie-talkies</loc>
-      <lastmod>2022-11-15</lastmod>
+      <lastmod>2025-03-06</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -52,12 +52,28 @@
 
       <loc>https://www.productsforourlives.com/about</loc>
 
-      <lastmod>2022-11-15</lastmod>
+      <lastmod>2025-03-06</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
 
    </url>
    
-  
+   <url>
+
+      <loc>https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son</loc>
+      <lastmod>2025-03-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.productsforourlives.com/blogs/night-vision-adventure</loc>
+      <lastmod>2025-03-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+
+   </url>
 
 </urlset>
