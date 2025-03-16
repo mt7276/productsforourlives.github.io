@@ -10,10 +10,6 @@ RewriteRule ^([^.]+)$ $1.html [L,QSA]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect www to non-www (optional, remove if not needed)
-RewriteCond %{HTTP_HOST} ^www\.productsforourlives\.com$ [NC]
-RewriteRule ^(.*)$ https://productsforourlives.com/$1 [L,R=301]
-
 # Redirect index.html and index to root (Prevents duplicate content issues)
 RewriteCond %{THE_REQUEST} /index(\.html)? [NC]
 RewriteRule ^(.*)index(\.html)?$ /$1 [R=301,L]
