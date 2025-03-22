@@ -19,13 +19,16 @@ RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [L,R=301]
 
 # Fix 301 Redirects (Ensuring all pages are redirected properly)
 
-RedirectMatch 301 ^/blog/?$ https://www.productsforourlives.com/blog/
-RedirectMatch 301 ^/night-vision-thermal-imaging/?$ https://www.productsforourlives.com/night-vision-thermal-imaging/
-RedirectMatch 301 ^/radar-guns-speed-sensors/?$ https://www.productsforourlives.com/radar-guns-speed-sensors/
-RedirectMatch 301 ^/long-range-walkie-talkies/?$ https://www.productsforourlives.com/long-range-walkie-talkies.html
-RedirectMatch 301 ^/about/?$ https://www.productsforourlives.com/about/
-RedirectMatch 301 ^/blogs/how-a-radar-gun-helped-my-son/?$ https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son/
-RedirectMatch 301 ^/blogs/night-vision-adventure/?$ https://www.productsforourlives.com/blogs/night-vision-adventure/
+RedirectMatch 301 ^/blog/?$ https://www.productsforourlives.com/blog
+RedirectMatch 301 ^/night-vision-thermal-imaging/?$ https://www.productsforourlives.com/night-vision-thermal-imaging
+RedirectMatch 301 ^/radar-guns-speed-sensors/?$ https://www.productsforourlives.com/radar-guns-speed-sensors
+RedirectMatch 301 ^/long-range-walkie-talkies/?$ https://www.productsforourlives.com/long-range-walkie-talkies
+RedirectMatch 301 ^/best-gaming-computers/?$ https://www.productsforourlives.com/night-vision-thermal-imaging
+RedirectMatch 301 ^/about/?$ https://www.productsforourlives.com/about
+RedirectMatch 301 ^/blogs/how-a-radar-gun-helped-my-son/?$ https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son
+RedirectMatch 301 ^/blogs/night-vision-adventure/?$ https://www.productsforourlives.com/blogs/night-vision-adventure
+RedirectMatch 301 ^/blog/evolution-of-radar-guns/?$ https://www.productsforourlives.com/night-vision-thermal-imaging
+
 
 # Ensure sitemap.xml remains accessible
 RewriteRule ^sitemap\.xml$ sitemap.xml [L]
