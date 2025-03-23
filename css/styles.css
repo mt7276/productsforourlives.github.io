@@ -1190,6 +1190,16 @@ footer a:hover {
 .product div {
   text-align: center;
 }
+.jump-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0066cc;
+  text-decoration: underline;
+}
+.jump-link:hover {
+  color: #004499;
+}
 
 /* Responsive Fix */
 @media (max-width: 768px) {
