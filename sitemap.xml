@@ -5,7 +5,7 @@
    <!-- Home Page -->
    <url>
       <loc>https://www.productsforourlives.com/</loc>
-      <lastmod>2025-03-29</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -13,7 +13,7 @@
    <!-- Blog Index -->
    <url>
       <loc>https://www.productsforourlives.com/blog</loc>
-      <lastmod>2025-03-29</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -21,7 +21,7 @@
    <!-- Product Categories -->
    <url>
       <loc>https://www.productsforourlives.com/best-night-vision-thermal-imaging</loc>
-      <lastmod>2025-03-23</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -35,14 +35,21 @@
 
    <url>
       <loc>https://www.productsforourlives.com/best-long-range-walkie-talkies</loc>
-      <lastmod>2025-03-24</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
 
    <url>
       <loc>https://www.productsforourlives.com/best-gaming-computers</loc>
-      <lastmod>2025-03-23</lastmod>
+      <lastmod>2025-03-30</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets.html</loc>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -50,7 +57,7 @@
    <!-- About Page -->
    <url>
       <loc>https://www.productsforourlives.com/about</loc>
-      <lastmod>2025-03-23</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
@@ -58,35 +65,35 @@
    <!-- Blog Posts -->
    <url>
       <loc>https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son</loc>
-      <lastmod>2025-03-23</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>https://www.productsforourlives.com/blogs/night-vision-adventure</loc>
-      <lastmod>2025-03-23</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>https://www.productsforourlives.com/blogs/evolution-of-radar-guns</loc>
-      <lastmod>2025-03-23</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>https://www.productsforourlives.com/blogs/night-vision-thermal-history</loc>
-      <lastmod>2025-03-24</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>https://www.productsforourlives.com/blogs/my-sons-first-gaming-pc</loc>
-      <lastmod>2025-03-29</lastmod>
+      <lastmod>2025-03-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
