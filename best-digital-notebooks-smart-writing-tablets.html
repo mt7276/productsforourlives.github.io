@@ -1583,7 +1583,10 @@
       gtag('js', new Date());
       gtag('config', 'G-5FYC8MWDDS');
     </script>
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -1594,8 +1597,14 @@
     <div class="container">
       <h1>Best Digital Notebooks & Smart Writing Tablets for 2025</h1>
       <h2>📝 Go Paperless With the Top E-Ink Tablets & Writing Devices</h2>
-      <p>Explore the best devices for note-taking, reading, and productivity—from advanced e-ink tablets to reusable smart notebooks.</p>
-      <nav class="site-map">
+      <!-- Toggleable Description -->
+      <button class="toggle-button" id="toggleDesc">Show Description</button>
+      <p class="description" id="siteDesc">Explore the best devices for note-taking, reading, and productivity—from advanced e-ink tablets to reusable smart notebooks.</p>
+      <!-- Responsive Hamburger Menu -->
+      <div class="menu-button-wrapper" id="menu-toggle-ham">
+        <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+      </div>
+      <nav class="site-nav">
         <ul>
           <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
           <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
@@ -2811,6 +2820,6 @@
     </ul>
 </nav>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
