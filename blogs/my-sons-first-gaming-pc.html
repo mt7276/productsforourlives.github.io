@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Son’s First Gaming PC: From Fortnite to Coding</title>
+    <title>My Son's First Gaming PC: From Fortnite to Coding and Beyond</title>
     <meta name="description" content="Discover how my 10-year-old’s first gaming PC sparked his passion for Fortnite, Minecraft VR, and coding Roblox games. A personal journey of tech and growth.">
     <meta name="keywords" content="gaming PC for kids, Fortnite gaming setup, Minecraft VR, Roblox game coding, best first gaming computer, kids and gaming, learning with games">
     <link rel="stylesheet" href="../css/styles.css">
@@ -17,14 +17,24 @@
         gtag('js', new Date());
         gtag('config', 'G-5FYC8MWDDS');
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
 <header>
     <div class="container">
         <h1>A Kid, A Keyboard, and a Dream: My Son’s First Gaming PC</h1>
-        <p>How one birthday gift turned into a passion for gaming, creativity, and coding.</p>
-        <nav class="site-map">
+        <!-- Toggleable Description -->
+        <button class="toggle-button" id="toggleDesc">Show Description</button>
+        <p class="description" id="siteDesc">How one birthday gift turned into a passion for gaming, creativity, and coding.</p>
+        <!-- Responsive Hamburger Menu -->
+        <div class="menu-button-wrapper" id="menu-toggle-ham">
+            <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+        </div>
+        <nav class="site-nav">
             <ul>
                 <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
                 <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
@@ -32,10 +42,12 @@
                 <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
                 <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
                 <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+                <li>
+                    <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                        title="Best Digital Notebooks & Smart Writing Tablets">
+                      Smart Writing Tablets
+                    </a>
+                  </li> 
                 <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
             </ul>
         </nav>
@@ -91,10 +103,12 @@
             <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
             <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
             <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-            <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+            <li>
+                <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                    title="Best Digital Notebooks & Smart Writing Tablets">
+                  Smart Writing Tablets
+                </a>
+              </li> 
             <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
         </ul>
     </nav>
@@ -109,6 +123,6 @@
     }
     </script>
 </footer>
-
+<script src="../js/main.js"></script>
 </body>
 </html>
