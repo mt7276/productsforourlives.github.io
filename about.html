@@ -17,6 +17,10 @@
         gtag('config', 'G-5FYC8MWDDS');   
     </script>
     <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -31,18 +35,24 @@
         <div class="container">
             <!-- <h1><a href="https://www.productsforourlives.com/" title="Products for Our Lives">Products for Our Lives</a></h1> -->
             <h1>Products for Our Lives</h1>
-            <nav class="site-map">
+            <!-- Responsive Hamburger Menu -->
+            <div class="menu-button-wrapper" id="menu-toggle-ham">
+                <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+            </div>
+            <nav class="site-nav">
                 <ul>
                   <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
                   <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-                  <li><a href="https://www.productsforourlives.com/long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+                  <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
                   <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
                   <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
                   <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                    <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+                  <li>
+                    <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                        title="Best Digital Notebooks & Smart Writing Tablets">
+                      Smart Writing Tablets
+                    </a>
+                  </li> 
                   <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
                 </ul>
               </nav>
@@ -111,14 +121,16 @@
         <ul>
             <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
             <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-            <li><a href="https://www.productsforourlives.com/long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+            <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
             <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
             <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
             <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-            <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+            <li>
+                <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                    title="Best Digital Notebooks & Smart Writing Tablets">
+                  Smart Writing Tablets
+                </a>
+              </li> 
             <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
         </ul>
     </nav>
@@ -131,8 +143,11 @@
         <a href="https://www.instagram.com/yourpage" target="_blank">Instagram</a>
     </p> -->
 
-    <!-- Schema Markup for Local SEO -->
-    <script type="application/ld+json">
+    
+</footer>
+<script src="js/main.js"></script>
+<!-- Schema Markup for Local SEO -->
+<script type="application/ld+json">
     {
         "@context": "https://www.productsforourlives.com/",
         "@type": "Organization",
@@ -142,8 +157,6 @@
         "sameAs": []
     }
     </script>
-</footer>
-
 </body>
 
 </html>
