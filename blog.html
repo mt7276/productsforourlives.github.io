@@ -43,6 +43,9 @@
         gtag('js', new Date());
         gtag('config', 'G-5FYC8MWDDS');   
     </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/styles.css">
         <link rel="canonical" href="https://www.productsforourlives.com/blog">
@@ -55,8 +58,14 @@
             <!-- <h1><a href="https://www.productsforourlives.com/" title="Products for Our Lives">Products for Our Lives</a></h1> -->
             <h1>Products for Our Lives</h1>
             <h2>📖 Stories, Reviews & Expert Insights – Explore the World of Innovation</h2>
-            <p>From **real-life adventures** to **in-depth product reviews**, our blog brings you engaging **stories**, expert buying guides, and the latest trends in **night vision, walkie-talkies, speed sensors**, and more. Whether you're looking for inspiration or a deep dive into cutting-edge technology, we’ve got you covered.</p>
-            <nav class="site-map">
+            <!-- Toggleable Description -->
+            <button class="toggle-button" id="toggleDesc">Show Description</button>
+            <p class="description" id="siteDesc">From **real-life adventures** to **in-depth product reviews**, our blog brings you engaging **stories**, expert buying guides, and the latest trends in **night vision, walkie-talkies, speed sensors**, and more. Whether you're looking for inspiration or a deep dive into cutting-edge technology, we’ve got you covered.</p>
+            <!-- Responsive Hamburger Menu -->
+            <div class="menu-button-wrapper" id="menu-toggle-ham">
+                <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+            </div>
+            <nav class="site-nav">
                 <ul>
                   <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
                   <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
@@ -64,10 +73,12 @@
                   <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
                   <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
                   <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                   <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+                  <li>
+                    <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                        title="Best Digital Notebooks & Smart Writing Tablets">
+                      Smart Writing Tablets
+                    </a>
+                  </li> 
                   <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
                 </ul>
               </nav>
@@ -98,12 +109,12 @@
                 <p>Night Vision and Thermal Imaging products have changed and improved a lot over the years...</p>
             </article>
 
-           <article>
+            <article>
                 <h3><a href="https://www.productsforourlives.com/blogs/my-sons-first-gaming-pc">My Sons First gaming PC</a></h3>
                 <p>How My 10-Year-Old Got His First Gaming PC—and Turned It into a Passion for Fortnite, Minecraft, and Coding...</p>
             </article>
 
-           <article>
+            <article>
                 <h3><a href="https://www.productsforourlives.com/blogs/outdoor-tech-kit-guide">Outdoor Tech Kit Guide</a></h3>
                 <p>Discover the ultimate gear setup for exploring the outdoors—featuring night vision goggles, radar guns, walkie-talkies, gaming PCs, and smart notebooks for the modern adventurer...</p>
             </article>
@@ -124,10 +135,12 @@
                 <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
                 <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
                 <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-               <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+                <li>
+                    <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                        title="Best Digital Notebooks & Smart Writing Tablets">
+                      Smart Writing Tablets
+                    </a>
+                  </li> 
                 <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
             </ul>
         </nav>
@@ -142,6 +155,6 @@
 
         
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
