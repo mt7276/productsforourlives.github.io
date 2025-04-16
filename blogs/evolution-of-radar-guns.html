@@ -17,6 +17,9 @@
          gtag('js', new Date());
          gtag('config', 'G-5FYC8MWDDS');   
      </script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
          
          <link rel="canonical" href="https://www.productsforourlives.com/blogs/evolution-of-radar-guns">
 </head>
@@ -25,8 +28,14 @@
 <header>
     <div class="container">
         <h1>The History and Evolution of Baseball Radar Guns</h1>
-        <p>How radar guns revolutionized baseball scouting, player development, and game strategy.</p>
-        <nav class="site-map">
+        <!-- Toggleable Description -->
+        <button class="toggle-button" id="toggleDesc">Show Description</button>
+        <p class="description" id="siteDesc">How radar guns revolutionized baseball scouting, player development, and game strategy.</p>
+        <!-- Responsive Hamburger Menu -->
+        <div class="menu-button-wrapper" id="menu-toggle-ham">
+            <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+        </div>
+        <nav class="site-nav">
             <ul>
               <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
               <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
@@ -34,10 +43,12 @@
               <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
               <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
               <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+              <li>
+                <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                    title="Best Digital Notebooks & Smart Writing Tablets">
+                  Smart Writing Tablets
+                </a>
+              </li> 
               <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
             </ul>
           </nav>
@@ -118,10 +129,12 @@
             <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
             <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
             <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-            <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a></li>
+            <li>
+                <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                    title="Best Digital Notebooks & Smart Writing Tablets">
+                  Smart Writing Tablets
+                </a>
+              </li> 
             <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
         </ul>
     </nav>
@@ -129,7 +142,7 @@
     <!-- Schema Markup for Local SEO -->
     <script type="application/ld+json">
     {
-        "@context": "https://www.productsforourlives.com/",
+        "@context": "https://www.productsforourlives.com",
         "@type": "Organization",
         "name": "Products For Our Lives",
         "url": "https://www.productsforourlives.com/",
@@ -138,6 +151,6 @@
     }
     </script>
 </footer>
-
+<script src="../js/main.js"></script>
 </body>
 </html>
