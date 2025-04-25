@@ -4,12 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const navMenu = document.querySelector(".site-nav");
   const toggleDesc = document.getElementById("toggleDesc");
   const siteDesc = document.getElementById("siteDesc");
+  const closeMenu = document.getElementById("closeMenu");
 
   if (toggleMenu && navMenu) {
     toggleMenu.addEventListener("click", function () {
       navMenu.classList.toggle("active");
     });
   }
+
+  if (closeMenu && navMenu) {
+  closeMenu.addEventListener("click", function () {
+    navMenu.classList.remove("active");
+    closeMenu.classList.remove("active");
+    //document.body.classList.remove("menu-open"); // Optional: If you're locking scroll
+  });
+}
 
   if (toggleDesc && siteDesc) {
     toggleDesc.addEventListener("click", function () {
@@ -29,4 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
