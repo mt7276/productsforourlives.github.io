@@ -12,7 +12,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;               /* Prevents sideways scroll */
-  scroll-behavior: smooth;          /* MOD: Smooth scrolling for better UX */
+  scroll-behavior: smooth;          /* Smooth scrolling for better UX */
 }
 
 body {
@@ -27,12 +27,13 @@ body {
 
 /* Additional base styles (optional) */
 a {
-  color: #0d3b66;
-  text-decoration: none;
+  color: #3e92cc;
+  text-decoration: underline;
 }
 
 a:hover {
   text-decoration: underline;
+  text-transform: capitalize;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section,
 .content {
-  margin: 2rem auto;  /* Increased from 1.25rem for better spacing */
+  margin: 2rem auto;
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
@@ -64,7 +65,7 @@ section,
 }
 
 .content {
-  padding: 1rem; /* Added for internal spacing in sections */
+  padding: 1rem; /* Internal spacing in sections */
 }
 
 section {
@@ -119,7 +120,7 @@ section p {
   Header & Navigation
 =================================================================*/
 header {
-  background: linear-gradient(135deg, #0d3b66, #3e92cc);
+  background: linear-gradient(135deg, #0f5291, #3e92cc);
   color: #fff;
   text-align: center;
   padding: 1rem 0.5rem;
@@ -153,7 +154,6 @@ header .container {
   align-items: center;
 }
 
-
 /* Toggle buttons */
 .toggle-button,
 .menu-toggle {
@@ -166,22 +166,21 @@ header .container {
   display: block;
   cursor: pointer;
   border-radius: 4px;
-  transition: background 0.3s, transform 0.2s; /* Smooth hover effects */
+  transition: background 0.3s, transform 0.2s;
 }
 
 .toggle-button:hover,
 .menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.1); /* Subtle hover background */
-  transform: translateY(-2px); /* Slight lift on hover */
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 /* Description toggle visibility on small screens */
 #toggleDesc {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
-/* Show toggleDesc only on small screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #toggleDesc {
     display: inline-block;
     background: transparent;
@@ -196,23 +195,44 @@ header .container {
   }
 
   header p.description {
-    display: none; /* Hide description by default on small screens */
+    display: none;
   }
 
   header p.description.active {
-    display: block; /* Only show when toggled */
+    display: block;
   }
 }
 
-
-.menu-toggle {
+/* .menu-toggle {
   font-size: 1.8rem;
   border: none;
   position: absolute;
   right: 1rem;
   top: 0.6rem;
-  z-index: 1200; /* Keeps it above titles */
+  z-index: 1200;
   background: none;
+} */
+
+/* .menu-toggle {
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+  color: white;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  z-index: 1200;
+} */
+
+.menu-toggle {
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+  color: white;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  z-index: 1200;
 }
 
 /* Mobile navigation (slides in) */
@@ -222,12 +242,10 @@ header .container {
   right: -250px;
   width: 250px;
   height: 100%;
-  background: #06283d;
+  background: #115493;
   padding-top: 4rem;
-  transition: right 0.3s ease; /* Smooth slide-in transition */
+  transition: right 0.3s ease;
   z-index: 1050;
-  /* MOD: Optionally add a subtle backdrop filter for modern look (if supported) */
-  /* backdrop-filter: blur(4px); */
 }
 
 .site-nav ul {
@@ -236,27 +254,91 @@ header .container {
   flex-direction: column;
   gap: 1rem;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0.5rem;
-  transition: background 0.3s; /* Smooth hover transition */
+  transition: background 0.3s ease;
 }
 
 .site-nav ul li a:hover {
-  background: #0d3b66; /* Hover background */
+  background: #0d3b66;
 }
 
 .site-nav.active {
-  right: 0; /* Slide in when active */
+  right: 0;
 }
 
 body.menu-open {
-  overflow: hidden; /* Prevent scrolling when menu is open */
+  overflow: hidden;
 }
 
+/* Desktop Navigation */
+@media (min-width: 1200px) {
+  #menu-toggle-ham {
+    display: none;
+  }
+
+  .close-menu{
+    display:none
+  }
+
+  header p.description {
+    display: block;
+  }
+
+  
+  #toggleDesc {
+    display: none;
+  }
+
+  .site-nav {
+    position: static;
+    width: max-content;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 30px;
+    transition: none;
+  }
+
+  .site-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-nav ul li {
+    display: inline-block;
+  }
+
+  .site-nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+
+  .site-nav ul li a:hover {
+    color: #3e92cc;
+    border-bottom: 2px solid #3e92cc;
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Content Cards */
 .content-card {
   position: relative;
   display: flex;
@@ -276,7 +358,7 @@ body.menu-open {
 }
 
 .card-body p {
-  margin-bottom: 1.5rem; /* space for button without overlap */
+  margin-bottom: 1.5rem;
 }
 
 .read-more {
@@ -295,14 +377,13 @@ body.menu-open {
   background-color: #145a9e;
 }
 
-
+/* Related Articles Grid */
 .content-articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  /* padding: 0 20px;
-  margin-bottom: 60px; */
 }
+
 .content-articles article {
   background: #fff;
   padding: 20px;
@@ -310,9 +391,11 @@ body.menu-open {
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: transform 0.2s ease;
 }
+
 .content-articles article:hover {
   transform: translateY(-4px);
 }
+
 .index-img {
   width: 100%;
   height: 180px;
@@ -320,21 +403,25 @@ body.menu-open {
   border-radius: 6px;
   margin-bottom: 15px;
 }
+
 .content-articles h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
 .content-articles p {
   font-size: 0.95rem;
   color: #444;
   margin-bottom: 15px;
 }
+
 /* Testimonials Section */
 .testimonials {
   padding: 60px 20px;
   background: #ffffff;
   text-align: center;
 }
+
 .testimonial-grid {
   display: flex;
   flex-wrap: wrap;
@@ -342,6 +429,7 @@ body.menu-open {
   gap: 30px;
   margin-top: 30px;
 }
+
 .testimonial {
   background: #f4f4f9;
   border-radius: 10px;
@@ -350,54 +438,26 @@ body.menu-open {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   text-align: left;
 }
+
 .testimonial p {
   font-size: 1rem;
   margin-bottom: 15px;
   color: #333;
 }
+
 .testimonial-meta {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .testimonial .avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-/* Related Articles */
-.related-posts {
-  padding: 60px 20px;
-  background: #e9f1f7;
-  text-align: center;
-}
-.related-posts h2 {
-  margin-bottom: 30px;
-}
-.related-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-.related-list li a {
-  display: block;
-  background: #fff;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  color: #0d3b66;
-  font-weight: 500;
-}
-.related-list li a:hover {
-  background: #dceefc;
-  transform: translateY(-3px);
-}
-
+/* Menu Button Wrapper */
 .menu-button-wrapper {
   width: 100%;
   display: flex;
@@ -407,76 +467,98 @@ body.menu-open {
 
 #toggleMenu {
   display: block;
-  /* margin: 20px auto 0 auto; */
   padding: 10px 16px;
   font-size: 1.2rem;
-  background-color: #0d3b66;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   z-index: 10;
   transition: background 0.3s ease;
-  text-align: center;
-  position: static; /* Optional: keep it in normal flow */
 }
-
 
 #toggleMenu:hover {
   background-color: #145a9e;
 }
 
-/* Desktop navigation */
-@media (min-width: 768px) {
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1100;
+  /* transform: rotate(180deg);  */
+  transition: color 0.3s;
+}
+
+/* .close-menu:hover {
+  color: #3e92cc; 
+} */
+
+
+/*=================================================================
+  Desktop Navigation (Clean, Centered)
+=================================================================*/
+/* @media (min-width: 1200px) {
+  
   #menu-toggle-ham {
-    display: none; /* Hide hamburger menu on desktop */
-  }
-  header p.description {
-    display: block; /* Show description by default on desktop */
+    display: none;
   }
 
-  /* Hide toggleDesc on large screens */
+  
+  header p.description {
+    display: block;
+  }
+
+  
   #toggleDesc {
     display: none;
   }
 
+  
   .site-nav {
     position: static;
     width: auto;
     height: auto;
-    background: none;
-    padding: 0;
-    transition: none; /* No transition needed on desktop */
+    background-color: #06283d;
+    padding: 10px 30px;
+    transition: none;
   }
 
   .site-nav ul {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
-    gap: 1rem; /* Consistent spacing between links */
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .site-nav ul li a {
-    background: #06283d;
-    border-radius: 4px;
-    padding: 0.5rem 1rem; /* Larger padding for better touch targets */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
   }
 
   .site-nav ul li a:hover {
-    background: #0d3b66; /* Hover effect */
+    color: #0d3b66;
+    border-bottom: 2px solid #0d3b66;
   }
-}
+} */
 
 /* Accessibility improvements */
 a:focus,
 button:focus {
-  outline: 2px solid #fff; /* White outline for visibility on dark background */
-}
-
-/* Additional focus for buttons for better UX */
-.btn:focus,
-.buy-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.4); /* MOD: Enhanced focus state for CTAs */
+  outline: 2px solid #0d3b66;
 }
 
 /*=================================================================
@@ -487,11 +569,11 @@ button:focus {
   display: inline-block;
   padding: 12px 28px;
   font-size: 1rem;
-  font-weight: 600; /* BOLDER for confidence */
+  font-weight: 600;
   color: #fff;
-  background: linear-gradient(to right, #28a745, #218838); /* MOD: gradient gives it depth */
+  background: linear-gradient(to right, #28a745, #218838);
   border: none;
-  border-radius: 8px; /* MOD: softer curve */
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   text-decoration: none;
@@ -502,7 +584,7 @@ button:focus {
 .buy-button:hover {
   background: linear-gradient(to right, #218838, #1c7734);
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* MOD: stronger hover shadow for a modern feel */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active,
@@ -533,13 +615,13 @@ button:focus {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.25s, box-shadow 0.25s; /* Added shadow transition */
+  transition: transform 0.25s, box-shadow 0.25s;
   display: flex;
   flex-direction: column;
 }
 
 .product .buy-button {
-  margin-top: auto; /* This pushes it to bottom */
+  margin-top: auto;
   align-self: flex-start;
   background: #28a745;
   color: #fff;
@@ -554,10 +636,9 @@ button:focus {
   background: #1e7e34;
 }
 
-
 .product:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .product figure {
@@ -588,18 +669,13 @@ button:focus {
 }
 
 .product div {
-  flex: 1 1 auto; /* Stretch text block */
+  flex: 1 1 auto;
 }
 
-.buy-button {
-  margin-top: auto; /* Lock to bottom */
-}
-
-
-/* MOD: For very small screens, hide lengthy product descriptions to save space */
+/* Hide lengthy descriptions on very small screens */
 @media (max-width: 500px) {
   .product p {
-    display: none; /* Hide descriptions on mobile */
+    display: none;
   }
 }
 
@@ -637,6 +713,7 @@ button:focus {
   .comparison-table {
     border: none;
   }
+
   .comparison-table thead {
     display: none;
   }
@@ -689,18 +766,18 @@ button:focus {
 .faq-item {
   border-bottom: 1px solid #ccc;
   padding: 0.75rem 0;
-  transition: background 0.3s; /* Smooth background transition */
+  transition: background 0.3s;
 }
 
 .faq-item:hover {
-  background: #f9f9f9; /* Subtle hover background */
+  background: #f9f9f9;
 }
 
 .faq-item h3 {
   font-size: 1.05rem;
   cursor: pointer;
   position: relative;
-  padding-right: 1.5rem; /* Space for the +/- icon */
+  padding-right: 1.5rem;
 }
 
 .faq-item h3::after {
@@ -709,22 +786,22 @@ button:focus {
   right: 0;
   top: 0;
   font-size: 1.2rem;
-  transition: transform 0.3s; /* Rotate icon on active */
+  transition: transform 0.3s;
 }
 
 .faq-item.active h3::after {
   content: "-";
-  transform: rotate(180deg); /* Rotate icon when active */
+  transform: rotate(180deg);
 }
 
 .faq-item p {
   margin-top: 0.45rem;
   font-size: 0.9rem;
-  display: none; /* Hide answers by default */
+  display: none;
 }
 
 .faq-item.active p {
-  display: block; /* Show answer when active */
+  display: block;
 }
 
 /*=================================================================
@@ -753,34 +830,26 @@ footer {
   transition: color 0.3s;
 }
 
-.footer-nav ul li a:hover { 
-  color: #ff6b35; 
+.footer-nav ul li a:hover {
+  color: #ff6b35;
 }
 
 /*=================================================================
   Utility Helpers
 =================================================================*/
-.text-center { 
-  text-align: center !important; 
+.text-center {
+  text-align: center !important;
 }
-.mt-1       { 
-  margin-top: 1rem !important; 
+.mt-1 {
+  margin-top: 1rem !important;
 }
-.mb-1       { 
-  margin-bottom: 1rem !important; 
-}
-
-/*=================================================================
-  Accessibility Improvements
-=================================================================*/
-a:focus, button:focus {
-  outline: 2px solid #0d3b66;  /* Improves keyboard navigation */
+.mb-1 {
+  margin-bottom: 1rem !important;
 }
 
 /*=================================================================
   Custom Responsive Adjustments for Tablets & Small Devices
 =================================================================*/
-/* MOD: Adjust font sizes for tablets */
 @media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
@@ -788,12 +857,12 @@ a:focus, button:focus {
   h2 {
     font-size: 1.6rem;
   }
-  .content p, .content li {
+  .content p,
+  .content li {
     font-size: 0.95rem;
   }
 }
 
-/* MOD: Hide some non-essential decorative elements on very small devices to save real estate */
 @media (max-width: 400px) {
   header h2 {
     font-size: 1.1rem;
@@ -805,7 +874,9 @@ a:focus, button:focus {
   }
 }
 
-/* Hero Section */
+/*=================================================================
+  Hero Section
+=================================================================*/
 .hero {
   background: linear-gradient(to right, #0d3b66, #3e92cc);
   color: white;
@@ -826,3 +897,46 @@ a:focus, button:focus {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
+
+
+/*=================================================================
+  Global Reset & Base Styles
+=================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  background: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3e92cc;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  color: #0d3b66;
+}
+
