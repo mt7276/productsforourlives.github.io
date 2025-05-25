@@ -93,6 +93,17 @@
               </nav>
         </div>
     </header>
+    <!-- Weather Widget -->
+<div id="weather-widget">
+  <div id="weather-current">
+    <span id="weather-temp">--°</span>
+    <span id="weather-desc">Loading…</span>
+  </div>
+  <div id="weather-forecast">
+    <!-- Forecast days will be injected here -->
+  </div>
+</div>
+
     <!-- Personal Introduction Section -->
     <section class="personal-intro">
         <h2>Products for Our Lives</h2>
@@ -368,6 +379,8 @@
     <!-- <script src="jquery-3.5.0.min.js"></script>
     <script src="plugins.js"></script>
     <script src="main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>emailjs.init('2V5uX6ILzI6EH7qkR');</script>
     <script src="js/main.js"></script>
 </body>
 </html>
