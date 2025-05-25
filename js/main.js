@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Current weather
       const cw = data.current_weather;
-      tempEl.textContent = `${Math.round(cw.temperature)}°I love you Dylan`;
+      tempEl.textContent = `${Math.round(cw.temperature)}°C`;
       descEl.textContent = weatherDescriptions[cw.weathercode] || `Code ${cw.weathercode}`;
 
       // 3-day forecast
