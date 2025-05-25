@@ -940,3 +940,52 @@ h1, h2, h3, h4, h5, h6 {
   color: #0d3b66;
 }
 
+#weather-widget {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.9);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Rubik', sans-serif;
+  width: min-content;
+  z-index: 1000;
+}
+
+#weather-current {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#weather-temp {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#weather-desc {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  color: #555;
+}
+
+#weather-forecast {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.forecast-day .day {
+  font-weight: 700;
+}
+
+.forecast-day .temp {
+  display: block;
+  margin-top: 0.25rem;
+}
