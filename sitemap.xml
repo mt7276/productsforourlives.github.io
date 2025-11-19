@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <!-- Home Page -->
@@ -35,7 +34,7 @@
 
    <url>
       <loc>https://www.productsforourlives.com/best-long-range-walkie-talkies</loc>
-      <lastmod>2025-11-06</lastmod>
+      <lastmod>2025-11-19</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -49,7 +48,7 @@
 
    <url>
       <loc>https://www.productsforourlives.com/best-gaming-computers</loc>
-      <lastmod>2025-04-24</lastmod>
+      <lastmod>2025-11-18</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -69,7 +68,7 @@
       <priority>0.5</priority>
    </url>
 
-   <!-- Blog Posts -->
+   <!-- Blog Posts: Long-Range Walkie Talkie Cluster -->
    <url>
       <loc>https://www.productsforourlives.com/blogs/how-far-do-long-range-walkie-talkies-work</loc>
       <lastmod>2025-11-19</lastmod>
@@ -83,15 +82,52 @@
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
+
    <url>
-      <loc>https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son</loc>
-      <lastmod>2025-04-24</lastmod>
+      <loc>https://www.productsforourlives.com/blogs/how-to-boost-walkie-talkie-range</loc>
+      <lastmod>2025-11-19</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
-      <loc>https://www.productsforourlives.com/blogs/night-vision-adventure</loc>
+      <loc>https://www.productsforourlives.com/blogs/best-channels-for-long-range-communication</loc>
+      <lastmod>2025-11-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/best-walkie-talkies-for-mountains</loc>
+      <lastmod>2025-11-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/gmrs-vs-frs-walkie-talkie-range</loc>
+      <lastmod>2025-11-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/gmrs-license-explained</loc>
+      <lastmod>2025-11-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/do-walkie-talkies-work-without-cell-service</loc>
+      <lastmod>2025-11-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Blog Posts: Radar Guns -->
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son</loc>
       <lastmod>2025-04-24</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
@@ -104,6 +140,14 @@
       <priority>0.8</priority>
    </url>
 
+   <!-- Blog Posts: Night Vision -->
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/night-vision-adventure</loc>
+      <lastmod>2025-04-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
    <url>
       <loc>https://www.productsforourlives.com/blogs/night-vision-thermal-history</loc>
       <lastmod>2025-04-24</lastmod>
@@ -111,13 +155,7 @@
       <priority>0.8</priority>
    </url>
 
-   <url>
-      <loc>https://www.productsforourlives.com/blogs/my-sons-first-gaming-pc</loc>
-      <lastmod>2025-04-24</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-
+   <!-- Blog Posts: Outdoor Tech & Adventure -->
    <url>
       <loc>https://www.productsforourlives.com/blogs/outdoor-tech-kit-guide</loc>
       <lastmod>2025-04-24</lastmod>
@@ -131,4 +169,13 @@
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
+
+   <!-- Blog Posts: Kids & Tech -->
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/my-sons-first-gaming-pc</loc>
+      <lastmod>2025-04-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
 </urlset>
