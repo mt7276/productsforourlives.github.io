@@ -39,25 +39,66 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
-    <!-- Schema Markup for SEO -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.productsforourlives.com/#website",
+      "url": "https://www.productsforourlives.com/",
+      "name": "Products for Our Lives",
+      "description": "Compare the best night vision, radar guns, walkie-talkies, handheld GPS units, gaming PCs, and smart writing tablets with honest reviews and buying guides.",
+      "publisher": {
+        "@id": "https://www.productsforourlives.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.productsforourlives.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.productsforourlives.com/#organization",
+      "name": "Products for Our Lives",
+      "url": "https://www.productsforourlives.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.productsforourlives.com/images/android-chrome-512x512.png"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.productsforourlives.com/#webpage",
+      "url": "https://www.productsforourlives.com/",
+      "name": "Best Tech Gear 2025: Gaming PCs, Night Vision, GPS & More",
+      "description": "Compare the best night vision, radar guns, walkie-talkies & gaming PCs. Expert reviews & buying guides to help you choose smarter.",
+      "isPartOf": {
+        "@id": "https://www.productsforourlives.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.productsforourlives.com/#breadcrumb"
+      },
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-11-19"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.productsforourlives.com/#breadcrumb",
+      "itemListElement": [
         {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Products for Our Lives",
-          "description": "Discover the best products in numerous categories for 2025. Detailed comparisons, features, and buying guide.",
-          "url": "https://www.productsforourlives.com/",
-          "image": "https://www.productsforourlives.com/images/nvblog.jpg",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Products For Our Lives",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.productsforourlives.com/images/logo.png"
-            }
-          }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.productsforourlives.com/"
         }
-        </script>
+      ]
+    }
+  ]
+}
+</script>
+
         
 
 </head>
@@ -265,32 +306,94 @@
     </section>
   
     <!-- Related Blog Posts -->
-    <section class="related-posts">
-    <h2>Related Articles</h2>
-    <ul class="related-list">
+    <section class="content">
+    <section id="blog-posts">
+        <h2>Latest Articles</h2>
 
-        <!-- NEW Walkie Talkie Articles -->
-        <li>
-            <a href="https://www.productsforourlives.com/blogs/how-far-do-long-range-walkie-talkies-work">
-                How Far Do Long-Range Walkie Talkies Really Work?
-            </a>
-        </li>
-        <li>
-            <a href="https://www.productsforourlives.com/blogs/long-range-walkie-talkies-hiking-hunting-emergencies">
-                Best Long-Range Walkie Talkies for Hiking, Hunting & Emergencies
-            </a>
-        </li>
+        <!-- Long-Range Walkie Talkie Articles -->
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/how-far-do-long-range-walkie-talkies-work">How Far Do Long-Range Walkie Talkies Really Work?</a></h3>
+            <p>Real-world testing vs box claims. Learn what actually affects radio range in forests, cities, mountains, and open terrain.</p>
+        </article>
 
-        <!-- EXISTING Articles -->
-        <li><a href="https://www.productsforourlives.com/blogs/night-vision-adventure">Night Vision Adventure</a></li>
-        <li><a href="https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son">Backyard Pitching Practice</a></li>
-        <li><a href="https://www.productsforourlives.com/blogs/evolution-of-radar-guns">Evolution of the Radar Gun</a></li>
-        <li><a href="https://www.productsforourlives.com/blogs/night-vision-thermal-history">Night Vision and Thermal History</a></li>
-        <li><a href="https://www.productsforourlives.com/blogs/my-sons-first-gaming-pc">My Son's First Gaming PC</a></li>
-        <li><a href="https://www.productsforourlives.com/blogs/outdoor-tech-kit-guide">Outdoor Tech Kit Guide</a></li>
-        <li><a href="https://www.productsforourlives.com/blogs/beyond-the-maps-edge-excitement">Treasure Hunt Excitement</a></li>
-    </ul>
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/how-to-boost-walkie-talkie-range">How to Boost Walkie Talkie Range</a></h3>
+            <p>Practical tips to increase range using antennas, terrain strategy, channel selection, elevation, and GMRS power settings.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/best-channels-for-long-range-communication">Best Channels for Long-Range Communication</a></h3>
+            <p>Not all channels are equal. Find the GMRS & FRS channels that cut through distance, terrain, and interference the best.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/best-walkie-talkies-for-mountains">Best Walkie Talkies for Mountains</a></h3>
+            <p>The top radios for steep terrain, ridgelines, dense forests, altitude challenges, and off-grid communication.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/long-range-walkie-talkies-hiking-hunting-emergencies">Best Long-Range Walkie Talkies for Hiking, Hunting & Emergencies</a></h3>
+            <p>The most reliable radios when the mountains, woods, or weather separate your group and cell service disappears.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/gmrs-vs-frs-walkie-talkie-range">GMRS vs FRS: Which Has Better Range?</a></h3>
+            <p>Understand power limits, channels, legal rules, and real-world performance to pick the right radio type.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/gmrs-license-explained">GMRS License Explained</a></h3>
+            <p>A simple breakdown of cost, rules, who is covered, and whether a GMRS license is worth it for your family.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/do-walkie-talkies-work-without-cell-service">Do Walkie Talkies Work Without Cell Service?</a></h3>
+            <p>A beginner-friendly guide on how walkie talkies work completely off-grid using direct radio communication.</p>
+        </article>
+
+        <!-- Radar Gun Articles -->
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/how-a-radar-gun-helped-my-son">How a Radar Gun Helped My Son</a></h3>
+            <p>A personal story about backyard pitching, competition, and how a radar gun turned practice into progress.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/evolution-of-radar-guns">Evolution of Radar Guns</a></h3>
+            <p>From WWII Doppler technology to modern baseball tracking systems—how radar guns changed the sport forever.</p>
+        </article>
+
+        <!-- Night Vision -->
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/night-vision-adventure">Night Vision Adventure</a></h3>
+            <p>A story-driven look at using night vision gear outdoors—from exploring woods to tracking wildlife.</p>
+        </article>
+
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/night-vision-thermal-history">Thermal & Night Vision History</a></h3>
+            <p>The full timeline of how night vision tech evolved from military-only gear to accessible outdoor tools.</p>
+        </article>
+
+        <!-- Outdoor Tech -->
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/outdoor-tech-kit-guide">Outdoor Tech Kit Guide</a></h3>
+            <p>Your modern outdoor setup: GPS, walkie talkies, night vision, radar guns, and practical gear you’ll actually use.</p>
+        </article>
+
+        <!-- Adventure Stories -->
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/beyond-the-maps-edge-excitement">Chasing Clues and Legends: The Rush of the Hunt</a></h3>
+            <p>A deep dive into the excitement, mystery, and thrill of a real treasure hunt and the tools that help along the way.</p>
+        </article>
+
+        <!-- Kids & Tech -->
+        <article class="blog-preview" itemscope itemtype="https://schema.org/BlogPosting">
+            <h3><a href="https://www.productsforourlives.com/blogs/my-sons-first-gaming-pc">My Son’s First Gaming PC</a></h3>
+            <p>How a simple birthday gift sparked a passion for gaming, building PCs, and exploring technology.</p>
+        </article>
+
+    </section>
 </section>
+
 
 
 
@@ -326,67 +429,6 @@
             <!--<a href="https://twitter.com/yourpage" target="_blank">Twitter</a> | -->
             <a href="https://www.instagram.com/prod4lives" target="_blank">Instagram</a>
         </p> 
-
-        <!-- Schema Markup for Local SEO -->
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "WebSite",
-                  "@id": "https://www.productsforourlives.com/#website",
-                  "url": "https://www.productsforourlives.com/",
-                  "name": "Products for Our Lives",
-                  "description": "Discover expert-reviewed guides on night vision devices, radar guns, walkie talkies, and gaming PCs. Shop smarter with top-rated picks and comparison charts.",
-                  "publisher": {
-                    "@id": "https://www.productsforourlives.com/#organization"
-                  },
-                  "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://www.productsforourlives.com/?s={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                  }
-                },
-                {
-                  "@type": "Organization",
-                  "@id": "https://www.productsforourlives.com/#organization",
-                  "name": "Products for Our Lives",
-                  "url": "https://www.productsforourlives.com/",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://www.productsforourlives.com/images/android-chrome-512x512.png"
-                  }
-                },
-                {
-                  "@type": "WebPage",
-                  "@id": "https://www.productsforourlives.com/#webpage",
-                  "url": "https://www.productsforourlives.com/",
-                  "name": "Top Night Vision Devices, Radar Guns, Walkie Talkies & Gaming PCs – Expert Reviews & Guides",
-                  "description": "Compare the best night vision, radar guns, walkie-talkies & gaming PCs. Expert reviews & buying guides to help you choose smarter.",
-                  "isPartOf": {
-                    "@id": "https://www.productsforourlives.com/#website"
-                  },
-                  "breadcrumb": {
-                    "@id": "https://www.productsforourlives.com/#breadcrumb"
-                  },
-                  "datePublished": "2025-01-01",
-                  "dateModified": "2025-04-15"
-                },
-                {
-                  "@type": "BreadcrumbList",
-                  "@id": "https://www.productsforourlives.com/#breadcrumb",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://www.productsforourlives.com/"
-                    }
-                  ]
-                }
-              ]
-            }
-            </script>
             
     </footer>
 
