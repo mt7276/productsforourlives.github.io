@@ -140,10 +140,31 @@
       <priority>0.8</priority>
    </url>
 
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/pocket-radar-vs-stalker-baseball-radar-guns</loc>
+      <lastmod>2025-04-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/best-radar-gun-for-youth-baseball</loc>
+      <lastmod>2025-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/how-to-use-a-radar-gun-in-baseball-practice</loc>
+      <lastmod>2025-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
    <!-- Blog Posts: Night Vision -->
    <url>
       <loc>https://www.productsforourlives.com/blogs/night-vision-adventure</loc>
-      <lastmod>2025-04-24</lastmod>
+      <lastmod>2025-11-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
