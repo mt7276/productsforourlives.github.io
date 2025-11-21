@@ -404,6 +404,12 @@ body.menu-open {
   margin-bottom: 15px;
 }
 
+img.small {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+
 .content-articles h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -630,6 +636,11 @@ button:focus {
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s ease;
+}
+
+.myPick{
+  font-weight: bold;
+  text-decoration: solid;
 }
 
 .product .buy-button:hover {
