@@ -909,7 +909,37 @@ footer {
   margin-bottom: 30px;
 }
 
+/* Hero image */
+.hero-image {
+  margin: 0 0 1.5rem;
+  display: block;
+}
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 960px;   /* match your main content width */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px; /* optional */
+  object-fit: cover;
+}
+.hero-image figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
 
+/* Small screens */
+@media (max-width: 640px) {
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  .hero-image figcaption {
+    font-size: 0.9rem;
+  }
+}
 /*=================================================================
   Global Reset & Base Styles
 =================================================================*/
