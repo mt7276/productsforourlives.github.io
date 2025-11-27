@@ -29,8 +29,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    /* 1. Organization – E-E-A-T rocket fuel */
+  "@graph": 
     {
       "@type": "Organization",
       "@id": "https://www.productsforourlives.com/#organization",
@@ -48,7 +47,6 @@
       }
     },
 
-    /* 2. WebPage + BreadcrumbList */
     {
       "@type": "WebPage",
       "@id": "https://www.productsforourlives.com/best-handheld-gps#webpage",
@@ -67,7 +65,6 @@
       }
     },
 
-    /* 3. Article (helps with Google News / Top Stories eligibility) */
     {
       "@type": "Article",
       "@id": "https://www.productsforourlives.com/best-handheld-gps#article",
@@ -80,7 +77,6 @@
       "mainEntityOfPage": {"@id":"https://www.productsforourlives.com/best-handheld-gps#webpage"}
     },
 
-    /* 4. ItemList – the exact thing that triggers Google’s rich product carousels */
     {
       "@type": "ItemList",
       "@id": "https://www.productsforourlives.com/best-handheld-gps#itemlist",
@@ -102,7 +98,6 @@
       ]
     },
 
-    /* 5. HowTo – “How to Choose the Best Handheld GPS” (Google LOVES this in 2025) */
     {
       "@type": "HowTo",
       "@id": "https://www.productsforourlives.com/best-handheld-gps#howto",
@@ -116,7 +111,6 @@
       ]
     },
 
-    /* 6. Two FAQPages (Google allows multiple) – covers 20+ high-volume questions */
     {
       "@type": "FAQPage",
       "mainEntity": [
@@ -128,7 +122,6 @@
       ]
     },
 
-    /* 7. Keep your original 11 detailed Product objects (I cleaned & fragment-ID’d them) */
     {"@type":"Product","@id":"#GPSMAP-65s","name":"Garmin GPSMAP 65s","image":"https://m.media-amazon.com/images/I/71jrDWhMTGL._AC_SL1500_.jpg","description":"Multi-band handheld GPS with topo maps and ABC sensors.","brand":{"@type":"Brand","name":"Garmin"},"sku":"GPSMAP-65s-001","url":"https://amzn.to/4rjab3K","offers":{"@type":"Offer","url":"https://amzn.to/4rjab3K","priceCurrency":"USD","price":"299.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"330"}},
     {"@type":"Product","@id":"#GPSMAP-67i","name":"Garmin GPSMAP 67i","image":"https://f.media-amazon.com/images/I/6131zZ6y8CL._AC_SX679_.jpg","description":"Rugged GPS with inReach satellite messaging.","brand":{"@type":"Brand","name":"Garmin"},"sku":"GPSMAP-67i-001","url":"https://amzn.to/4qr1802","offers":{"@type":"Offer","url":"https://amzn.to/4qr1802","priceCurrency":"USD","price":"549.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"124"}},
     {"@type":"Product","@id":"#INREACH-MINI2","name":"Garmin inReach Mini 2","image":"https://f.media-amazon.com/images/I/51yVqDGXt4L._AC_SX679_.jpg","description":"Compact satellite communicator with GPS.","brand":{"@type":"Brand","name":"Garmin"},"sku":"INREACH-MINI2-001","url":"https://amzn.to/4qlFB97","offers":{"@type":"Offer","url":"https://amzn.to/4qlFB97","priceCurrency":"USD","price":"399.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"215"}},
