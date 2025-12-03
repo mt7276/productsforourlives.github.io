@@ -214,40 +214,71 @@
 </head>
 <body>
 
-    <header class="blog-header">
-        <div class="container">
-            <h1>Products for Our Lives</h1>
-            <h2>📖 Stories, Reviews & Expert Insights – Explore the World of Innovation</h2>
-            <!-- Toggleable Description -->
-            <button class="toggle-button" id="toggleDesc">Show Description</button>
-            <p class="description" id="siteDesc">
-                From <strong>real-life adventures</strong> to <strong>in-depth product reviews</strong>, our blog brings you engaging <strong>stories</strong>, expert buying guides, and the latest trends in <strong>night vision, long-range walkie-talkies, radar guns, speed sensors</strong>, and more. Whether you're looking for inspiration or a deep dive into cutting-edge technology, we’ve got you covered.
-            </p>
-            <!-- Responsive Hamburger Menu -->
-            <div class="menu-button-wrapper" id="menu-toggle-ham">
-                <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
-            </div>
-            <nav class="site-nav">
-                <button id="closeMenu" class="close-menu" aria-label="Close Menu">➤</button>
-
-                <ul>
-                    <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
-                    <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-                    <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
-                    <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
-                    <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
-                    <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
-                    <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                    <li>
-                      <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                          title="Best Digital Notebooks & Smart Writing Tablets">
-                        Smart Writing Tablets
-                      </a>
-                    </li> 
-                    <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
-                </ul>
-              </nav>
+    <header class="site-header">
+      <div class="top-line">
+        <div class="container top-line-row">
+          <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+          <div class="top-line-actions">
+            <a class="pill-link" href="#blog-posts">Skip to latest posts</a>
+            <a class="pill-link ghost" href="#topics">Jump to topics</a>
+          </div>
         </div>
+      </div>
+      <div class="masthead">
+        <div class="container masthead-row">
+          <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+          <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+            <img src="images/favicon-32x32.png" alt="Products for Our Lives logo">
+            <span>Products for Our Lives</span>
+          </a>
+          <nav class="site-nav">
+            <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+            <ul>
+              <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+              <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+              <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+              <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+              <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
+              <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+              <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
+              <li>
+                <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                    title="Best Digital Notebooks & Smart Writing Tablets">
+                  Smart Writing Tablets
+                </a>
+              </li> 
+              <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container header-intro">
+        <p class="eyebrow">Blog • Updated November 2025</p>
+        <h1>Products for Our Lives Blog</h1>
+        <h2>📖 Stories, field notes, and expert how-tos on radios, optics, GPS, and more</h2>
+        <p class="lede">From real-life adventures to in-depth product reviews, we share field-tested tips, gear picks, and how-to guides across night vision, long-range walkie talkies, radar guns, GPS, and smart tech.</p>
+        <div class="hero-meta">
+          <span class="chip">Field notes</span>
+          <span class="chip">How-to guides</span>
+          <span class="chip">Product deep-dives</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#blog-posts">See latest posts</a>
+          <a class="btn ghost" href="#topics">Browse topics</a>
+        </div>
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <div class="toc-links">
+            <a href="#blog-posts">Latest posts</a>
+            <a href="#topics">Topics</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="toggle-button" id="toggleDesc" aria-controls="siteDesc" aria-expanded="false">Show Description</button>
+          <p class="description" id="siteDesc">
+            From <strong>real-life adventures</strong> to <strong>in-depth product reviews</strong>, our blog brings you engaging stories, expert buying guides, and trends in night vision, walkie-talkies, radar guns, GPS, and more.
+          </p>
+        </div>
+      </div>
     </header>
 
     <section class="content">

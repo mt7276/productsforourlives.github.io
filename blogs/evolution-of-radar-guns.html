@@ -11,7 +11,7 @@
     <meta name="googlebot" content="index, follow">
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
      <!-- Google Analytics -->
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FYC8MWDDS"></script>
      <script>
@@ -38,42 +38,91 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>The History and Evolution of Baseball Radar Guns</h1>
-        <!-- Toggleable Description -->
-        <button class="toggle-button" id="toggleDesc">Show Description</button>
-        <p class="description" id="siteDesc">How radar guns revolutionized baseball scouting, player development, and game strategy — plus how to choose the best radar gun for baseball pitching today.</p>
-        <!-- Responsive Hamburger Menu -->
-        <div class="menu-button-wrapper" id="menu-toggle-ham">
-            <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
-        </div>
-        <nav class="site-nav">
-            <button id="closeMenu" class="close-menu" aria-label="Close Menu">➤</button>
-            <ul>
-                <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
-                <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-                <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
-                <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
-                <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
-                <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
-                <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                <li>
-                  <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                      title="Best Digital Notebooks & Smart Writing Tablets">
-                    Smart Writing Tablets
-                  </a>
-                </li> 
-                <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
-            </ul>
-          </nav>
+
+<header class="site-header">
+  <div class="top-line">
+    <div class="container top-line-row">
+      <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+      <div class="top-line-actions">
+        <a class="pill-link" href="#article-top">Skip to article</a>
+        <a class="pill-link ghost" href="#contact">Contact</a>
+      </div>
     </div>
+  </div>
+  <div class="masthead">
+    <div class="container masthead-row">
+      <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+      <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+        <img src="../images/favicon-32x32.png" alt="Products for Our Lives logo">
+        <span>Products for Our Lives</span>
+      </a>
+      <nav class="site-nav">
+        <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+        <ul>
+          <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+          <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+          <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+          <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+          <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
+          <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+          <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
+          <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" title="Best Digital Notebooks & Smart Writing Tablets">Smart Writing Tablets</a></li>
+          <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container header-intro">
+    <p class="eyebrow">Blog • Updated November 2025</p>
+    <h1>The History and Evolution of Baseball Radar Guns</h1>
+    <h2>Field notes, guides, and real-world tips</h2>
+    <p class="lede">How radar guns revolutionized baseball scouting, player development, and game strategy — plus how to choose the best radar gun for baseball pitching today.</p>
+    <div class="hero-meta">
+      <span class="chip">Blog post</span>
+      <span class="chip">Real-world tips</span>
+      <span class="chip">5-minute read</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn primary" href="#article-top">Read the article</a>
+      <a class="btn ghost" href="https://www.productsforourlives.com/blog">Back to blog</a>
+    </div>
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <div class="toc-links">
+        <a href="#article-top">Overview</a>
+        <a href="#contact">Contact</a>
+      </div> 
+      <button class="toggle-button" id="toggleDesc" aria-controls="siteDesc" aria-expanded="false">Show Description</button>
+      <p class="description" id="siteDesc">How radar guns revolutionized baseball scouting, player development, and game strategy — plus how to choose the best radar gun for baseball pitching today.</p>
+    </div>
+  </div>
 </header>
 
-<section class="content">
+
+<section class="content" id="article-top">
   <article>
       <h2>Radar Guns in Baseball: From Guesswork to High-Tech Pitch Tracking</h2>
       <p>If you have ever searched for the <strong>best radar gun for baseball</strong> or wondered <strong>when radar guns were first used in baseball</strong>, you are in the right place. This article walks through the complete history of baseball radar guns, explains <strong>when MLB started using radar guns</strong>, and finishes with our top picks for the <strong>best radar gun for baseball pitching</strong> today.</p>
+
+      <h2>Quick Picks (with buy links)</h2>
+      <ul>
+        <li><strong>Best overall + video data:</strong> <a href="https://www.productsforourlives.com/radar-guns-speed-sensors#pocket-radar-smart-coach">Pocket Radar Smart Coach</a> — app, video overlay, history.</li>
+        <li><strong>Best compact / no app:</strong> <a href="https://www.productsforourlives.com/radar-guns-speed-sensors#pocket-radar-ball-coach">Pocket Radar Ball Coach</a> — pocket size, ±1 MPH, hands-free mode.</li>
+        <li><strong>Best hands-free budget:</strong> <a href="https://www.productsforourlives.com/radar-guns-speed-sensors#drm-hands-free">DRM Hands-Free Radar</a> — tripod + voice callouts.</li>
+        <li><strong>Best simple point-and-shoot:</strong> <a href="https://www.productsforourlives.com/radar-guns-speed-sensors#bushnell-velocity">Bushnell Velocity</a> — classic pistol grip, big LCD.</li>
+        <li><strong>See all picks:</strong> <a href="https://www.productsforourlives.com/radar-guns-speed-sensors">Full radar gun guide</a></li>
+      </ul>
+
+      <h2>Baseball Radar Gun Timeline (Cheat Sheet)</h2>
+      <ul>
+        <li><strong>1940s:</strong> Doppler radar developed for military; early civilian speed guns follow.</li>
+        <li><strong>1950s–60s:</strong> Police radar guns adapted for baseball experiments.</li>
+        <li><strong>1975:</strong> <strong>JUGS Gun</strong> launches — first purpose-built baseball radar gun.</li>
+        <li><strong>Late 1970s:</strong> MLB clubs adopt radar guns widely.</li>
+        <li><strong>1980s–1990s:</strong> Velocity becomes a core scouting data point.</li>
+        <li><strong>2000s:</strong> <strong>Stalker</strong> guns become pro standard; full flight tracking.</li>
+        <li><strong>Today:</strong> Radar + high-speed cameras + systems like TrackMan/Hawk-Eye for spin/movement.</li>
+      </ul>
 
       <h2>Early Days: Baseball Without Speed Tracking</h2>
       <p>Before radar guns entered the game, baseball coaches and scouts relied completely on the <strong>eye test</strong> and box-score performance. A pitcher was labeled “hard-throwing” based on reputation, not an actual miles-per-hour reading. There was no accurate way to quantify pitch velocity.</p>
@@ -107,6 +156,56 @@
       <p>In the early 2000s, <strong>Stalker Radar Guns</strong> emerged as the industry standard for professional baseball. These advanced radar guns could track velocity from the pitcher’s release point all the way to home plate, helping teams understand how much speed a pitch lost on its way to the catcher’s glove.</p>
 
       <p>Today, radar is just one piece of a broader tracking system. Modern baseball combines radar with high-speed cameras and sophisticated software to analyze every pitch in incredible detail.</p>
+
+      <h2>How to Choose the Right Radar Gun (Coach/Parent Checklist)</h2>
+      <ul>
+        <li><strong>Accuracy & range:</strong> Look for ±1 MPH accuracy and ranges that cover your sport (baseball/softball 25–130+ MPH).</li>
+        <li><strong>Handheld vs. hands-free:</strong> Hands-free/tripod is great for bullpens; handheld is best for games and travel.</li>
+        <li><strong>Data & video:</strong> App video overlay (Smart Coach) helps with mechanics; LCD-only (Velocity) is fine for simple reads.</li>
+        <li><strong>Multi-sport modes:</strong> If you coach tennis/lacrosse/volleyball, pick a multi-sport unit.</li>
+        <li><strong>Power & portability:</strong> Check battery type (AAA/AA vs. rechargeable) and whether it fits in a pocket or bag.</li>
+      </ul>
+
+      <h2>Placement Tips for Accurate Readings</h2>
+      <ul>
+        <li><strong>Line up with the ball’s flight:</strong> Behind the catcher/plate for pitching; behind hitter for exit velocity.</li>
+        <li><strong>Distance matters:</strong> Follow the manufacturer’s recommended distance/angle; too close or far can drop reads.</li>
+        <li><strong>Hands-free setups:</strong> Tripod behind net/plate for consistent angles during bullpens.</li>
+        <li><strong>Avoid obstructions:</strong> Netting/backstops can interfere; clear line-of-sight is best.</li>
+      </ul>
+
+      <h2>Mini Comparison: Radar Types & Best Uses</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Best For</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>App + video</td>
+            <td>Data-driven bullpens, recruiting clips</td>
+            <td><a href="https://www.productsforourlives.com/radar-guns-speed-sensors#pocket-radar-smart-coach">Pocket Radar Smart Coach</a></td>
+          </tr>
+          <tr>
+            <td>Pocket LCD</td>
+            <td>Point-and-shoot in games; travel ball</td>
+            <td><a href="https://www.productsforourlives.com/radar-guns-speed-sensors#pocket-radar-ball-coach">Pocket Radar Ball Coach</a></td>
+          </tr>
+          <tr>
+            <td>Hands-free voice/LED</td>
+            <td>Bullpens, cages, serve speed practice</td>
+            <td><a href="https://www.productsforourlives.com/radar-guns-speed-sensors#drm-hands-free">DRM Hands-Free</a>, <a href="https://www.productsforourlives.com/radar-guns-speed-sensors#netplayz-baseball-radar">NetPlayz</a></td>
+          </tr>
+          <tr>
+            <td>Budget pistol grip</td>
+            <td>Simple readings for parents/rec teams</td>
+            <td><a href="https://www.productsforourlives.com/radar-guns-speed-sensors#bushnell-velocity">Bushnell Velocity</a></td>
+          </tr>
+        </tbody>
+      </table>
 
       <h2>Integration with Modern Pitch-Tracking Systems</h2>
       <p>Current radar guns work alongside powerful pitch-tracking platforms such as:</p>
@@ -179,7 +278,7 @@
 </section>
 
 <!-- Footer -->
-<footer>
+<footer id="contact">
     <p>&copy; 2025 Products For Our Lives. All rights reserved.</p>
     <p>Affiliate Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
 
@@ -211,92 +310,93 @@
             <a href="https://www.instagram.com/prod4lives" target="_blank">Instagram</a>
         </p> 
 
-    <!-- Schema Markup for Organization -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Products For Our Lives",
-        "url": "https://www.productsforourlives.com/",
-        "logo": "https://www.productsforourlives.com/favicon.ico",
-        "sameAs": []
-    }
-    </script>
-
-    <!-- Schema Markup for Article + FAQ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "When were radar guns first used in baseball?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Radar guns began appearing in baseball in the 1950s and 1960s when early police radar guns were adapted to measure pitch speed. Widespread use followed with the release of the JUGS baseball radar gun in 1975."
-          }
+          "@type": "Organization",
+          "@id": "https://www.productsforourlives.com/#organization",
+          "name": "Products For Our Lives",
+          "url": "https://www.productsforourlives.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.productsforourlives.com/favicon.ico"
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61575499014545",
+            "https://www.instagram.com/prod4lives"
+          ]
         },
         {
-          "@type": "Question",
-          "name": "When did MLB start using radar guns?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Major League Baseball started regularly using radar guns in the late 1970s. By the 1980s, nearly every MLB club relied on radar guns for scouting, player development, and in-game analysis."
-          }
+          "@type": "BlogPosting",
+          "@id": "https://www.productsforourlives.com/blogs/evolution-of-radar-guns#post",
+          "headline": "The History and Evolution of Baseball Radar Guns",
+          "description": "Learn when radar guns were invented, when MLB started using radar guns, and which radar gun is best for baseball pitching today. This in-depth guide covers the full history and evolution of baseball radar guns.",
+          "author": {
+            "@type": "Person",
+            "name": "Michael"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.productsforourlives.com/#organization"
+          },
+          "mainEntityOfPage": "https://www.productsforourlives.com/blogs/evolution-of-radar-guns",
+          "url": "https://www.productsforourlives.com/blogs/evolution-of-radar-guns",
+          "datePublished": "2025-04-01",
+          "dateModified": "2025-11-19"
         },
         {
-          "@type": "Question",
-          "name": "When were radar guns invented?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Radar guns were first developed in the 1940s during World War II to measure the speed of moving objects like aircraft. They were later adapted for traffic enforcement and eventually for sports such as baseball."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "When was the radar gun invented for baseball?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The first widely adopted radar gun invented for baseball was the JUGS Gun, launched in 1975. It was specifically engineered to measure baseball pitch velocity accurately and conveniently."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best radar gun for baseball pitching?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For professional and college programs, the Stalker Pro II+ is often considered the best radar gun for baseball pitching due to its accuracy and durability. For youth, travel ball, and individual training, options like the Pocket Radar Smart Coach, Pocket Radar Ball Coach, and JUGS Sports radar guns offer excellent performance and value."
-          }
+          "@type": "FAQPage",
+          "@id": "https://www.productsforourlives.com/blogs/evolution-of-radar-guns#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "When were radar guns first used in baseball?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Radar guns began appearing in baseball in the 1950s and 1960s when early police radar guns were adapted to measure pitch speed. Widespread use followed with the release of the JUGS baseball radar gun in 1975."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When did MLB start using radar guns?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Major League Baseball started regularly using radar guns in the late 1970s. By the 1980s, nearly every MLB club relied on radar guns for scouting, player development, and in-game analysis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When were radar guns invented?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Radar guns were first developed in the 1940s during World War II to measure the speed of moving objects like aircraft. They were later adapted for traffic enforcement and eventually for sports such as baseball."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When was the radar gun invented for baseball?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The first widely adopted radar gun invented for baseball was the JUGS Gun, launched in 1975. It was specifically engineered to measure baseball pitch velocity accurately and conveniently."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best radar gun for baseball pitching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For professional and college programs, the Stalker Pro II+ is often considered the best radar gun for baseball pitching due to its accuracy and durability. For youth, travel ball, and individual training, options like the Pocket Radar Smart Coach, Pocket Radar Ball Coach, and JUGS Sports radar guns offer excellent performance and value."
+              }
+            }
+          ]
         }
       ]
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "The History and Evolution of Baseball Radar Guns",
-      "description": "Learn when radar guns were invented, when MLB started using radar guns, and which radar gun is best for baseball pitching today. This in-depth guide covers the full history and evolution of baseball radar guns.",
-      "author": {
-        "@type": "Organization",
-        "name": "Products For Our Lives"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Products For Our Lives",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.productsforourlives.com/favicon.ico"
-        }
-      },
-      "mainEntityOfPage": "https://www.productsforourlives.com/blogs/evolution-of-radar-guns",
-      "url": "https://www.productsforourlives.com/blogs/evolution-of-radar-guns",
-      "datePublished": "2025-04-01",
-      "dateModified": "2025-11-19"
-    }
-    </script>
+
 </footer>
 <script src="../js/main.js"></script>
 </body>

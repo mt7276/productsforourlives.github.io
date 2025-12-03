@@ -47,7 +47,7 @@
           "@type": "WebSite",
           "@id": "https://www.productsforourlives.com/#website",
           "url": "https://www.productsforourlives.com/",
-          "name": "Products for Our Lives",
+          "name": "Products For Our Lives",
           "description": "Compare the best night vision, radar guns, walkie-talkies, handheld GPS units, gaming PCs, and smart writing tablets with honest reviews and buying guides.",
           "publisher": {
             "@id": "https://www.productsforourlives.com/#organization"
@@ -61,7 +61,7 @@
         {
           "@type": "Organization",
           "@id": "https://www.productsforourlives.com/#organization",
-          "name": "Products for Our Lives",
+          "name": "Products For Our Lives",
           "url": "https://www.productsforourlives.com/",
           "logo": {
             "@type": "ImageObject",
@@ -94,77 +94,95 @@
               "item": "https://www.productsforourlives.com/"
             }
           ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.productsforourlives.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do you choose and test products?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We field-test radios, optics, and PCs in real conditions, check manufacturer claims against real-world performance, and only recommend gear that balances value, reliability, and support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do your links cost me extra?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Some links are affiliate links, but you pay the same price. They help keep our testing independent and the guides free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What categories do you cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Night vision and thermal optics, radar guns, long-range walkie talkies, handheld GPS units, gaming PCs, and smart writing tablets."
+              }
+            }
+          ]
         }
       ]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do you choose and test products?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We field-test radios, optics, and PCs in real conditions, check manufacturer claims against real-world performance, and only recommend gear that balances value, reliability, and support."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do your links cost me extra?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Some links are affiliate links, but you pay the same price. They help keep our testing independent and the guides free."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What categories do you cover?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Night vision and thermal optics, radar guns, long-range walkie talkies, handheld GPS units, gaming PCs, and smart writing tablets."
-          }
-        }
-      ]
-    }
-    </script>
+
 
         
 
 </head>
   
 <body id="top">
-    <header>
-        <div class="container">
-            <h1>High-Tech Products for Modern Lifestyles</h1> 
-            <h2>Top Night Vision, Radar Guns, Walkie Talkies, Gaming Computers & Smart Notebooks</h2> 
-            <button id="toggleDesc">Show Description</button>
-            <p class="description" id="siteDesc">Discover high-performance gear built for adventure and productivity. From advanced night vision goggles and precision sports radar guns to powerful long-range walkie-talkies, gaming computers, and smart notebooks—our collection delivers cutting-edge technology for outdoor explorers, professionals, gamers, and students alike. Elevate your visibility, accuracy, communication, and computing power in any environment.</p>
-            <div class="menu-button-wrapper" id="menu-toggle-ham">
-                <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
-            </div>
-            <nav class="site-nav">
-              <button id="closeMenu" class="close-menu" aria-label="Close Menu">➤</button>
-                <ul>
-                  <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
-                  <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-                  <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
-                  <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
-                  <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
-                  <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
-                  <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-                  <li>
-                    <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                        title="Best Digital Notebooks & Smart Writing Tablets">
-                      Smart Writing Tablets
-                    </a>
-                  </li> 
-                  <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
-                </ul>
-              </nav>
+    <header class="site-header">
+      <div class="top-line">
+        <div class="container top-line-row">
+          <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+          <div class="top-line-actions">
+            <!-- <a class="pill-link" href="#categories">Skip to guides</a> -->
+            <a class="pill-link ghost" href="#blog-posts">Read the latest</a>
+          </div>
         </div>
+      </div>
+      <div class="masthead">
+        <div class="container masthead-row">
+          <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+          <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+            <img src="images/favicon-32x32.png" alt="Products for Our Lives logo">
+            <span>Products for Our Lives</span>
+          </a>
+          <nav class="site-nav">
+            <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+            <ul>
+              <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+              <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+              <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+              <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+              <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
+              <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+              <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
+              <li>
+                <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                    title="Best Digital Notebooks & Smart Writing Tablets">
+                  Smart Writing Tablets
+                </a>
+              </li> 
+              <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container header-intro">
+        <p class="eyebrow">Gear Guides • Updated November 2025</p>
+        <h1>High-Tech Products for Modern Lifestyles</h1> 
+        <h2>Top night vision, radar guns, walkie talkies, gaming PCs, GPS, and smart notebooks</h2> 
+        <p class="lede">Discover high-performance gear for adventure and productivity—field-tested radios, optics, PCs, GPS units, and smart notebooks for explorers, pros, gamers, and students.</p>
+        
+          <button id="toggleDesc" class="toggle-button" aria-controls="siteDesc" aria-expanded="false">Show Description</button>
+          <p class="description" id="siteDesc">Discover high-performance gear built for adventure and productivity. From night vision goggles and precision radar guns to long-range walkie-talkies, gaming computers, GPS units, and smart notebooks.</p>
+        </div>
+      </div>
     </header>
     <!-- Weather Widget -->
 <!-- <div id="weather-widget">

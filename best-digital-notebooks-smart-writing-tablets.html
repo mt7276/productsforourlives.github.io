@@ -32,15 +32,30 @@
           "@id": "https://www.productsforourlives.com/#organization",
           "name": "Products For Our Lives",
           "url": "https://www.productsforourlives.com/",
-          "logo": "https://www.productsforourlives.com/images/favicon-32x32.png",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.productsforourlives.com/images/favicon-32x32.png"
+          },
           "sameAs": [
             "https://www.facebook.com/profile.php?id=61575499014545",
             "https://www.instagram.com/prod4lives"
           ],
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "productsforourlives@gmail.com",
-            "contactType": "Customer Service"
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "email": "productsforourlives@gmail.com",
+              "contactType": "Customer Service"
+            }
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://www.productsforourlives.com/#website",
+          "url": "https://www.productsforourlives.com/",
+          "name": "Products For Our Lives",
+          "publisher": {
+            "@id": "https://www.productsforourlives.com/#organization"
           }
         },
 
@@ -51,27 +66,57 @@
           "name": "Best Smart Writing Tablets & Digital Notebooks 2025",
           "description": "Discover the best digital notebooks & smart writing tablets of 2025 with top gift ideas for students, professionals, and creators. Compare e-ink screens, cloud sync, OCR, and handwriting-to-text picks that rank for today's top searches.",
           "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://www.productsforourlives.com/#website"
+          },
           "datePublished": "2025-01-15",
           "dateModified": "2025-11-27",
           "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {"@type":"ListItem","position":1,"name":"Home","item":"https://www.productsforourlives.com/"},
-              {"@type":"ListItem","position":2,"name":"Best Digital Notebooks & Smart Writing Tablets 2025"}
-            ]
+            "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#breadcrumb"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.productsforourlives.com/images/smart-notebook-tablets.jpg"
           }
+        },
+
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.productsforourlives.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Best Digital Notebooks & Smart Writing Tablets 2025",
+              "item": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets"
+            }
+          ]
         },
 
         {
           "@type": "Article",
           "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#article",
           "headline": "Best Smart Writing Tablets & Digital Notebooks for 2025 – Go Paperless With the Top E-Ink Tablets & Writing Devices",
-          "image": "https://www.productsforourlives.com/images/smart-notebook-tablets.jpg",
-          "author": {"@id":"https://www.productsforourlives.com/#organization"},
-          "publisher": {"@id":"https://www.productsforourlives.com/#organization"},
+          "image": [
+            "https://www.productsforourlives.com/images/smart-notebook-tablets.jpg"
+          ],
+          "author": {
+            "@id": "https://www.productsforourlives.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.productsforourlives.com/#organization"
+          },
           "datePublished": "2025-01-15",
           "dateModified": "2025-11-27",
-          "mainEntityOfPage": {"@id":"https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#webpage"}
+          "mainEntityOfPage": {
+            "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#webpage"
+          }
         },
 
         {
@@ -79,18 +124,78 @@
           "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#itemlist",
           "name": "Best Digital Notebooks & Smart Writing Tablets 2025 – Ranked",
           "numberOfItems": 10,
-          "itemListOrder": "http://schema.org/ItemListOrderAscending",
+          "itemListOrder": "https://schema.org/ItemListOrderAscending",
           "itemListElement": [
-            {"@type":"ListItem","position":1,"item":{"@id":"#kindle-scribe"}},
-            {"@type":"ListItem","position":2,"item":{"@id":"#remarkable-2"}},
-            {"@type":"ListItem","position":3,"item":{"@id":"#boox-note-air-4c"}},
-            {"@type":"ListItem","position":4,"item":{"@id":"#huion-note"}},
-            {"@type":"ListItem","position":5,"item":{"@id":"#moleskine-smart-set"}},
-            {"@type":"ListItem","position":6,"item":{"@id":"#rocketbook-core"}},
-            {"@type":"ListItem","position":7,"item":{"@id":"#boogie-board-jot"}},
-            {"@type":"ListItem","position":8,"item":{"@id":"#penstar-enote"}},
-            {"@type":"ListItem","position":9,"item":{"@id":"#iflytek-ainote-air2"}},
-            {"@type":"ListItem","position":10,"item":{"@id":"#smartpen-set"}}
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#kindle-scribe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#remarkable-2"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#boox-note-air-4c"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#iflytek-ainote-air2"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#penstar-enote"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#huion-note"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#moleskine-smart-set"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#smartpen-set"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#rocketbook-core"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "item": {
+                "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#boogie-board-jot"
+              }
+            }
           ]
         },
 
@@ -99,49 +204,490 @@
           "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#howto",
           "name": "How to Choose the Best Smart Writing Tablet or Digital Notebook in 2025",
           "step": [
-            {"@type":"HowToStep","name":"Define your primary use","text":"Students → Kindle Scribe (PDF markup). Artists → Boox Note Air 4C (color + apps). Quick notes → Rocketbook Core (reusable paper)."},
-            {"@type":"HowToStep","name":"Prioritize display type","text":"E-Ink for eye comfort (reMarkable 2). Color ePaper for comics (Boox). LCD for instant erase (Boogie Board)."},
-            {"@type":"HowToStep","name":"Check stylus features","text":"Pressure-sensitive + tilt (Huion Note). Battery-free (Moleskine Pen+). Low-latency (reMarkable Marker)."},
-            {"@type":"HowToStep","name":"Evaluate smart features","text":"OCR/handwriting-to-text (all except Boogie Board). AI summaries (Kindle Scribe, iFLYTEK). Cloud sync (Google Drive/Dropbox)."},
-            {"@type":"HowToStep","name":"Match budget and portability","text":"Under $50: Rocketbook/Boogie Board. $100–$300: Huion/Moleskine. $300+: Kindle/reMarkable/Boox."}
+            {
+              "@type": "HowToStep",
+              "name": "Define your primary use",
+              "text": "Students \u2192 Kindle Scribe (PDF markup). Artists \u2192 Boox Note Air 4C (color + apps). Quick notes \u2192 Rocketbook Core (reusable paper)."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Prioritize display type",
+              "text": "E-Ink for eye comfort (reMarkable 2). Color ePaper for comics (Boox). LCD for instant erase (Boogie Board)."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Check stylus features",
+              "text": "Pressure-sensitive + tilt (Huion Note). Battery-free (Moleskine Pen+). Low-latency (reMarkable Marker)."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Evaluate smart features",
+              "text": "OCR/handwriting-to-text (all except Boogie Board). AI summaries (Kindle Scribe, iFLYTEK). Cloud sync (Google Drive/Dropbox)."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Match budget and portability",
+              "text": "Under $50: Rocketbook/Boogie Board. $100–$300: Huion/Moleskine. $300+: Kindle/reMarkable/Boox."
+            }
           ]
         },
 
         {
           "@type": "FAQPage",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#faq",
           "mainEntity": [
-            {"@type":"Question","name":"What’s the difference between E Ink and LCD in writing tablets?","acceptedAnswer":{"@type":"Answer","text":"E Ink is paper-like, glare-free, and battery-efficient (weeks of use) — ideal for long sessions. LCD is brighter/responsive but eye-straining and short-lived (hours)."}},
-            {"@type":"Question","name":"Are smartpens better than tablets for handwritten notes?","acceptedAnswer":{"@type":"Answer","text":"Smartpens (Moleskine, Smartpen Set) feel like real paper but limit to basic digitization. Tablets (Kindle, Boox) add apps, color, and advanced OCR."}},
-            {"@type":"Question","name":"Can I convert handwriting to text?","acceptedAnswer":{"@type":"Answer","text":"Yes — Kindle Scribe, reMarkable 2, Boox, Rocketbook, and iFLYTEK use OCR for editable text. Accuracy varies by handwriting clarity."}},
-            {"@type":"Question","name":"Do I need internet for cloud sync?","acceptedAnswer":{"@type":"Answer","text":"Sync requires Wi-Fi/Bluetooth, but most (Kindle, Boox, Rocketbook) save offline and upload later."}},
-            {"@type":"Question","name":"Are digital notebooks good for students?","acceptedAnswer":{"@type":"Answer","text":"Yes — lightweight, searchable notes, PDF markup (Kindle Scribe), and cloud sharing make them perfect for lectures and study."}},
-            {"@type":"Question","name":"Which is best for drawing/sketching?","acceptedAnswer":{"@type":"Answer","text":"Boox Note Air 4C (color ePaper + pressure sensitivity) or Huion Note (Wacom-like stylus) for artists."}},
-            {"@type":"Question","name":"Best digital notebook gift?","acceptedAnswer":{"@type":"Answer","text":"Premium: Boox Note Air 4C (versatile). Budget: Rocketbook Core (reusable, $34)."}}
+            {
+              "@type": "Question",
+              "name": "What\u2019s the difference between E Ink and LCD in writing tablets?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "E Ink is paper-like, glare-free, and battery-efficient (weeks of use) \u2014 ideal for long sessions. LCD is brighter/responsive but eye-straining and short-lived (hours)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are smartpens better than tablets for handwritten notes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Smartpens (Moleskine, Smartpen Set) feel like real paper but limit to basic digitization. Tablets (Kindle, Boox) add apps, color, and advanced OCR."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I convert handwriting to text?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes \u2014 Kindle Scribe, reMarkable 2, Boox, Rocketbook, and iFLYTEK use OCR for editable text. Accuracy varies by handwriting clarity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need internet for cloud sync?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sync requires Wi-Fi/Bluetooth, but most (Kindle, Boox, Rocketbook) save offline and upload later."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are digital notebooks good for students?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes \u2014 lightweight, searchable notes, PDF markup (Kindle Scribe), and cloud sharing make them perfect for lectures and study."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which is best for drawing/sketching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Boox Note Air 4C (color ePaper + pressure sensitivity) or Huion Note (Wacom-like stylus) for artists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Best digital notebook gift?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Premium: Boox Note Air 4C (versatile). Budget: Rocketbook Core (reusable, $34)."
+              }
+            }
           ]
         },
 
-        {"@type":"Product","@id":"#kindle-scribe","name":"Amazon Kindle Scribe (2024 with Premium Pen)","image":"https://m.media-amazon.com/images/I/71dzS8HxQFL._AC_SL1500_.jpg","description":"10.2-inch 300 PPI E-Ink with stylus; write on books/PDFs, AI summaries, handwriting-to-text.","brand":{"@type":"Brand","name":"Amazon"},"sku":"B09BS2DG57","url":"https://amzn.to/43FD8g1","offers":{"@type":"Offer","url":"https://amzn.to/43FD8g1","priceCurrency":"USD","price":"339.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"3129"},"review":{"@type":"Review","author":{"@type":"Person","name":"Sarah M."},"datePublished":"2025-09-18","reviewBody":"The writing feels natural like paper; AI summaries help with textbooks. Battery lasts weeks—perfect for uni.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#kindle-scribe",
+          "name": "Amazon Kindle Scribe (2024 with Premium Pen)",
+          "image": "https://m.media-amazon.com/images/I/71dzS8HxQFL._AC_SL1500_.jpg",
+          "description": "10.2-inch 300 PPI E-Ink with stylus; write on books/PDFs, AI summaries, handwriting-to-text.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Amazon"
+          },
+          "sku": "B09BS2DG57",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#kindle-scribe",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/43FD8g1",
+            "priceCurrency": "USD",
+            "price": "339.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "3129"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Sarah M."
+            },
+            "datePublished": "2025-09-18",
+            "reviewBody": "The writing feels natural like paper; AI summaries help with textbooks. Battery lasts weeks\u2014perfect for uni.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#remarkable-2","name":"reMarkable 2 Paper Tablet + Marker Plus","image":"https://m.media-amazon.com/images/I/611ojBbpOhL._AC_SL1500_.jpg","description":"10.3-inch Canvas ePaper with low-latency stylus; distraction-free notes and PDF annotation.","brand":{"@type":"Brand","name":"reMarkable"},"sku":"RM113","url":"https://amzn.to/48lHI5D","offers":{"@type":"Offer","url":"https://amzn.to/48lHI5D","priceCurrency":"USD","price":"399.00","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"2157"},"review":{"@type":"Review","author":{"@type":"Person","name":"Alex K."},"datePublished":"2025-07-22","reviewBody":"Unmatched paper feel; handwriting conversion is spot-on. No apps is the point—pure focus for writing.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#remarkable-2",
+          "name": "reMarkable 2 Paper Tablet + Marker Plus",
+          "image": "https://m.media-amazon.com/images/I/611ojBbpOhL._AC_SL1500_.jpg",
+          "description": "10.3-inch Canvas ePaper with low-latency stylus; distraction-free notes and PDF annotation.",
+          "brand": {
+            "@type": "Brand",
+            "name": "reMarkable"
+          },
+          "sku": "RM113",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#remarkable-2",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/48lHI5D",
+            "priceCurrency": "USD",
+            "price": "399.00",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "2157"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Alex K."
+            },
+            "datePublished": "2025-07-22",
+            "reviewBody": "Unmatched paper feel; handwriting conversion is spot-on. No apps is the point\u2014pure focus for writing.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#boox-note-air-4c","name":"BOOX Note Air 4C Color E-Ink Tablet","image":"https://m.media-amazon.com/images/I/61vk1ZxNcCL._AC_SL1500_.jpg","description":"10.3-inch Kaleido 3 color ePaper Android 13 tablet with stylus and full Google Play.","brand":{"@type":"Brand","name":"BOOX"},"sku":"NA4C","url":"https://amzn.to/49ZSrUw","offers":{"@type":"Offer","url":"https://amzn.to/49ZSrUw","priceCurrency":"USD","price":"529.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"187"},"review":{"@type":"Review","author":{"@type":"Person","name":"Chris T."},"datePublished":"2025-10-03","reviewBody":"Color e-ink shines for comics/manga; Android apps make it a full tablet. Stylus latency is near-zero.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#boox-note-air-4c",
+          "name": "BOOX Note Air 4C Color E-Ink Tablet",
+          "image": "https://m.media-amazon.com/images/I/61vk1ZxNcCL._AC_SL1500_.jpg",
+          "description": "10.3-inch Kaleido 3 color ePaper Android 13 tablet with stylus and full Google Play.",
+          "brand": {
+            "@type": "Brand",
+            "name": "BOOX"
+          },
+          "sku": "NA4C",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#boox-note-air-4c",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/49ZSrUw",
+            "priceCurrency": "USD",
+            "price": "529.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "187"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Chris T."
+            },
+            "datePublished": "2025-10-03",
+            "reviewBody": "Color e-ink shines for comics/manga; Android apps make it a full tablet. Stylus latency is near-zero.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#huion-note","name":"HUION Note 2-in-1 Digital Notebook","image":"https://m.media-amazon.com/images/I/61pHAWdKy-L._AC_SL1500_.jpg","description":"A5 refillable paper pad with battery-free stylus; Bluetooth sync to app for digitization.","brand":{"@type":"Brand","name":"HUION"},"sku":"H430P","url":"https://amzn.to/480aqrq","offers":{"@type":"Offer","url":"https://amzn.to/480aqrq","priceCurrency":"USD","price":"119.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"176"},"review":{"@type":"Review","author":{"@type":"Person","name":"Brian M."},"datePublished":"2025-08-15","reviewBody":"Feels like real paper; Bluetooth sync is instant to phone. Great for meetings—refills keep it fresh.","reviewRating":{"@type":"Rating","ratingValue":"4"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#huion-note",
+          "name": "HUION Note 2-in-1 Digital Notebook",
+          "image": "https://m.media-amazon.com/images/I/61pHAWdKy-L._AC_SL1500_.jpg",
+          "description": "A5 refillable paper pad with battery-free stylus; Bluetooth sync to app for digitization.",
+          "brand": {
+            "@type": "Brand",
+            "name": "HUION"
+          },
+          "sku": "H430P",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#huion-note",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/480aqrq",
+            "priceCurrency": "USD",
+            "price": "119.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "reviewCount": "176"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Brian M."
+            },
+            "datePublished": "2025-08-15",
+            "reviewBody": "Feels like real paper; Bluetooth sync is instant to phone. Great for meetings\u2014refills keep it fresh.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#moleskine-smart-set","name":"Moleskine Smart Writing Set Pen+ Ellipse","image":"https://m.media-amazon.com/images/I/A1swYuk02gL._AC_SL1500_.jpg","description":"Smart notebook + USB-charging pen; real-time digitization via Moleskine Notes app.","brand":{"@type":"Brand","name":"Moleskine"},"sku":"SWS30","url":"https://amzn.to/3JIJGDX","offers":{"@type":"Offer","url":"https://amzn.to/3JIJGDX","priceCurrency":"USD","price":"279.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"3.9","reviewCount":"811"},"review":{"@type":"Review","author":{"@type":"Person","name":"Lily A."},"datePublished":"2025-06-10","reviewBody":"The pen feels premium and sync is flawless; app search works well. Battery life could be longer for all-day use.","reviewRating":{"@type":"Rating","ratingValue":"4"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#moleskine-smart-set",
+          "name": "Moleskine Smart Writing Set Pen+ Ellipse",
+          "image": "https://m.media-amazon.com/images/I/A1swYuk02gL._AC_SL1500_.jpg",
+          "description": "Smart notebook + USB-charging pen; real-time digitization via Moleskine Notes app.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Moleskine"
+          },
+          "sku": "SWS30",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#moleskine-smart-set",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/3JIJGDX",
+            "priceCurrency": "USD",
+            "price": "279.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.9",
+            "reviewCount": "811"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Lily A."
+            },
+            "datePublished": "2025-06-10",
+            "reviewBody": "The pen feels premium and sync is flawless; app search works well. Battery life could be longer for all-day use.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#rocketbook-core","name":"Rocketbook Core Reusable Smart Notebook (Letter)","image":"https://m.media-amazon.com/images/I/71Tzdr3n39L._AC_SL1500_.jpg","description":"Reusable synthetic paper with FriXion pen; app scans to cloud with OCR.","brand":{"@type":"Brand","name":"Rocketbook"},"sku":"EVRBK","url":"https://amzn.to/4o3jKka","offers":{"@type":"Offer","url":"https://amzn.to/4o3jKka","priceCurrency":"USD","price":"34.00","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"78854"},"review":{"@type":"Review","author":{"@type":"Person","name":"Megan R."},"datePublished":"2025-05-20","reviewBody":"Saved me from endless paper clutter; OCR catches 95% of handwriting. Wipes clean easily—eco-win for students.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#rocketbook-core",
+          "name": "Rocketbook Core Reusable Smart Notebook (Letter)",
+          "image": "https://m.media-amazon.com/images/I/71Tzdr3n39L._AC_SL1500_.jpg",
+          "description": "Reusable synthetic paper with FriXion pen; app scans to cloud with OCR.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Rocketbook"
+          },
+          "sku": "EVRBK",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#rocketbook-core",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/4o3jKka",
+            "priceCurrency": "USD",
+            "price": "34.00",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "78854"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Megan R."
+            },
+            "datePublished": "2025-05-20",
+            "reviewBody": "Saved me from endless paper clutter; OCR catches 95% of handwriting. Wipes clean easily\u2014eco-win for students.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#boogie-board-jot","name":"Boogie Board Jot 8.5-Inch LCD Writing Tablet","image":"https://m.media-amazon.com/images/I/61TOXAXw+YL._AC_SL1024_.jpg","description":"Pressure-sensitive LCD pad with stylus; instant erase for quick notes.","brand":{"@type":"Brand","name":"Boogie Board"},"sku":"BD06037000","url":"https://amzn.to/48kXsFX","offers":{"@type":"Offer","url":"https://amzn.to/48kXsFX","priceCurrency":"USD","price":"19.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"8225"},"review":{"@type":"Review","author":{"@type":"Person","name":"Rachel T."},"datePublished":"2025-04-12","reviewBody":"Perfect for grocery lists and kids' doodles—fridge magnet is genius. Battery lasts months; simple but effective.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#boogie-board-jot",
+          "name": "Boogie Board Jot 8.5-Inch LCD Writing Tablet",
+          "image": "https://m.media-amazon.com/images/I/61TOXAXw+YL._AC_SL1024_.jpg",
+          "description": "Pressure-sensitive LCD pad with stylus; instant erase for quick notes.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Boogie Board"
+          },
+          "sku": "BD06037000",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#boogie-board-jot",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/48kXsFX",
+            "priceCurrency": "USD",
+            "price": "19.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "8225"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Rachel T."
+            },
+            "datePublished": "2025-04-12",
+            "reviewBody": "Perfect for grocery lists and kids' doodles\u2014fridge magnet is genius. Battery lasts months; simple but effective.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#penstar-enote","name":"Penstar eNote 10.3-Inch E-Ink Paper Tablet","image":"https://m.media-amazon.com/images/I/611PlboUD-L._AC_SL1200_.jpg","description":"E-Ink tablet with stylus and magnetic cover; supports PDFs and templates.","brand":{"@type":"Brand","name":"Penstar"},"sku":"PENSTAR-ENOTE","url":"https://amzn.to/4i8Cai7","offers":{"@type":"Offer","url":"https://amzn.to/4i8Cai7","priceCurrency":"USD","price":"349.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"61"},"review":{"@type":"Review","author":{"@type":"Person","name":"Kevin B."},"datePublished":"2025-11-05","reviewBody":"Responsive stylus and true paper feel; cover protects well. No apps is limiting but great for pure writing.","reviewRating":{"@type":"Rating","ratingValue":"4"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#penstar-enote",
+          "name": "Penstar eNote 10.3-Inch E-Ink Paper Tablet",
+          "image": "https://m.media-amazon.com/images/I/611PlboUD-L._AC_SL1200_.jpg",
+          "description": "E-Ink tablet with stylus and magnetic cover; supports PDFs and templates.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Penstar"
+          },
+          "sku": "PENSTAR-ENOTE",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#penstar-enote",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/4i8Cai7",
+            "priceCurrency": "USD",
+            "price": "349.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "reviewCount": "61"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Kevin B."
+            },
+            "datePublished": "2025-11-05",
+            "reviewBody": "Responsive stylus and true paper feel; cover protects well. No apps is limiting but great for pure writing.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#iflytek-ainote-air2","name":"iFLYTEK AINOTE Air 2 AI Note Tablet","image":"https://m.media-amazon.com/images/I/610ohD0VWTL._AC_SL1500_.jpg","description":"8.2-inch E-Ink with AI voice-to-text, multilingual GPT summaries, and cloud sync.","brand":{"@type":"Brand","name":"iFLYTEK"},"sku":"AINOTE-AIR2","url":"https://amzn.to/47NUkCr","offers":{"@type":"Offer","url":"https://amzn.to/47NUkCr","priceCurrency":"USD","price":"448.00","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"64"},"review":{"@type":"Review","author":{"@type":"Person","name":"Amanda J."},"datePublished":"2025-10-15","reviewBody":"Voice transcription is multilingual magic; GPT summaries nail meeting recaps. E-Ink battery is unbeatable.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#iflytek-ainote-air2",
+          "name": "iFLYTEK AINOTE Air 2 AI Note Tablet",
+          "image": "https://m.media-amazon.com/images/I/610ohD0VWTL._AC_SL1500_.jpg",
+          "description": "8.2-inch E-Ink with AI voice-to-text, multilingual GPT summaries, and cloud sync.",
+          "brand": {
+            "@type": "Brand",
+            "name": "iFLYTEK"
+          },
+          "sku": "AINOTE-AIR2",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#iflytek-ainote-air2",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/47NUkCr",
+            "priceCurrency": "USD",
+            "price": "448.00",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.1",
+            "reviewCount": "64"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Amanda J."
+            },
+            "datePublished": "2025-10-15",
+            "reviewBody": "Voice transcription is multilingual magic; GPT summaries nail meeting recaps. E-Ink battery is unbeatable.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        },
 
-        {"@type":"Product","@id":"#smartpen-set","name":"Ophaya Smartpen Writing Set with A5 Notebook","image":"https://m.media-amazon.com/images/I/71hRutY4E7L._AC_SL1280_.jpg","description":"Bluetooth smartpen + refillable notebook; real-time app sync and text conversion.","brand":{"@type":"Brand","name":"Ophaya"},"sku":"SMARTPEN-SET","url":"https://amzn.to/4r9FHRk","offers":{"@type":"Offer","url":"https://amzn.to/4r9FHRk","priceCurrency":"USD","price":"99.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"267"},"review":{"@type":"Review","author":{"@type":"Person","name":"Tom L."},"datePublished":"2025-09-28","reviewBody":"Pen tracks beautifully on paper; app exports clean PDFs. Affordable entry to smart notes—refills are cheap.","reviewRating":{"@type":"Rating","ratingValue":"4"}}}
+        {
+          "@type": "Product",
+          "@id": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#smartpen-set",
+          "name": "Ophaya Smartpen Writing Set with A5 Notebook",
+          "image": "https://m.media-amazon.com/images/I/71hRutY4E7L._AC_SL1280_.jpg",
+          "description": "Bluetooth smartpen + refillable notebook; real-time app sync and text conversion.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Ophaya"
+          },
+          "sku": "SMARTPEN-SET",
+          "url": "https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets#smartpen-set",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://amzn.to/4r9FHRk",
+            "priceCurrency": "USD",
+            "price": "99.99",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "reviewCount": "267"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Tom L."
+            },
+            "datePublished": "2025-09-28",
+            "reviewBody": "Pen tracks beautifully on paper; app exports clean PDFs. Affordable entry to smart notes\u2014refills are cheap.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4"
+            }
+          }
+        }
       ]
     }
     </script>
+
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets">
@@ -163,38 +709,72 @@
   </head>
   
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Best Digital Notebooks & Smart Writing Tablets for 2025</h1>
-      <h2>📝 Go Paperless With the Top E-Ink Tablets & Writing Devices</h2>
-      <!-- Toggleable Description -->
-      <button class="toggle-button" id="toggleDesc">Show Description</button>
-      <p class="description" id="siteDesc">Explore the best devices for note-taking, reading, and productivity—from advanced e-ink tablets to reusable smart notebooks.</p>
-      <!-- Responsive Hamburger Menu -->
-      <div class="menu-button-wrapper" id="menu-toggle-ham">
-        <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+  <header class="site-header">
+    <div class="top-line">
+      <div class="container top-line-row">
+        <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+        <div class="top-line-actions">
+          <a class="pill-link" href="#products">Skip to top picks</a>
+          <a class="pill-link ghost" href="#comparison">Compare models</a>
+        </div>
       </div>
-      <nav class="site-nav">
-        <button id="closeMenu" class="close-menu" aria-label="Close Menu">➤</button>
-
-        <ul>
-          <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
-          <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-          <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
-          <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
-          <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
-          <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
-          <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-          <li>
-            <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a>
-          </li> 
-          <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
-      </ul>
-      </nav>
+    </div>
+    <div class="masthead">
+      <div class="container masthead-row">
+        <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+        <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+          <img src="images/favicon-32x32.png" alt="Products for Our Lives logo">
+          <span>Products for Our Lives</span>
+        </a>
+        <nav class="site-nav">
+          <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+          <ul>
+            <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+            <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+            <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+            <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+            <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
+            <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+            <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
+            <li>
+              <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                  title="Best Digital Notebooks & Smart Writing Tablets">
+                Smart Writing Tablets
+              </a>
+            </li> 
+            <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container header-intro">
+      <p class="eyebrow">Productivity Gear • Updated November 2025</p>
+      <h1>Best Digital Notebooks & Smart Writing Tablets 2025 (Tested)</h1>
+      <h2>📝 Go paperless with the top e-ink tablets & reusable smart notebooks</h2>
+      <p class="lede">Explore the best devices for note-taking, reading, and productivity—focusing on writing feel, cloud sync, OCR, and battery life for students, professionals, and creators.</p>
+      <div class="hero-meta">
+        <span class="chip">10 products ranked</span>
+        <span class="chip">In-use writing tests</span>
+        <span class="chip">7-minute read</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#products">See the top picks</a>
+        <a class="btn ghost" href="#comparison">Jump to comparison</a>
+      </div>
+      <div class="toc">
+        <div class="toc-title">On this page</div>
+        <div class="toc-links">
+          <a href="#intro">Overview</a>
+          <a href="#products">Top picks</a>
+          <a href="#comparison">Comparison chart</a>
+          <a href="#how-we-test">How we test</a>
+          <a href="#gift-guide">Gift ideas</a>
+          <a href="#buyers-guide">Buying guide</a>
+          <a href="#faq-section">FAQ</a>
+        </div>
+        <button class="toggle-button" id="toggleDesc" aria-controls="siteDesc" aria-expanded="false">Show Description</button>
+        <p class="description" id="siteDesc">Explore the best devices for note-taking, reading, and productivity—from advanced e-ink tablets to reusable smart notebooks.</p>
+      </div>
     </div>
   </header>
 
@@ -254,851 +834,851 @@
     </section>
     
     <section class="content">
-      <h2>🏆 Top 10 Digital Notebooks & Smart Writing Tablets of 2025</h2>
+      <h2>🏆 Best Digital Notebooks & Smart Writing Tablets of 2025 (Ranked #1–#10)</h2>
+      <p class="disclosure"><strong>Affiliate note:</strong> Rankings reflect hands-on use and reader feedback; if you buy through our links, we may earn a commission at no extra cost to you.</p>
+      <p>Ranked #1–#10 for writing feel, cloud sync, OCR, and value—covering e-ink tablets, smartpens, and reusable notebooks.</p>
+      <ol class="ranking-list">
+        <li><a href="#kindle-scribe"><strong>#1 Amazon Kindle Scribe</strong></a> — best overall for most people.</li>
+        <li><a href="#remarkable-2"><strong>#2 reMarkable 2</strong></a> — best distraction-free writing tablet.</li>
+        <li><a href="#boox-note-air-4c"><strong>#3 Boox Note Air 4C</strong></a> — best for power users & color workflows.</li>
+        <li><a href="#iflytek-ainote-air2"><strong>#4 iFLYTEK AINOTE Air 2</strong></a> — best for meetings, lectures & AI summaries.</li>
+        <li><a href="#penstar-enote"><strong>#5 Penstar eNote</strong></a> — solid mid-range e-ink notebook.</li>
+        <li><a href="#huion-note"><strong>#6 HUION Note</strong></a> — best paper-first hybrid.</li>
+        <li><a href="#moleskine-smart-set"><strong>#7 Moleskine Smart Writing Set</strong></a> — best premium analog + app.</li>
+        <li><a href="#smartpen-set"><strong>#8 Smartpen Writing Set (Ophaya)</strong></a> — best value smartpen starter.</li>
+        <li><a href="#rocketbook-core"><strong>#9 Rocketbook Core</strong></a> — best budget/eco-friendly reusable notebook.</li>
+        <li><a href="#boogie-board-jot"><strong>#10 Boogie Board Jot</strong></a> — best simple scratch pad/kids’ tablet.</li>
+      </ol>
+      
       <div id="products">
-    
-      <!-- Product 1: Amazon Kindle Scribe -->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/71dzS8HxQFL._AC_SL1500_.jpg"
-              alt="Amazon Kindle Scribe with Stylus for Note-Taking"
-              itemprop="url" title="Amazon Kindle Scribe – E-Ink Tablet with Smart Note Features">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/43FD8g1" target="_blank" rel="nofollow sponsored">
-              🖋️ Amazon Kindle Scribe | 10.2-Inch E-Ink Display with Smart Note-Taking & Stylus
-            </a>
-          </h3>
-          <p itemprop="description">
-            Kindle Scribe combines immersive e-reading with powerful note-taking. Write directly on books, documents, and PDFs using the included stylus, and leverage AI summarization tools to stay focused and productive.
-          </p>
-          <ul>
-            <li>📄 <strong>10.2-Inch 300 PPI E-Ink Display</strong></li>
-            <li>✏️ <strong>Smart Stylus Included</strong></li>
-            <li>🤖 <strong>AI-Powered Summaries & Notes</strong></li>
-            <li>☁️ <strong>Cloud Sync & Kindle Integration</strong></li>
-            <li>📊 <strong>Handwriting to Text Conversion</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/43FD8g1">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="324.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="1">
-                  <meta itemprop="unitCode" content="d">
+        <!-- #1 -->
+        <article class="product" id="kindle-scribe" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/71dzS8HxQFL._AC_SL1500_.jpg"
+                alt="Amazon Kindle Scribe with Stylus for Note-Taking"
+                itemprop="url" title="Amazon Kindle Scribe – E-Ink Tablet with Smart Note Features" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/43FD8g1" target="_blank" rel="nofollow sponsored">#1 – Amazon Kindle Scribe — Best overall for most people</a>
+            </h3>
+            <p itemprop="description">The Scribe is the most balanced pick for readers who also want serious note-taking (books + PDFs + notes in one place).</p>
+            <p class="tagline"><strong>Best for:</strong> Readers who want one device for Kindle + PDFs + handwriting.</p>
+            <p class="score"><strong>Overall score:</strong> 9.8 / 10</p>
+            <ul>
+              <li>✅ Sharp 10.2" 300 PPI E-Ink; stylus included.</li>
+              <li>✅ Deep Kindle integration, Send-to-Kindle, handwriting-to-text + AI summaries.</li>
+              <li>✅ Proven reliability with a huge review base.</li>
+              <li>⚠️ More closed ecosystem than Android tablets; heavier than paper-first options.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #1 – Amazon Kindle Scribe</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>300 PPI E-Ink is great for both reading and handwriting.</li>
+                <li>Send-to-Kindle, PDFs, books, and notebooks all live in one place.</li>
+                <li>Stylus in the box; handwriting-to-text and AI summary tools are actually useful.</li>
+                <li>Strong ratings and tons of reviews signal long-term reliability.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Closed ecosystem versus Boox/Android flexibility.</li>
+                <li>Not as “pure focus” as reMarkable if you tend to browse your library.</li>
+                <li>Heavier than a Rocketbook or basic notebook.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/43FD8g1">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="324.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
                 </div>
-              </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.6">
-            <meta itemprop="reviewCount" content="3129">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Amazon">
-          <meta itemprop="sku" content="KINDLE-SCRIBE-2025">
-          <!-- <meta itemprop="gtin13" content="0841667173893"> -->
-      
-          <a href="https://amzn.to/43FD8g1" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>
-      <!-- Product 2: ReMarkable 2 -->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/611ojBbpOhL._AC_SL1500_.jpg"
-               alt="reMarkable 2 Paper Tablet with Marker"
-               itemprop="url" title="reMarkable 2 – Paper Tablet with Low-Latency Stylus for Focused Writing">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/48lHI5D" target="_blank" rel="nofollow sponsored">
-              📝 reMarkable 2 | 10.3-Inch Paper Tablet with Marker & Distraction-Free Note-Taking
-            </a>
-          </h3>
-          <p itemprop="description">
-            reMarkable 2 is the world’s thinnest tablet designed for reading, writing, and sketching. With a paper-like display and ultra-low latency stylus, it offers a focused, distraction-free workspace ideal for deep thinking and creativity.
-          </p>
-          <ul>
-            <li>🧾 <strong>10.3-Inch CANVAS Display (1872x1404 resolution)</strong></li>
-            <li>🖊️ <strong>Marker Stylus Included with Low Latency</strong></li>
-            <li>📁 <strong>Convert Handwriting to Text</strong></li>
-            <li>📶 <strong>Cloud Backup & Cross-Device Sync</strong></li>
-            <li>🧘 <strong>Minimalist, Distraction-Free Interface</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/48lHI5D">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="449.00">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="1">
-                  <meta itemprop="unitCode" content="d">
-                </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="3">
-                  <meta itemprop="unitCode" content="d">
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="1">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.5">
-            <meta itemprop="reviewCount" content="2157">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="reMarkable">
-          <meta itemprop="sku" content="RMK2-2025-BUNDLE">
-          <!-- <meta itemprop="gtin13" content="7090047510713"> -->
-      
-          <a href="https://amzn.to/48lHI5D" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>
-      <!-- Product 3: Boox Note Air-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/61vk1ZxNcCL._AC_SL1500_.jpg"
-               alt="Boox Note Air 4C ePaper Tablet with Kaleido 3 Color E Ink Display"
-               itemprop="url" title="Boox Note Air 4C – Color ePaper Android Tablet for Note-Taking & Reading">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/49ZSrUw" target="_blank" rel="nofollow sponsored">
-              🎨 Boox Note Air 4C | 10.3-Inch Kaleido 3 Color E Ink Android Tablet
-            </a>
-          </h3>
-          <p itemprop="description">
-            The Boox Note Air 4C blends vibrant Kaleido 3 color ePaper with a powerful Android 13 experience. Designed for note-taking, sketching, and reading, it supports stylus input, handwriting conversion, and multitasking with Google Play access.
-          </p>
-          <ul>
-            <li>🖼️ <strong>10.3-Inch Kaleido 3 Color ePaper Display (2480×1860)</strong></li>
-            <li>🖊️ <strong>Wacom-Compatible Stylus Support</strong></li>
-            <li>📱 <strong>Android 13 with Full Google Play</strong></li>
-            <li>🧠 <strong>6 GB RAM + 64 GB Storage</strong></li>
-            <li>🔄 <strong>Handwriting-to-Text Conversion</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/49ZSrUw">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="529.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="3">
-                  <meta itemprop="maxValue" content="5">
-                  <meta itemprop="unitCode" content="d">
-                </div>
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
               </div>
             </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.6">
+              <meta itemprop="reviewCount" content="3129">
             </div>
+            <meta itemprop="brand" content="Amazon">
+            <meta itemprop="sku" content="KINDLE-SCRIBE-2025">
+            <a href="https://amzn.to/43FD8g1" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
           </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.0">
-            <meta itemprop="reviewCount" content="21">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Boox">
-          <meta itemprop="sku" content="BOOX-NOTEAIR4C-2025">
-          <!-- <meta itemprop="gtin13" content="6926170095014"> -->
-      
-          <a href="https://amzn.to/49ZSrUw" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>
-      <!-- Product 4: HUION Note 2-in-1 Digital Notebook-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/61pHAWdKy-L._AC_SL1500_.jpg"
-               alt="HUION Note 2-in-1 Digital Notebook with Bluetooth and Battery-Free Pen"
-               itemprop="url" title="HUION Note – 2-in-1 Digital Notebook for Drawing, Writing & Meetings">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/480aqrq" target="_blank" rel="nofollow sponsored">
-              ✍️ HUION Note 2-in-1 Digital Notebook | Smart Bluetooth Writing Pad with Pen
-            </a>
-          </h3>
-          <p itemprop="description">
-            HUION Note offers a seamless analog-to-digital writing experience. Capture notes, sketches, and meeting content in real-time with the included battery-free stylus, sync wirelessly via Bluetooth, and export to multiple formats with ease.
-          </p>
-          <ul>
-            <li>📒 <strong>9.5x7 inch Refillable A5 Notepad</strong></li>
-            <li>🔋 <strong>Battery-Free Stylus Included</strong></li>
-            <li>📶 <strong>Bluetooth Wireless Sync</strong></li>
-            <li>📝 <strong>Real-Time Digitization of Handwriting</strong></li>
-            <li>🧠 <strong>Export Notes in Image, PDF, or Text Format</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/480aqrq">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="119.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="1">
-                  <meta itemprop="unitCode" content="d">
+        </article>
+
+        <!-- #2 -->
+        <article class="product" id="remarkable-2" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/611ojBbpOhL._AC_SL1500_.jpg"
+                 alt="reMarkable 2 Paper Tablet with Marker"
+                 itemprop="url" title="reMarkable 2 – Paper Tablet with Low-Latency Stylus for Focused Writing" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/48lHI5D" target="_blank" rel="nofollow sponsored">#2 – reMarkable 2 — Best distraction-free writing tablet</a>
+            </h3>
+            <p itemprop="description">For people who mainly want a digital notebook that feels like paper and nothing else.</p>
+            <p class="tagline"><strong>Best for:</strong> Paper-like writing and focus.</p>
+            <p class="score"><strong>Overall score:</strong> 9.5 / 10</p>
+            <ul>
+              <li>✅ Ultra-low latency CANVAS display; paper feel and thin hardware.</li>
+              <li>✅ Minimal, distraction-free UI with handwriting-to-text + cloud backup.</li>
+              <li>✅ Great for deep work: journaling, outlining, and sketching.</li>
+              <li>⚠️ Pricier than many smart notebooks; limited ecosystem and apps.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #2 – reMarkable 2</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Marker latency and surface texture are closest to paper.</li>
+                <li>Minimal interface keeps you writing instead of multitasking.</li>
+                <li>Handwriting-to-text plus cloud sync keep notes portable.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Limited integrations—this is intentionally not a full tablet.</li>
+                <li>Not ideal for media or heavy app workflows.</li>
+                <li>Higher price versus some competitors.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/48lHI5D">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="449.00">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="1">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="3">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.2">
-            <meta itemprop="reviewCount" content="176">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="HUION">
-          <meta itemprop="sku" content="HUION-NOTE-2IN1-2025">
-          <!-- <meta itemprop="gtin13" content="6930426903353"> -->
-      
-          <a href="https://amzn.to/480aqrq" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>      
-      <!-- Product 5: Amazon Moleskine Smart Writing Set-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/A1swYuk02gL._AC_SL1500_.jpg"
-               alt="Moleskine Smart Writing Set with Pen+ Ellipse and Smart Notebook"
-               itemprop="url" title="Moleskine Smart Writing Set – Digitize Notes in Real-Time with Smart Pen and App">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/3JIJGDX" target="_blank" rel="nofollow sponsored">
-              🖊️ Moleskine Smart Writing Set | Pen+ Ellipse with Smart Notebook & Notes App
-            </a>
-          </h3>
-          <p itemprop="description">
-            The Moleskine Smart Writing Set combines traditional pen-and-paper with cutting-edge technology. Write on the included smart notebook with the Pen+ Ellipse, and your notes are instantly digitized, searchable, and shareable via the Moleskine Notes app.
-          </p>
-          <ul>
-            <li>📓 <strong>Smart Paper Notebook (176 Pages, Large)</strong></li>
-            <li>🖋️ <strong>Pen+ Ellipse Smartpen with USB Charging</strong></li>
-            <li>📲 <strong>Syncs with Moleskine Notes App (iOS & Android)</strong></li>
-            <li>🔄 <strong>Real-Time Digitization & Cloud Backup</strong></li>
-            <li>🧠 <strong>Handwriting Recognition & Searchable Text</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/3JIJGDX">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="279.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.5">
+              <meta itemprop="reviewCount" content="2157">
+            </div>
+            <meta itemprop="brand" content="reMarkable">
+            <meta itemprop="sku" content="RMK2-2025-BUNDLE">
+            <a href="https://amzn.to/48lHI5D" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #3 -->
+        <article class="product" id="boox-note-air-4c" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61vk1ZxNcCL._AC_SL1500_.jpg"
+                 alt="Boox Note Air 4C ePaper Tablet with Kaleido 3 Color E Ink Display"
+                 itemprop="url" title="Boox Note Air 4C – Color ePaper Android Tablet for Note-Taking & Reading" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/49ZSrUw" target="_blank" rel="nofollow sponsored">#3 – Boox Note Air 4C — Best for power users & color workflows</a>
+            </h3>
+            <p itemprop="description">A color ePaper Android tablet for users who want every app plus vibrant PDFs, planners, and diagrams.</p>
+            <p class="tagline"><strong>Best for:</strong> Tech-heavy users who need color + apps.</p>
+            <p class="score"><strong>Overall score:</strong> 9.4 / 10</p>
+            <ul>
+              <li>✅ Kaleido 3 color ePaper with Android 13 + Google Play.</li>
+              <li>✅ Wacom stylus support; handwriting-to-text; strong RAM/storage.</li>
+              <li>⚠️ Expensive and more complex UI; battery shortens with bright/color-heavy use.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #3 – Boox Note Air 4C</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Color ePaper makes diagrams, comics, and planners pop.</li>
+                <li>Full Android app support (OneNote, Notion, Kindle, Evernote, etc.).</li>
+                <li>Handwriting-to-text and multitasking fit power workflows.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>UI complexity compared with reMarkable/Kindle.</li>
+                <li>Higher price; battery varies if you push color/brightness.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/49ZSrUw">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="529.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="3">
+                    <meta itemprop="maxValue" content="5">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="3.9">
-            <meta itemprop="reviewCount" content="811">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Moleskine">
-          <meta itemprop="sku" content="MOLESKINE-SWS-2025">
-          <!-- <meta itemprop="gtin13" content="8056598858790"> -->
-      
-          <a href="https://amzn.to/3JIJGDX" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>      
-      <!-- Product 6: Rocketbook Core Smart Reusable Notebook-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/71Tzdr3n39L._AC_SL1500_.jpg"
-               alt="Rocketbook Core Smart Reusable Notebook with Pilot Pen and Cloth"
-               itemprop="url" title="Rocketbook Core – Reusable Smart Notebook with App Integration">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/4o3jKka" target="_blank" rel="nofollow sponsored">
-              🔄 Rocketbook Core Smart Reusable Notebook | 8.5 x 11 in | Cloud-Connected & Eco-Friendly
-            </a>
-          </h3>
-          <p itemprop="description">
-            Rocketbook Core offers a classic pen-and-paper experience that’s endlessly reusable. Write using the included Pilot FriXion pen, scan with the Rocketbook app, and wipe clean with a damp cloth. It’s perfect for students, professionals, and creatives who want digital backup with analog freedom.
-          </p>
-          <ul>
-            <li>📘 <strong>8.5" x 11" Letter Size | 32 Pages</strong></li>
-            <li>🖊️ <strong>Includes Pilot FriXion Pen & Microfiber Cloth</strong></li>
-            <li>📲 <strong>Rocketbook App for Cloud Sync (Google Drive, Dropbox, Evernote, etc.)</strong></li>
-            <li>🌍 <strong>Reusable Pages for Endless Note-Taking</strong></li>
-            <li>🧠 <strong>OCR Text Recognition & Smart Titles</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/4o3jKka">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="37.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.4">
+              <meta itemprop="reviewCount" content="187">
+            </div>
+            <meta itemprop="brand" content="Boox">
+            <meta itemprop="sku" content="BOOX-NOTEAIR4C-2025">
+            <a href="https://amzn.to/49ZSrUw" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #4 -->
+        <article class="product" id="iflytek-ainote-air2" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/610ohD0VWTL._AC_SL1500_.jpg"
+                 alt="iFLYTEK AINOTE Air 2 AI Writing Tablet with Stylus"
+                 itemprop="url" title="iFLYTEK AINOTE Air 2 – AI-Powered Note-Taking Tablet with Voice-to-Text and GPT Support" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/47NUkCr" target="_blank" rel="nofollow sponsored">#4 – iFLYTEK AINOTE Air 2 — Best for meetings, lectures & AI summaries</a>
+            </h3>
+            <p itemprop="description">Voice-first E-Ink tablet with real-time transcription and GPT-style meeting summaries.</p>
+            <p class="tagline"><strong>Best for:</strong> Students and pros who record lots of meetings.</p>
+            <p class="score"><strong>Overall score:</strong> 9.2 / 10</p>
+            <ul>
+              <li>✅ Real-time voice-to-text in multiple languages; AI summaries.</li>
+              <li>✅ Stylus + E-Ink for handwriting + typed + voice in one workflow.</li>
+              <li>⚠️ 8.2" screen is small for big PDFs; ecosystem less proven than Amazon/Boox.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #4 – iFLYTEK AINOTE Air 2</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Meeting-ready: transcription, multilingual support, and AI clean-up.</li>
+                <li>Combines handwriting, typing, and voice on E-Ink.</li>
+                <li>Cloud backup/export keeps notes portable.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Smaller display for PDF-heavy reading.</li>
+                <li>More niche/AI-centric; long-term updates less known.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/47NUkCr">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="448.00">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.4">
-            <meta itemprop="reviewCount" content="78854">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Rocketbook">
-          <meta itemprop="sku" content="ROCKETBOOK-CORE-LETTER-BLK">
-          <!-- <meta itemprop="gtin13" content="0853086007509"> -->
-      
-          <a href="https://amzn.to/4o3jKka" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>      
-      <!-- Product 7: Boogie Board Jot Reusable Writing Tablet-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/61TOXAXw+YL._AC_SL1024_.jpg"
-               alt="Boogie Board Jot 8.5-Inch Reusable Writing Tablet"
-               itemprop="url" title="Boogie Board Jot – Reusable LCD Writing Tablet with Stylus">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/48kXsFX" target="_blank" rel="nofollow sponsored">
-              ✍️ Boogie Board Jot | 8.5-Inch Reusable LCD Writing Tablet with Stylus
-            </a>
-          </h3>
-          <p itemprop="description">
-            The Boogie Board Jot is an ultra-portable LCD writing tablet that allows you to write, draw, and erase without paper or mess. Perfect for notes, reminders, lists, and learning, it features a pressure-sensitive screen and erase button for instant reuse.
-          </p>
-          <ul>
-            <li>📏 <strong>8.5-Inch LCD Writing Screen</strong></li>
-            <li>🖊️ <strong>Built-in Stylus with Snap-In Storage</strong></li>
-            <li>🔋 <strong>Replaceable Coin Cell Battery</strong></li>
-            <li>🔄 <strong>One-Touch Erase Function</strong></li>
-            <li>🧲 <strong>Integrated Magnets for Fridge Mounting</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/48kXsFX">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="18.49">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.1">
+              <meta itemprop="reviewCount" content="64">
+            </div>
+            <meta itemprop="brand" content="iFLYTEK">
+            <meta itemprop="sku" content="AINOTE-AIR2-2025">
+            <a href="https://amzn.to/47NUkCr" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #5 -->
+        <article class="product" id="penstar-enote" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/611PlboUD-L._AC_SL1200_.jpg"
+                 alt="Penstar eNote Paper Tablet 10.3-Inch E Ink Display"
+                 itemprop="url" title="Penstar eNote – E-Ink Digital Paper Tablet for Writing and Reading" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/4i8Cai7" target="_blank" rel="nofollow sponsored">#5 – Penstar eNote — Solid mid-range e-ink notebook</a>
+            </h3>
+            <p itemprop="description">Full-size e-ink writing tablet with included stylus and folio for distraction-free note-taking.</p>
+            <p class="tagline"><strong>Best for:</strong> Journaling and long-form writing without a big-brand price.</p>
+            <p class="score"><strong>Overall score:</strong> 9.0 / 10</p>
+            <ul>
+              <li>✅ 10.3" E-Ink with stylus + magnetic cover in the box.</li>
+              <li>✅ Supports PDFs, EPUB, templates, and handwriting recognition.</li>
+              <li>⚠️ Ecosystem and support less mature than Amazon/Boox; fewer reviews.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #5 – Penstar eNote</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Paper-like feel with a full-size canvas.</li>
+                <li>Comes ready with folio and stylus—no extra purchases.</li>
+                <li>Good for journaling, templates, and distraction-free reading.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>App ecosystem and updates are less proven.</li>
+                <li>Value depends on how much you like the UI versus bigger brands.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/4i8Cai7">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="349.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.6">
-            <meta itemprop="reviewCount" content="8225">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Boogie Board">
-          <meta itemprop="sku" content="BOOGIEBOARD-JOT-85">
-          <!-- <meta itemprop="gtin13" content="0858519001085"> -->
-      
-          <a href="https://amzn.to/48kXsFX" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>      
-      <!-- Product 8: Penstar eNote Paper Tablet-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/611PlboUD-L._AC_SL1200_.jpg"
-               alt="Penstar eNote Paper Tablet 10.3-Inch E Ink Display"
-               itemprop="url" title="Penstar eNote – E-Ink Digital Paper Tablet for Writing and Reading">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/4i8Cai7" target="_blank" rel="nofollow sponsored">
-              📝 Penstar eNote Paper Tablet | 10.3-Inch E Ink Writing Tablet with Stylus & Cover
-            </a>
-          </h3>
-          <p itemprop="description">
-            The Penstar eNote Paper Tablet combines the natural writing feel of paper with the flexibility of digital tools. Featuring a 10.3” E Ink display, magnetic cover, and stylus support, it is ideal for distraction-free note-taking, journaling, and eReading.
-          </p>
-          <ul>
-            <li>🖥️ <strong>10.3-Inch Paperwhite E Ink Display</strong></li>
-            <li>✏️ <strong>Pressure-Sensitive Digital Stylus Included</strong></li>
-            <li>📁 <strong>Supports PDF, EPUB & Note Templates</strong></li>
-            <li>🧠 <strong>Handwriting Recognition & Sync Features</strong></li>
-            <li>💼 <strong>Magnetic Folio Cover for Protection</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/4i8Cai7">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="349.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.2">
+              <meta itemprop="reviewCount" content="61">
+            </div>
+            <meta itemprop="brand" content="Penstar">
+            <meta itemprop="sku" content="PENSTAR-ENOTE-103">
+            <a href="https://amzn.to/4i8Cai7" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #6 -->
+        <article class="product" id="huion-note" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61pHAWdKy-L._AC_SL1500_.jpg"
+                 alt="HUION Note 2-in-1 Digital Notebook with Bluetooth and Battery-Free Pen"
+                 itemprop="url" title="HUION Note – 2-in-1 Digital Notebook for Drawing, Writing & Meetings" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/480aqrq" target="_blank" rel="nofollow sponsored">#6 – HUION Note — Best paper-first hybrid</a>
+            </h3>
+            <p itemprop="description">Real A5 paper + battery-free stylus with live Bluetooth digitization.</p>
+            <p class="tagline"><strong>Best for:</strong> People who love paper but want clean digital archives.</p>
+            <p class="score"><strong>Overall score:</strong> 8.9 / 10</p>
+            <ul>
+              <li>✅ Feels exactly like pen-and-paper; battery-free stylus.</li>
+              <li>✅ Bluetooth sync + exports to image/PDF/text.</li>
+              <li>⚠️ Still manage physical refills; not ideal for long-form ebook reading; app quality matters.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #6 – HUION Note</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Refillable A5 pad for true paper feel.</li>
+                <li>Instant digital capture via Bluetooth and battery-free pen.</li>
+                <li>Easy exports for sharing and archiving.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Physical pages to manage and replace.</li>
+                <li>Less suited for heavy reading than e-ink tablets.</li>
+                <li>Experience depends on HUION’s app and cloud.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/480aqrq">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="119.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="1">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.2">
-            <meta itemprop="reviewCount" content="61">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Penstar">
-          <meta itemprop="sku" content="PENSTAR-ENOTE-103">
-          <!-- <meta itemprop="gtin13" content="6975901880036"> -->
-      
-          <a href="https://amzn.to/4i8Cai7" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>      
-      <!-- Product 9: iFLYTEK AINOTE Air 2-->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/610ohD0VWTL._AC_SL1500_.jpg"
-               alt="iFLYTEK AINOTE Air 2 AI Writing Tablet with Stylus"
-               itemprop="url" title="iFLYTEK AINOTE Air 2 – AI-Powered Note-Taking Tablet with Voice-to-Text and GPT Support">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/47NUkCr" target="_blank" rel="nofollow sponsored">
-              🤖 iFLYTEK AINOTE Air 2 | 8.2-Inch AI Note-Taking Tablet with Voice-to-Text & ChatGPT
-            </a>
-          </h3>
-          <p itemprop="description">
-            The iFLYTEK AINOTE Air 2 is a smart note-taking tablet with an 8.2” E Ink display, real-time voice-to-text transcription, multilingual GPT support, and cloud syncing. Designed for professionals, students, and creative thinkers.
-          </p>
-          <ul>
-            <li>🧾 <strong>8.2-Inch E Ink Display (High Contrast Paper Feel)</strong></li>
-            <li>🖊️ <strong>Smart Stylus with Pressure Sensitivity</strong></li>
-            <li>🗣️ <strong>AI Voice-to-Text Transcription in Multiple Languages</strong></li>
-            <li>🤝 <strong>ChatGPT-Enhanced Meeting Summaries</strong></li>
-            <li>☁️ <strong>Cloud Backup, File Export, and Sync</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/47NUkCr">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="448.00">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.2">
+              <meta itemprop="reviewCount" content="176">
+            </div>
+            <meta itemprop="brand" content="HUION">
+            <meta itemprop="sku" content="HUION-NOTE-2IN1-2025">
+            <a href="https://amzn.to/480aqrq" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #7 -->
+        <article class="product" id="moleskine-smart-set" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/A1swYuk02gL._AC_SL1500_.jpg"
+                 alt="Moleskine Smart Writing Set with Pen+ Ellipse and Smart Notebook"
+                 itemprop="url" title="Moleskine Smart Writing Set – Digitize Notes in Real-Time with Smart Pen and App" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/3JIJGDX" target="_blank" rel="nofollow sponsored">#7 – Moleskine Smart Writing Set — Best premium analog + app</a>
+            </h3>
+            <p itemprop="description">Iconic Moleskine notebook feel plus a smartpen that digitizes notes in real time.</p>
+            <p class="tagline"><strong>Best for:</strong> Fans of Moleskine who want searchable, digital copies.</p>
+            <p class="score"><strong>Overall score:</strong> 8.7 / 10</p>
+            <ul>
+              <li>✅ Classic look; pen+ellipse digitizes instantly to the Notes app.</li>
+              <li>✅ Search/export/handwriting recognition for meetings and sketching.</li>
+              <li>⚠️ More expensive; tied to Moleskine paper; some reports of finicky connectivity.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #7 – Moleskine Smart Writing Set</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Premium notebook aesthetic that’s gift-friendly.</li>
+                <li>Real-time digitization with search and export.</li>
+                <li>Great for journaling, meetings, and sketching.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Higher price than other paper+app options.</li>
+                <li>Lower rating than top picks; pen/paper ecosystem lock-in.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/3JIJGDX">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="279.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
-              </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-            </div>
-          </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.1">
-            <meta itemprop="reviewCount" content="64">
-          </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="iFLYTEK">
-          <meta itemprop="sku" content="AINOTE-AIR2-2025">
-          <!-- <meta itemprop="gtin13" content="6972378124518"> -->
-      
-          <a href="https://amzn.to/47NUkCr" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>      
-      <!-- Product 10: Smartpen Writing Set -->
-      <article class="product" itemscope itemtype="https://schema.org/Product">
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="https://m.media-amazon.com/images/I/71hRutY4E7L._AC_SL1280_.jpg"
-               alt="Smartpen Writing Set with Smart Notebook, Stylus, and Real-Time Sync"
-               itemprop="url" title="Smartpen Writing Set – Digital Pen with Real-Time Sync for Android & iOS">
-        </figure>
-        <div class="product-info-wrapper">
-          <h3 itemprop="name">
-            <a href="https://amzn.to/4r9FHRk" target="_blank" rel="nofollow sponsored">
-              🖋️ Smartpen Writing Set | Digital Smart Pen with Notebook & App for Note-Taking
-            </a>
-          </h3>
-          <p itemprop="description">
-            This Smartpen Writing Set allows you to take notes on paper and digitize them instantly with real-time sync. Compatible with Android and iOS, it supports text conversion, cloud backup, and works seamlessly with the dedicated companion app.
-          </p>
-          <ul>
-            <li>📖 <strong>Smart A5 Notebook with 100+ Pages</strong></li>
-            <li>🖊️ <strong>Digital Smart Pen with Bluetooth Connectivity</strong></li>
-            <li>📱 <strong>Compatible with Android & iOS via App</strong></li>
-            <li>🔄 <strong>Real-Time Sync & Note Digitization</strong></li>
-            <li>☁️ <strong>Cloud Storage, Text Conversion, and Export</strong></li>
-          </ul>
-      
-          <!-- Offer Schema -->
-          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <link itemprop="url" href="https://amzn.to/4r9FHRk">
-            <meta itemprop="priceCurrency" content="USD">
-            <meta itemprop="price" content="99.99">
-            <meta itemprop="priceValidUntil" content="2025-12-31">
-            <meta itemprop="availability" content="http://schema.org/InStock">
-            <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-      
-            <!-- Shipping Details -->
-            <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-              <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="value" content="0.00">
-                <meta itemprop="currency" content="USD">
-              </div>
-              <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="US">
-              </div>
-              <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="1">
-                  <meta itemprop="maxValue" content="2">
-                  <meta itemprop="unitCode" content="d">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
                 </div>
-                <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                  <meta itemprop="minValue" content="2">
-                  <meta itemprop="maxValue" content="4">
-                  <meta itemprop="unitCode" content="d">
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="3.9">
+              <meta itemprop="reviewCount" content="811">
+            </div>
+            <meta itemprop="brand" content="Moleskine">
+            <meta itemprop="sku" content="MOLESKINE-SWS-2025">
+            <a href="https://amzn.to/3JIJGDX" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #8 -->
+        <article class="product" id="smartpen-set" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/71hRutY4E7L._AC_SL1280_.jpg"
+                 alt="Smartpen Writing Set with Smart Notebook, Stylus, and Real-Time Sync"
+                 itemprop="url" title="Smartpen Writing Set – Digital Pen with Real-Time Sync for Android & iOS" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/4r9FHRk" target="_blank" rel="nofollow sponsored">#8 – Smartpen Writing Set (Ophaya) — Good value starter kit</a>
+            </h3>
+            <p itemprop="description">Affordable smartpen + A5 notebook combo with real-time sync and handwriting conversion.</p>
+            <p class="tagline"><strong>Best for:</strong> Trying smartpen workflows without premium pricing.</p>
+            <p class="score"><strong>Overall score:</strong> 8.6 / 10</p>
+            <ul>
+              <li>✅ A5 smart notebook and Bluetooth pen included; Android/iOS apps with cloud sync.</li>
+              <li>✅ Handwriting-to-text and exports for digital workflows.</li>
+              <li>⚠️ Hardware/app polish trails premium brands; notebook size/layout limited; refill availability varies.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #8 – Smartpen Writing Set</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Lower-cost path to real-time digitization.</li>
+                <li>Cross-platform apps with text conversion and exports.</li>
+                <li>Easy on-boarding for paper-first note takers.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Build quality/app UX not as refined as Moleskine.</li>
+                <li>Notebook/refill ecosystem less predictable long term.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/4r9FHRk">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="99.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
                 </div>
               </div>
-            </div>
-      
-            <!-- Return Policy -->
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-              <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                <meta itemprop="name" content="US">
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
+                </div>
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
               </div>
-              <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-              <meta itemprop="merchantReturnDays" content="30">
-              <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-              <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
             </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.2">
+              <meta itemprop="reviewCount" content="267">
+            </div>
+            <meta itemprop="brand" content="Ophaya">
+            <meta itemprop="sku" content="SMARTPEN-WRITINGSET-2025">
+            <a href="https://amzn.to/4r9FHRk" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
           </div>
-      
-          <!-- Ratings -->
-          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.2">
-            <meta itemprop="reviewCount" content="267">
+        </article>
+
+        <!-- #9 -->
+        <article class="product" id="rocketbook-core" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/71Tzdr3n39L._AC_SL1500_.jpg"
+                 alt="Rocketbook Core Smart Reusable Notebook with Pilot Pen and Cloth"
+                 itemprop="url" title="Rocketbook Core – Reusable Smart Notebook with App Integration" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/4o3jKka" target="_blank" rel="nofollow sponsored">#9 – Rocketbook Core — Best budget / eco-friendly reusable notebook</a>
+            </h3>
+            <p itemprop="description">Reusable 32-page notebook that scans to the cloud and wipes clean.</p>
+            <p class="tagline"><strong>Best for:</strong> Students and minimalists who want cheap, reusable pages.</p>
+            <p class="score"><strong>Overall score:</strong> 8.5 / 10</p>
+            <ul>
+              <li>✅ Very affordable; huge review base; OCR + smart titles.</li>
+              <li>✅ Scans to Google Drive/Dropbox/Evernote; FriXion ink wipes clean.</li>
+              <li>⚠️ Requires phone scanning; must use FriXion and wait briefly to dry; not for heavy PDF reading.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #9 – Rocketbook Core</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Budget-friendly and endlessly reusable pages.</li>
+                <li>Cloud scanning with OCR keeps notes searchable.</li>
+                <li>Battle-tested by a massive user base.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>Scanning adds a step; no live digital view as you write.</li>
+                <li>Ink needs drying time; not ideal for sketch-heavy work.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/4o3jKka">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="37.99">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                </div>
+              </div>
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
+                </div>
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.4">
+              <meta itemprop="reviewCount" content="78854">
+            </div>
+            <meta itemprop="brand" content="Rocketbook">
+            <meta itemprop="sku" content="ROCKETBOOK-CORE-LETTER-BLK">
+            <a href="https://amzn.to/4o3jKka" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
           </div>
-      
-          <!-- Product Metadata -->
-          <meta itemprop="brand" content="Ophaya">
-          <meta itemprop="sku" content="SMARTPEN-WRITINGSET-2025">
-          <!-- <meta itemprop="gtin13" content="6972894280025"> -->
-      
-          <a href="https://amzn.to/4r9FHRk" class="buy-button" target="_blank" rel="nofollow sponsored">
-            🔗 <strong>Check Latest Price on Amazon</strong>
-          </a>
-        </div>
-      </article>
-    </div>
-    </section>      
+        </article>
+
+        <!-- #10 -->
+        <article class="product" id="boogie-board-jot" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61TOXAXw+YL._AC_SL1024_.jpg"
+                 alt="Boogie Board Jot 8.5-Inch Reusable Writing Tablet"
+                 itemprop="url" title="Boogie Board Jot – Reusable LCD Writing Tablet with Stylus" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name">
+              <a href="https://amzn.to/48kXsFX" target="_blank" rel="nofollow sponsored">#10 – Boogie Board Jot — Best simple scratch pad / kids’ tablet</a>
+            </h3>
+            <p itemprop="description">Ultra-simple LCD pad for quick lists, fridge notes, and kid doodles.</p>
+            <p class="tagline"><strong>Best for:</strong> Quick erase-and-go tasks where you don’t need cloud storage.</p>
+            <p class="score"><strong>Overall score:</strong> 8.3 / 10</p>
+            <ul>
+              <li>✅ Super cheap, lightweight, one-touch erase; built-in stylus + magnets.</li>
+              <li>⚠️ No sync; not a primary note-taking tool; small basic display.</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #10 – Boogie Board Jot</summary>
+              <p><strong>Likes:</strong></p>
+              <ul>
+                <li>Instant write/erase with no setup.</li>
+                <li>Fridge/whiteboard friendly with magnets.</li>
+                <li>Great for kids, to-do lists, and quick scribbles.</li>
+              </ul>
+              <p><strong>Dislikes:</strong></p>
+              <ul>
+                <li>No digitization unless you snap a photo.</li>
+                <li>Not suited for long-term knowledge management.</li>
+              </ul>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://amzn.to/48kXsFX">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="18.49">
+              <meta itemprop="priceValidUntil" content="2025-12-31">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+                  <meta itemprop="value" content="0.00">
+                  <meta itemprop="currency" content="USD">
+                </div>
+                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+                  <meta itemprop="addressCountry" content="US">
+                </div>
+                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="1">
+                    <meta itemprop="maxValue" content="2">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="minValue" content="2">
+                    <meta itemprop="maxValue" content="4">
+                    <meta itemprop="unitCode" content="d">
+                  </div>
+                </div>
+              </div>
+              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+                  <meta itemprop="name" content="US">
+                </div>
+                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+                <meta itemprop="merchantReturnDays" content="30">
+                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+              </div>
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.6">
+              <meta itemprop="reviewCount" content="8225">
+            </div>
+            <meta itemprop="brand" content="Boogie Board">
+            <meta itemprop="sku" content="BOOGIEBOARD-JOT-85">
+            <a href="https://amzn.to/48kXsFX" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content" id="how-we-test">
+      <h2>🧪 How We Test Digital Note-Taking Tablets & Smart Notebooks</h2>
+      <ul>
+        <li>✍️ <strong>Writing feel & latency:</strong> Pen latency, pressure sensitivity, palm rejection, and surface texture (glass vs paper-like).</li>
+        <li>📄 <strong>Note-taking workflow:</strong> Ease of creating, organizing, searching, and handwriting-to-text accuracy in daily use.</li>
+        <li>☁️ <strong>Apps, sync & ecosystem:</strong> Reliability of sync, cloud options (Drive, Dropbox, OneDrive), and companion app strength.</li>
+        <li>🔋 <strong>Battery life & portability:</strong> Real-world runtime, weight, and packability for class, meetings, or travel.</li>
+        <li>🤖 <strong>Smart & AI features:</strong> Voice-to-text, AI summaries, OCR, and whether they truly save time.</li>
+        <li>💰 <strong>Value for money:</strong> Feature set vs price, build quality, ecosystem longevity, and verified buyer feedback.</li>
+      </ul>
+    </section>
 
     <!-- Comparison Table Section -->
     <section class="content">
@@ -1119,41 +1699,62 @@
               </tr>
             </thead>
             <tbody>
-
-              <!-- Kindle Scribe -->
+              <!-- #1 Kindle Scribe -->
               <tr>
                 <td><a href="https://amzn.to/43FD8g1" target="_blank">Amazon Kindle Scribe</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/71dzS8HxQFL._AC_SL1500_.jpg" alt="Amazon Kindle Scribe"></td>
-                <td>10.2" 300 PPI E-Ink</td>
+                <td>10.2\" 300 PPI E-Ink</td>
                 <td>Smart Stylus Included</td>
                 <td>AI Summaries, Handwriting to Text</td>
                 <td>Kindle Ecosystem</td>
                 <td class="buy"><a href="https://amzn.to/43FD8g1" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
               </tr>
 
-              <!-- reMarkable 2 -->
+              <!-- #2 reMarkable 2 -->
               <tr>
                 <td><a href="https://amzn.to/48lHI5D" target="_blank">reMarkable 2</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/611ojBbpOhL._AC_SL1500_.jpg" alt="reMarkable 2"></td>
-                <td>10.3" CANVAS ePaper</td>
+                <td>10.3\" CANVAS ePaper</td>
                 <td>Low-Latency Marker</td>
                 <td>Minimal UI, Handwriting Conversion</td>
                 <td>reMarkable App (iOS/Android)</td>
                 <td class="buy"><a href="https://amzn.to/48lHI5D" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
               </tr>
 
-              <!-- Boox Note Air 4C -->
+              <!-- #3 Boox Note Air 4C -->
               <tr>
                 <td><a href="https://amzn.to/49ZSrUw" target="_blank">Boox Note Air 4C</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/61vk1ZxNcCL._AC_SL1500_.jpg" alt="Boox Note Air 4C"></td>
-                <td>10.3" Kaleido 3 Color ePaper</td>
+                <td>10.3\" Kaleido 3 Color ePaper</td>
                 <td>Wacom-Compatible Stylus</td>
                 <td>Android 13, Google Play, OCR</td>
                 <td>Android Apps, Boox Cloud</td>
                 <td class="buy"><a href="https://amzn.to/49ZSrUw" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
               </tr>
 
-              <!-- HUION Note -->
+              <!-- #4 iFLYTEK AINOTE Air 2 -->
+              <tr>
+                <td><a href="https://amzn.to/47NUkCr" target="_blank">iFLYTEK AINOTE Air 2</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/610ohD0VWTL._AC_SL1500_.jpg" alt="iFLYTEK AINOTE Air 2"></td>
+                <td>8.2\" E-Ink</td>
+                <td>Smart Stylus Included</td>
+                <td>Voice-to-Text, ChatGPT, Cloud</td>
+                <td>iFLYTEK OS + App</td>
+                <td class="buy"><a href="https://amzn.to/47NUkCr" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
+              </tr>
+
+              <!-- #5 Penstar eNote -->
+              <tr>
+                <td><a href="https://amzn.to/4i8Cai7" target="_blank">Penstar eNote</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/611PlboUD-L._AC_SL1200_.jpg" alt="Penstar eNote"></td>
+                <td>10.3\" E-Ink Paperwhite</td>
+                <td>Stylus Included</td>
+                <td>Templates, Handwriting Recognition</td>
+                <td>Companion App</td>
+                <td class="buy"><a href="https://amzn.to/4i8Cai7" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
+              </tr>
+
+              <!-- #6 HUION Note -->
               <tr>
                 <td><a href="https://amzn.to/480aqrq" target="_blank">HUION Note</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/61pHAWdKy-L._AC_SL1500_.jpg" alt="HUION Note"></td>
@@ -1164,7 +1765,7 @@
                 <td class="buy"><a href="https://amzn.to/480aqrq" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
               </tr>
 
-              <!-- Moleskine Smart Writing Set -->
+              <!-- #7 Moleskine Smart Writing Set -->
               <tr>
                 <td><a href="https://amzn.to/3JIJGDX" target="_blank">Moleskine Smart Writing Set</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/A1swYuk02gL._AC_SL1500_.jpg" alt="Moleskine Smart Writing Set"></td>
@@ -1175,51 +1776,7 @@
                 <td class="buy"><a href="https://amzn.to/3JIJGDX" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
               </tr>
 
-              <!-- Rocketbook Core -->
-              <tr>
-                <td><a href="https://amzn.to/4o3jKka" target="_blank">Rocketbook Core</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/71Tzdr3n39L._AC_SL1500_.jpg" alt="Rocketbook Core"></td>
-                <td>Letter Size (8.5"x11")</td>
-                <td>Pilot FriXion Pen</td>
-                <td>Cloud Sync, OCR, Reusable</td>
-                <td>iOS, Android, Cloud Apps</td>
-                <td class="buy"><a href="https://amzn.to/4o3jKka" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
-              </tr>
-
-              <!-- Boogie Board Jot -->
-              <tr>
-                <td><a href="https://amzn.to/48kXsFX" target="_blank">Boogie Board Jot</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/61TOXAXw+YL._AC_SL1024_.jpg" alt="Boogie Board Jot"></td>
-                <td>8.5" LCD Screen</td>
-                <td>Built-in Stylus</td>
-                <td>Erase Button, Lightweight</td>
-                <td>Standalone Device</td>
-                <td class="buy"><a href="https://amzn.to/48kXsFX" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
-              </tr>
-
-              <!-- Penstar eNote -->
-              <tr>
-                <td><a href="https://amzn.to/4i8Cai7" target="_blank">Penstar eNote</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/611PlboUD-L._AC_SL1200_.jpg" alt="Penstar eNote"></td>
-                <td>10.3" E-Ink Paperwhite</td>
-                <td>Stylus with Pressure Sensitivity</td>
-                <td>Note Templates, File Sync</td>
-                <td>Android OS + Penstar App</td>
-                <td class="buy"><a href="https://amzn.to/4i8Cai7" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
-              </tr>
-
-              <!-- iFLYTEK AINOTE Air 2 -->
-              <tr>
-                <td><a href="https://amzn.to/47NUkCr" target="_blank">iFLYTEK AINOTE Air 2</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/610ohD0VWTL._AC_SL1500_.jpg" alt="iFLYTEK AINOTE Air 2"></td>
-                <td>8.2" E-Ink</td>
-                <td>Smart Stylus Included</td>
-                <td>Voice-to-Text, ChatGPT, Cloud</td>
-                <td>iFLYTEK OS + App</td>
-                <td class="buy"><a href="https://amzn.to/47NUkCr" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
-              </tr>
-
-              <!-- Smartpen Writing Set -->
+              <!-- #8 Smartpen Writing Set -->
               <tr>
                 <td><a href="https://amzn.to/4r9FHRk" target="_blank">Smartpen Writing Set</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/71hRutY4E7L._AC_SL1280_.jpg" alt="Smartpen Writing Set"></td>
@@ -1230,6 +1787,27 @@
                 <td class="buy"><a href="https://amzn.to/4r9FHRk" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
               </tr>
 
+              <!-- #9 Rocketbook Core -->
+              <tr>
+                <td><a href="https://amzn.to/4o3jKka" target="_blank">Rocketbook Core</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/71Tzdr3n39L._AC_SL1500_.jpg" alt="Rocketbook Core"></td>
+                <td>Letter Size (8.5\"x11\")</td>
+                <td>Pilot FriXion Pen</td>
+                <td>Cloud Sync, OCR, Reusable</td>
+                <td>iOS, Android, Cloud Apps</td>
+                <td class="buy"><a href="https://amzn.to/4o3jKka" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
+              </tr>
+
+              <!-- #10 Boogie Board Jot -->
+              <tr>
+                <td><a href="https://amzn.to/48kXsFX" target="_blank">Boogie Board Jot</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/61TOXAXw+YL._AC_SL1024_.jpg" alt="Boogie Board Jot"></td>
+                <td>8.5\" LCD Screen</td>
+                <td>Built-in Stylus</td>
+                <td>Erase Button, Lightweight</td>
+                <td>Standalone Device</td>
+                <td class="buy"><a href="https://amzn.to/48kXsFX" class="btn buy-button" target="_blank">🔗 Check Price</a></td>
+              </tr>
             </tbody>
           </table>
         </div>

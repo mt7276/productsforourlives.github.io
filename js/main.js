@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (toggleMenu && navMenu) {
     toggleMenu.addEventListener("click", function () {
       navMenu.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
     });
   }
 
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   closeMenu.addEventListener("click", function () {
     navMenu.classList.remove("active");
     closeMenu.classList.remove("active");
-    //document.body.classList.remove("menu-open"); // Optional: If you're locking scroll
+    document.body.classList.remove("menu-open");
   });
 }
 
@@ -38,4 +39,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-

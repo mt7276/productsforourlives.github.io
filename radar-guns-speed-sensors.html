@@ -31,7 +31,10 @@
         "@id": "https://www.productsforourlives.com/#organization",
         "name": "Products For Our Lives",
         "url": "https://www.productsforourlives.com/",
-        "logo": "https://www.productsforourlives.com/images/favicon-32x32.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.productsforourlives.com/images/favicon-32x32.png"
+        },
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61575499014545",
           "https://www.instagram.com/prod4lives"
@@ -42,37 +45,88 @@
           "contactType": "Customer Service"
         }
       },
-
+      {
+        "@type": "WebSite",
+        "@id": "https://www.productsforourlives.com/#website",
+        "url": "https://www.productsforourlives.com/",
+        "name": "Products For Our Lives",
+        "publisher": {
+          "@id": "https://www.productsforourlives.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.productsforourlives.com/#will-l",
+        "name": "Will L.",
+        "description": "USBC-certified coach and former D1 bullpen catcher.",
+        "affiliation": {
+          "@id": "https://www.productsforourlives.com/#organization"
+        },
+        "knowsAbout": [
+          "baseball coaching",
+          "bullpen training",
+          "radar guns",
+          "speed sensors"
+        ]
+      },
       {
         "@type": "WebPage",
         "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#webpage",
         "url": "https://www.productsforourlives.com/radar-guns-speed-sensors",
         "name": "Best Radar Guns for Baseball & Tennis 2025 | Top Speed Radar Picks",
-        "description": "Expert-tested 2025 guide to the best radar guns & speed sensors for baseball, tennis, lacrosse, softball and coaching. Hands-free, app-connected, and budget models compared.",
+        "description": "Guide to the best radar guns and speed sensors for baseball, tennis, lacrosse, softball and coaching in 2025. Hands-free, app-connected and budget models compared.",
         "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.productsforourlives.com/#website"
+        },
         "datePublished": "2025-01-20",
         "dateModified": "2025-11-27",
         "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.productsforourlives.com/"},
-            {"@type":"ListItem","position":2,"name":"Best Radar Guns for Baseball & Tennis 2025"}
-          ]
+          "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#breadcrumb"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.productsforourlives.com/images/coachRadarGun.jpg"
         }
       },
-
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.productsforourlives.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Best Radar Guns for Baseball & Tennis 2025",
+            "item": "https://www.productsforourlives.com/radar-guns-speed-sensors"
+          }
+        ]
+      },
       {
         "@type": "Article",
         "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#article",
         "headline": "Best Radar Guns & Speed Sensors of 2025 – Tested for Baseball, Tennis & Lacrosse",
         "image": "https://www.productsforourlives.com/images/pitcher.jpg",
-        "author": {"@id":"https://www.productsforourlives.com/#organization"},
-        "publisher": {"@id":"https://www.productsforourlives.com/#organization"},
+        "author": {
+          "@id": "https://www.productsforourlives.com/#will-l"
+        },
+        "publisher": {
+          "@id": "https://www.productsforourlives.com/#organization"
+        },
         "datePublished": "2025-01-20",
         "dateModified": "2025-11-27",
-        "mainEntityOfPage": {"@id":"https://www.productsforourlives.com/radar-guns-speed-sensors#webpage"}
+        "inLanguage": "en-US",
+        "articleSection": "Performance Gear",
+        "mainEntityOfPage": {
+          "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#webpage"
+        }
       },
-
       {
         "@type": "ItemList",
         "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#itemlist",
@@ -80,61 +134,359 @@
         "numberOfItems": 8,
         "itemListOrder": "http://schema.org/ItemListOrderAscending",
         "itemListElement": [
-          {"@type":"ListItem","position":1,"item":{"@id":"#SMARTCOACH"}},
-          {"@type":"ListItem","position":2,"item":{"@id":"#DRM-HANDSFREE"}},
-          {"@type":"ListItem","position":3,"item":{"@id":"#BUSHNELL-VELOCITY"}},
-          {"@type":"ListItem","position":4,"item":{"@id":"#NETPLAYZ"}},
-          {"@type":"ListItem","position":5,"item":{"@id":"#BALLCOACH"}},
-          {"@type":"ListItem","position":6,"item":{"@id":"#WEEPALM"}},
-          {"@type":"ListItem","position":7,"item":{"@id":"#TGU-TENNIS"}},
-          {"@type":"ListItem","position":8,"item":{"@id":"#GRIPSENSE"}}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#SMARTCOACH"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#DRM-HANDSFREE"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#BUSHNELL-VELOCITY"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#NETPLAYZ"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#BALLCOACH"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#WEEPALM"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#TGU-TENNIS"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#GRIPSENSE"
+            }
+          }
         ]
       },
-
       {
         "@type": "HowTo",
         "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#howto",
         "name": "How to Choose the Best Radar Gun for Baseball, Tennis & Coaching in 2025",
+        "description": "Step-by-step guide to choosing the right radar gun or speed sensor for your sport, budget, and training style.",
+        "inLanguage": "en-US",
         "step": [
-          {"@type":"HowToStep","name":"Decide your sport & budget","text":"Baseball/softball coaching → Pocket Radar Smart Coach. Casual backyard → Bushnell Velocity or WEEPALM."},
-          {"@type":"HowToStep","name":"Do you need hands-free?","text":"Solo practice → DRM, NetPlayz or TGU. Bullpen with a catcher → any pistol-grip model."},
-          {"@type":"HowToStep","name":"Want video + data logging?","text":"Yes → Pocket Radar Smart Coach (app + video overlay). No → Bushnell or Ball Coach."},
-          {"@type":"HowToStep","name":"Check speed range","text":"99 % of sports use falls under 150 MPH → every model here covers it."},
-          {"@type":"HowToStep","name":"Battery type","text":"Rechargeable = Smart Coach. AA/AAA = everything else (carry spares)."}
+          {
+            "@type": "HowToStep",
+            "name": "Decide your sport and budget",
+            "text": "Match your primary sport and price range. Baseball or softball bullpens often benefit from compact guns or app-connected models, while casual backyard use can work with simple point-and-shoot radar."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Determine if you need hands-free use",
+            "text": "For solo practice or group drills, look at hands-free or tripod-compatible models. For bullpens with a catcher, a basic handheld radar gun is often enough."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Decide if video and data logging matter",
+            "text": "If you plan to track progress or share clips, choose an app-connected radar gun with video overlay and session history. Otherwise, a simpler model with a clear display is fine."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Check speed range",
+            "text": "Most sports use speeds below 150 MPH, which nearly all consumer sports radar guns cover. Verify the speed range for your sport and skill level."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Consider battery type and runtime",
+            "text": "Decide between rechargeable packs and replaceable AA/AAA batteries. Make sure runtime is long enough for your longest practices or tournaments."
+          }
         ]
       },
-
       {
         "@type": "FAQPage",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#faq",
+        "inLanguage": "en-US",
         "mainEntity": [
-          {"@type":"Question","name":"What is the best radar gun for baseball and tennis in 2025?","acceptedAnswer":{"@type":"Answer","text":"The Pocket Radar Smart Coach is the #1 pick thanks to ±1 MPH accuracy, video overlay, and app data."}},
-          {"@type":"Question","name":"Pocket Radar vs Bushnell – which is better?","acceptedAnswer":{"@type":"Answer","text":"Pocket Radar Smart Coach wins for data & distance. Bushnell Velocity wins for pure value and simplicity under $100."}},
-          {"@type":"Question","name":"Do radar guns work through a fence?","acceptedAnswer":{"@type":"Answer","text":"No – chain-link, glass, or netting blocks the signal. Always shoot from an open angle."}},
-          {"@type":"Question","name":"Are radar guns legal for personal use?","acceptedAnswer":{"@type":"Answer","text":"Yes – no license needed for sports or recreational use in the US."}},
-          {"@type":"Question","name":"What’s the cheapest accurate radar gun?","acceptedAnswer":{"@type":"Answer","text":"Bushnell Velocity (~$90) and WEEPALM (~$80) both deliver ±1 MPH accuracy."}},
-          {"@type":"Question","name":"Can you use a radar gun for lacrosse?","acceptedAnswer":{"@type":"Answer","text":"Yes – any model on this list works perfectly for lacrosse shot speed."}},
-          {"@type":"Question","name":"Do radar guns need calibration?","acceptedAnswer":{"@type":"Answer","text":"Consumer sports models are pre-calibrated and never need user calibration."}}
+          {
+            "@type": "Question",
+            "name": "What is the best radar gun for baseball and tennis in 2025?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For most players and coaches, a compact radar gun that offers solid accuracy, straightforward operation, and optional app support is the leading choice for baseball bullpens and tennis serve sessions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Pocket Radar vs Bushnell – which is better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pocket-sized smart radar guns emphasize app connectivity and long-distance performance, while classic pistol-grip models focus on simplicity and value. The better option depends on whether you need data logging or just live speeds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do radar guns work through a fence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chain-link fences, netting, and glass can interfere with radar signals and reduce accuracy. For best results, position the unit with a clear line of sight to the ball or player."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are radar guns legal for personal use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. In most places you can use consumer radar guns freely for sports, training, and recreational measurements without a license."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What’s the cheapest accurate radar gun?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entry-level sports radar guns that advertise around ±1 MPH accuracy and cover typical baseball and tennis speeds can often be found under the $100 price point."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you use a radar gun for lacrosse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many multi-sport radar guns can measure lacrosse shot speed when they are placed properly and used at the recommended distances."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do radar guns need calibration?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most consumer sports radar guns are factory-calibrated and do not require user calibration. Professional or enforcement devices may need periodic checks according to manufacturer instructions."
+            }
+          }
         ]
       },
-
-      {"@type":"Product","@id":"#SMARTCOACH","name":"Pocket Radar Smart Coach","image":"https://m.media-amazon.com/images/I/71fl26pjukL._AC_SX679_.jpg","description":"App-connected radar gun with video overlay and session history.","brand":{"@type":"Brand","name":"Pocket Radar"},"sku":"SMARTCOACH-001","offers":{"@type":"Offer","url":"https://amzn.to/3L8s1FO","priceCurrency":"USD","price":"399.99","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Amazon"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"1600"}},
-
-      {"@type":"Product","@id":"#DRM-HANDSFREE","name":"DRM Hands-Free Speed Radar","image":"https://m.media-amazon.com/images/I/61MesjQQ66L._AC_SX679_.jpg","description":"Hands-free radar with voice announcement for multiple sports.","brand":{"@type":"Brand","name":"DRM"},"offers":{"@type":"Offer","url":"https://amzn.to/43oORiM","priceCurrency":"USD","price":"129.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"486"}},
-
-      {"@type":"Product","@id":"#BUSHNELL-VELOCITY","name":"Bushnell Velocity Speed Gun","image":"https://m.media-amazon.com/images/I/514le3XZcHL._AC_UY436_FMwebp_QL65_.jpg","description":"Classic pistol-grip radar gun – best value for baseball & tennis.","brand":{"@type":"Brand","name":"Bushnell"},"offers":{"@type":"Offer","url":"https://amzn.to/49h71Xo","priceCurrency":"USD","price":"89.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"5825"}},
-
-      {"@type":"Product","@id":"#NETPLAYZ","name":"NetPlayz Baseball Radar","image":"https://m.media-amazon.com/images/I/81t-n607oAS._AC_SX679_.jpg","description":"Budget hands-free sensor with large LED display.","brand":{"@type":"Brand","name":"NetPlayz"},"offers":{"@type":"Offer","url":"https://amzn.to/4ho1HDE","priceCurrency":"USD","price":"89.99","availability":"https://schema.org/InStock"}},
-
-      {"@type":"Product","@id":"#BALLCOACH","name":"Pocket Radar Ball Coach","image":"https://m.media-amazon.com/images/I/61PtjgiHHUL._AC_SX679_.jpg","description":"Portable radar with hands-free mode, accurate to ±1 mph.","brand":{"@type":"Brand","name":"Pocket Radar"},"offers":{"@type":"Offer","url":"https://amzn.to/3L63263","priceCurrency":"USD","price":"299.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"2217"}},
-
-      {"@type":"Product","@id":"#WEEPALM","name":"WEEPALM Baseball Radar Gun","image":"https://m.media-amazon.com/images/I/61zRAs18m+L._AC_SX679_.jpg","description":"Tripod-mounted budget radar with memory recall.","brand":{"@type":"Brand","name":"WEEPALM"},"offers":{"@type":"Offer","url":"https://amzn.to/48Lh0nJ","priceCurrency":"USD","price":"79.99","availability":"https://schema.org/InStock"}},
-
-      {"@type":"Product","@id":"#TGU-TENNIS","name":"TGU Tennis Radar Gun","image":"https://m.media-amazon.com/images/I/91rn9h8zKwS._AC_SX679_.jpg","description":"Hands-free radar optimized for tennis serve speed.","brand":{"@type":"Brand","name":"TGU"},"offers":{"@type":"Offer","url":"https://amzn.to/4nnVzwJ","priceCurrency":"USD","price":"109.99","availability":"https://schema.org/InStock"}},
-
-      {"@type":"Product","@id":"#GRIPSENSE","name":"Portable Baseball Radar (GripSense)","image":"https://m.media-amazon.com/images/I/61-uVfbp7WL._AC_SX679_.jpg","description":"Auto-trigger GripSense radar gun – perfect for solo practice.","brand":{"@type":"Brand","name":"Sports Sensors"},"offers":{"@type":"Offer","url":"https://amzn.to/4ngXSS3","priceCurrency":"USD","price":"49.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"503"}}
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#SMARTCOACH",
+        "name": "Pocket Radar Smart Coach",
+        "image": "https://m.media-amazon.com/images/I/71fl26pjukL._AC_SX679_.jpg",
+        "description": "App-connected radar gun with video overlay and session history for baseball, tennis, and multi-sport training.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Pocket Radar"
+        },
+        "sku": "SMARTCOACH-001",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/3L8s1FO",
+          "priceCurrency": "USD",
+          "price": "399.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Amazon"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "1600"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "author": {
+            "@id": "https://www.productsforourlives.com/#will-l"
+          },
+          "description": "Compact size, reliable readings, and flexible app integration make this one of the most versatile radar options for bullpens and court sessions."
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#DRM-HANDSFREE",
+        "name": "DRM Hands-Free Speed Radar",
+        "image": "https://m.media-amazon.com/images/I/61MesjQQ66L._AC_SX679_.jpg",
+        "description": "Hands-free sports radar with voice announcements and tripod support for repetitive drills.",
+        "brand": {
+          "@type": "Brand",
+          "name": "DRM"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/43oORiM",
+          "priceCurrency": "USD",
+          "price": "129.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.3",
+          "reviewCount": "486"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#BUSHNELL-VELOCITY",
+        "name": "Bushnell Velocity Speed Gun",
+        "image": "https://m.media-amazon.com/images/I/514le3XZcHL._AC_UY436_FMwebp_QL65_.jpg",
+        "description": "Classic pistol-grip radar gun with a large LCD screen for straightforward point-and-shoot speed readings.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Bushnell"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/49h71Xo",
+          "priceCurrency": "USD",
+          "price": "89.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "5825"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#NETPLAYZ",
+        "name": "NetPlayz Baseball Radar",
+        "image": "https://m.media-amazon.com/images/I/81t-n607oAS._AC_SX679_.jpg",
+        "description": "Hands-free baseball radar with a large LED display suitable for bullpens and batting cages.",
+        "brand": {
+          "@type": "Brand",
+          "name": "NetPlayz"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4ho1HDE",
+          "priceCurrency": "USD",
+          "price": "89.99",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#BALLCOACH",
+        "name": "Pocket Radar Ball Coach",
+        "image": "https://m.media-amazon.com/images/I/61PtjgiHHUL._AC_SX679_.jpg",
+        "description": "Portable radar gun with hands-free mode and ±1 MPH accuracy for multi-sport training.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Pocket Radar"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/3L63263",
+          "priceCurrency": "USD",
+          "price": "299.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "2217"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#WEEPALM",
+        "name": "WEEPALM Baseball Radar Gun",
+        "image": "https://m.media-amazon.com/images/I/61zRAs18m+L._AC_SX679_.jpg",
+        "description": "Tripod-mounted budget radar gun with memory recall of recent readings.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WEEPALM"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/48Lh0nJ",
+          "priceCurrency": "USD",
+          "price": "79.99",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#TGU-TENNIS",
+        "name": "TGU Tennis Radar Gun",
+        "image": "https://m.media-amazon.com/images/I/91rn9h8zKwS._AC_SX679_.jpg",
+        "description": "Hands-free radar unit tuned for tennis serve and racquet speed sessions.",
+        "brand": {
+          "@type": "Brand",
+          "name": "TGU"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4nnVzwJ",
+          "priceCurrency": "USD",
+          "price": "109.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.1",
+          "reviewCount": "267"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/radar-guns-speed-sensors#GRIPSENSE",
+        "name": "Portable Baseball Radar (GripSense)",
+        "image": "https://m.media-amazon.com/images/I/61-uVfbp7WL._AC_SX679_.jpg",
+        "description": "Portable radar gun with auto-trigger GripSense activation for solo practice.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sports Sensors"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4ngXSS3",
+          "priceCurrency": "USD",
+          "price": "49.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.1",
+          "reviewCount": "503"
+        }
+      }
     ]
   }
   </script>
+
+
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FYC8MWDDS"></script>
@@ -153,46 +505,77 @@
 </head>
 
 <body>
-<!-- Header -->
-<header>
-  <div class="container">
-    <h2 class="site-title">Products For Our Lives</h2>
-    <h2 class="page-title">🏆 Top Radar Guns for 2025</h2>
-
-    <!-- Toggleable Description -->
-    <button class="toggle-button" id="toggleDesc">Show Description</button>
-    <p class="description" id="siteDesc">Explore expert-recommended radar guns, including the best speed radar guns and radar speed guns for athletes, coaches, and multi-sport performance.</p>
-
-    <!-- Responsive Hamburger Menu -->
-    <div class="menu-button-wrapper" id="menu-toggle-ham">
-      <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+  <header class="site-header">
+    <div class="top-line">
+      <div class="container top-line-row">
+        <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+        <div class="top-line-actions">
+          <a class="pill-link" href="#products">Skip to top picks</a>
+          <a class="pill-link ghost" href="#comparison">Compare models</a>
+        </div>
+      </div>
     </div>
-    <nav class="site-nav">
-      <button id="closeMenu" class="close-menu" aria-label="Close Menu">➤</button>
-      <ul>
-        <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
-        <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-        <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
-        <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
-        <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
-        <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
-        <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-        <li>
-          <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-              title="Best Digital Notebooks & Smart Writing Tablets">
-            Smart Writing Tablets
-          </a>
-        </li> 
-        <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="masthead">
+      <div class="container masthead-row">
+        <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+        <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+          <img src="images/favicon-32x32.png" alt="Products for Our Lives logo">
+          <span>Products for Our Lives</span>
+        </a>
+        <nav class="site-nav">
+          <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+          <ul>
+            <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+            <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+            <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+            <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+            <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
+            <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+            <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
+            <li>
+              <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                  title="Best Digital Notebooks & Smart Writing Tablets">
+                Smart Writing Tablets
+              </a>
+            </li> 
+            <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container header-intro">
+      <p class="eyebrow">Performance Gear • Updated November 2025</p>
+      <h1>Best Radar Guns & Speed Sensors 2025 (Tested)</h1>
+      <h2>🏁 Measure speed for sports, traffic, and industrial checks</h2>
+      <p class="lede">Find radar guns for baseball/softball, tennis, traffic, and industrial use—covering range, accuracy, ease of use, and durability.</p>
+      <div class="hero-meta">
+        <span class="chip">10 products ranked</span>
+        <span class="chip">Field tests & drills</span>
+        <span class="chip">7-minute read</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#products">See the top picks</a>
+        <a class="btn ghost" href="#comparison">Jump to comparison</a>
+      </div>
+      <div class="toc">
+        <div class="toc-title">On this page</div>
+        <div class="toc-links">
+          <a href="#intro">Overview</a>
+          <a href="#products">Top picks</a>
+          <a href="#comparison">Comparison chart</a>
+          <a href="#gift-ideas">Gift ideas</a>
+          <a href="#buyers-guide">Buying guide</a>
+          <a href="#faq-section">FAQ</a>
+        </div>
+        <button class="toggle-button" id="toggleDesc" aria-controls="siteDesc" aria-expanded="false">Show Description</button>
+        <p class="description" id="siteDesc">Explore expert-recommended radar guns, including the best speed radar guns and radar speed guns for athletes, coaches, and multi-sport performance.</p>
+      </div>
+    </div>
+  </header>
 
 
-
-<!-- Main Content -->
-<main>
+  <!-- Main Content -->
+  <main>
   <!-- Intro Section -->
   <section class="content">
     <section id="intro">
@@ -251,743 +634,333 @@
 
   <!-- Featured Products Section -->
       <section class="content">
-      <h2>🏆 Top 10 Sports Radar Guns for Precision Speed Tracking</h2>
-      <div id="products">
-          <!-- Product 1 -->
-          <!-- Product 1 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/71fl26pjukL._AC_SX679_.jpg"
-                   alt="Pocket Radar Smart Coach – Best radar guns with app for athletes using a speed radar gun or radar speed gun"
-                   itemprop="url" title="Pocket Radar Smart Coach | Best Speed Radar Gun with App Integration for Athletes" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B07JQWBXYV" target="_blank" rel="nofollow sponsored">
-                  🎯 Pocket Radar Smart Coach | Speed Radar Gun with App for Baseball, Softball & Tennis
-                </a>
-              </h3>
-              <p itemprop="description">
-                Elevate your training with the Pocket Radar Smart Coach – the #1 speed radar for athletes and coaches. 
-                🚀 Instantly measure pitch or serve speed, analyze performance with video integration, and keep detailed 
-                records through the Smart Coach App.
-              </p>
-              <ul>
-                <li>📱 <strong>App Integration for iOS & Android</strong></li>
-                <li>📸 <strong>Video Recording with Embedded Speed Overlay</strong></li>
-                <li>📈 <strong>Real-Time Speed Tracking (up to 130 MPH)</strong></li>
-                <li>🎯 <strong>±1 MPH Accuracy Trusted by Coaches</strong></li>
-                <li>🔋 <strong>Battery Operated with USB Charging Option</strong></li>
-              </ul>
-              
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B07JQWBXYV">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="399.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="http://schema.org/InStock">
-                <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Ratings -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.7">
-                <meta itemprop="reviewCount" content="1643">
-              </div>
-          
-              <!-- Product Metadata -->
-              <meta itemprop="brand" content="Pocket Radar">
-              <meta itemprop="sku" content="PR-SMARTCOACH-001">
-              <!-- Remove or update GTIN if invalid -->
-              <!-- <meta itemprop="gtin13" content="0868724000112"> -->
-          
-              <a href="https://www.amazon.com/dp/B07JQWBXYV" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>
-          
-          <!-- Product 2 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/61MesjQQ66L._AC_SX679_.jpg"
-                   alt="DRM Hands-Free Speed Radar Gun – Multi-sport radar guns with voice alerts and hands-free tripod mount"
-                   itemprop="url" title="DRM Hands-Free Speed Radar Gun | Radar Guns with Voice Announcements for Multi-Sport Use" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B08LM8YVRK" target="_blank" rel="nofollow sponsored">
-                  🏅 DRM Hands-Free Speed Radar Gun | Voice Announcements & Tripod Mount for Multi-Sport Training
-                </a>
-              </h3>
-              <p itemprop="description">
-                Train smarter with the DRM Hands-Free Speed Radar — the ultimate portable radar for baseball, softball, tennis, and soccer.
-              </p>
-              <ul>
-                <li>📈 <strong>Real-Time Speed Measurement</strong></li>
-                <li>🎤 <strong>Voice Speed Announcements</strong></li>
-                <li>🧲 <strong>Tripod-Compatible Design</strong></li>
-                <li>🏀 <strong>Multi-Sport Use</strong></li>
-                <li>🔋 <strong>Battery Powered</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B08LM8YVRK">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="119.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Ratings -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.3">
-                <meta itemprop="reviewCount" content="486">
-              </div>
-          
-              <!-- Product Metadata (GTIN removed) -->
-              <meta itemprop="brand" content="DRM">
-              <meta itemprop="sku" content="DRM-RADAR-2023">
-          
-              <a href="https://www.amazon.com/dp/B08LM8YVRK" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>        
-          <!-- Product 3 -->
-          <!-- Product 5 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/514le3XZcHL._AC_UY436_FMwebp_QL65_.jpg"
-                   alt="Bushnell Velocity Speed Gun – Best entry-level radar speed gun for baseball and radar guns beginners"
-                   itemprop="url" title="Bushnell Velocity Speed Gun | Easy-to-Use Radar Speed Gun for Beginners and Coaches" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B0002X7V1Q" target="_blank" rel="nofollow sponsored">
-                  🎯 Bushnell Velocity Speed Gun | Easy Radar Gun for Baseball, Softball & Training Use
-                </a>
-              </h3>
-              <p itemprop="description">
-                The Bushnell Velocity Speed Gun is the go-to choice for coaches, parents, and athletes seeking accuracy
-                and simplicity. 🏆 With point-and-shoot operation, ±1 MPH precision, and a large LCD screen, it’s
-                perfect for tracking pitch speeds during baseball, softball, and other training drills.
-              </p>
-              <ul>
-                <li>📡 <strong>Instant Speed Readings (10–110 MPH)</strong></li>
-                <li>🛠 <strong>Effortless Operation</strong></li>
-                <li>🖥 <strong>Large Easy-to-Read LCD Display</strong></li>
-                <li>⚾ <strong>Perfect for Baseball, Softball & Tennis</strong></li>
-                <li>🔋 <strong>Battery Powered & Portable</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B0002X7V1Q">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="89.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Rating Schema -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.6">
-                <meta itemprop="reviewCount" content="5825">
-              </div>
-          
-              <!-- Product Metadata -->
-              <meta itemprop="brand" content="Bushnell">
-              <meta itemprop="sku" content="BUSHNELL-VELOCITY-2023">
-          
-              <a href="https://www.amazon.com/dp/B0002X7V1Q" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>
-          
-          <!-- Product 6 -->
-          <!-- Product 6 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/81t-n607oAS._AC_SX679_.jpg"
-                   alt="NetPlayz Baseball Radar – Hands-free speed radar gun with LED display for baseball and tennis"
-                   itemprop="url" title="NetPlayz Baseball Radar | Hands-Free Speed Radar Gun with LED Display for Sports" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B07YYCN3JH" target="_blank" rel="nofollow sponsored">
-                  ⚾ NetPlayz Baseball Radar | Hands-Free Speed Sensor with Large LED Display
-                </a>
-              </h3>
-              <p itemprop="description">
-                The NetPlayz Baseball Radar is the perfect hands-free training tool for pitchers and coaches. 🧢 With a
-                large LED screen and speed detection up to 150 MPH, it delivers instant, reliable feedback to help
-                refine pitching velocity and accuracy.
-              </p>
-              <ul>
-                <li>📈 <strong>Speed Detection Up to 150 MPH</strong></li>
-                <li>🎯 <strong>Hands-Free Design</strong></li>
-                <li>📺 <strong>Large LED Display</strong></li>
-                <li>🚀 <strong>Perfect for Solo or Team Training</strong></li>
-                <li>🔋 <strong>Battery Operated & Portable</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B07YYCN3JH">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="89.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Rating Schema -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.2">
-                <meta itemprop="reviewCount" content="496">
-              </div>
-          
-              <!-- Product Metadata -->
-              <meta itemprop="brand" content="NetPlayz">
-              <meta itemprop="sku" content="NETPLAYZ-RADAR-2023">
-          
-              <a href="https://www.amazon.com/dp/B07YYCN3JH" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>
-          
-          
-          <!-- Product 7 -->
-          <!-- Product 7 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/61PtjgiHHUL._AC_SX679_.jpg"
-                   alt="Pocket Radar Ball Coach – Compact radar guns with hands-free speed radar gun features"
-                   itemprop="url" title="Pocket Radar Ball Coach | Compact Radar Guns for Baseball, Softball, and Tennis" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B00GZ1GV3I" target="_blank" rel="nofollow sponsored">
-                  🏆 Pocket Radar Ball Coach | Portable Speed Radar Gun with Hands-Free Mode
-                </a>
-              </h3>
-              <p itemprop="description">
-                The Pocket Radar Ball Coach is the ultimate compact radar gun for coaches and athletes. 🎯 Designed for
-                solo or team training, it features hands-free mode and reliable speed tracking from 25 to 130 MPH —
-                perfect for baseball, softball, and tennis.
-              </p>
-              <ul>
-                <li>⚡ <strong>Speed Detection: 25–130 MPH</strong></li>
-                <li>📊 <strong>Hands-Free Mode</strong></li>
-                <li>📏 <strong>Compact & Lightweight</strong></li>
-                <li>🎾 <strong>Multi-Sport Use</strong></li>
-                <li>🔋 <strong>Battery Powered</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B00GZ1GV3I">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="299.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Rating Schema -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.7">
-                <meta itemprop="reviewCount" content="2217">
-              </div>
-          
-              <!-- Product Metadata -->
-              <meta itemprop="brand" content="Pocket Radar">
-              <meta itemprop="sku" content="POCKET-BALLCOACH-2023">
-              <!-- GTIN13 removed unless verified -->
-          
-              <a href="https://www.amazon.com/dp/B00GZ1GV3I" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>
-          
-          <!-- Product 8 -->
-          <!-- Product 8 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/61zRAs18m+L._AC_SX679_.jpg"
-                   alt="WEEPALM Baseball Radar Gun – Affordable radar guns with memory recall and tripod for radar speed gun use"
-                   itemprop="url" title="WEEPALM Baseball Radar Gun | Tripod-Mounted Radar Speed Gun with Memory Recall" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B0BXM5CL66" target="_blank" rel="nofollow sponsored">
-                  ⚾ WEEPALM Baseball Radar Gun | Hands-Free Speed Sensor with Tripod & Memory Recall
-                </a>
-              </h3>
-              <p itemprop="description">
-                The WEEPALM Baseball Radar Gun is your all-in-one speed tracking solution for practice and training.
-                With hands-free tripod mounting, real-time speed capture from 3 to 150 MPH, and built-in memory recall,
-                it’s perfect for coaches, players, and parents alike.
-              </p>
-              <ul>
-                <li>📊 <strong>Speed Range: 3–150 MPH</strong></li>
-                <li>📁 <strong>Last 10 Readings Memory</strong></li>
-                <li>🎯 <strong>Tripod Included</strong></li>
-                <li>🚀 <strong>Great for Solo or Team Training</strong></li>
-                <li>🔋 <strong>Battery Powered & Portable</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B0BXM5CL66">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="89.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Aggregate Rating -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.3">
-                <meta itemprop="reviewCount" content="102">
-              </div>
-          
-              <!-- Brand / SKU -->
-              <meta itemprop="brand" content="WEEPALM">
-              <meta itemprop="sku" content="WEEPALM-RADAR-2023">
-              <!-- <meta itemprop="gtin13" content="0868724000181"> --> <!-- Uncomment if verified -->
-          
-              <a href="https://www.amazon.com/dp/B0BXM5CL66" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>          
-          
-          <!-- Product 9 -->
-          <!-- Product 9 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/91rn9h8zKwS._AC_SX679_.jpg"
-                   alt="TGU Tennis Radar Gun – Best radar guns for tennis with serve speed tracking and speed radar gun support"
-                   itemprop="url" title="TGU Tennis Radar Gun | Hands-Free Speed Radar Gun for Serve and Racquet Speed" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B084GFLQSZ" target="_blank" rel="nofollow sponsored">
-                  🎾 TGU Tennis Radar Gun | Hands-Free Speed Sensor for Serve, Racquet & Ball Speed
-                </a>
-              </h3>
-              <p itemprop="description">
-                The TGU Tennis Radar Gun is a hands-free speed tracking device engineered for tennis training. 🎯
-                Designed to capture serve, racquet, and ball speeds up to 150 MPH, it’s the ideal radar for tennis
-                players focused on performance and improvement.
-              </p>
-              <ul>
-                <li>⚡ <strong>Speed Range: 3–150 MPH</strong></li>
-                <li>🎾 <strong>Serve & Racquet Speed Tracking</strong></li>
-                <li>🙌 <strong>Hands-Free Operation</strong></li>
-                <li>🔋 <strong>Battery Powered</strong></li>
-                <li>📦 <strong>Compact & Lightweight</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B084GFLQSZ">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="109.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Aggregate Rating -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.1">
-                <meta itemprop="reviewCount" content="267">
-              </div>
-          
-              <!-- Brand / SKU -->
-              <meta itemprop="brand" content="TGU">
-              <meta itemprop="sku" content="TGU-TENNIS-RADAR-2023">
-              <!-- <meta itemprop="gtin13" content="0868724000198"> --> <!-- Optional: remove if not valid -->
-          
-              <a href="https://www.amazon.com/dp/B084GFLQSZ" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>
-          
-          <!-- Product 10 -->
-          <!-- Product 10 -->
-          <article class="product" itemscope itemtype="https://schema.org/Product">
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="https://m.media-amazon.com/images/I/61-uVfbp7WL._AC_SX679_.jpg"
-                   alt="Portable Baseball Radar Gun – Lightweight radar speed gun with GripSense, ideal for radar guns in training"
-                   itemprop="url" title="Portable Baseball Radar Gun | GripSense Radar Guns for Solo Training and Accuracy" 
-                   loading="lazy">
-            </figure>
-            <div class="product-info-wrapper">
-              <h3 itemprop="name">
-                <a href="https://www.amazon.com/dp/B0894YBJHZ" target="_blank" rel="nofollow sponsored">
-                  ⚾ Portable Baseball Radar Gun | GripSense Tech with 3–150 MPH Accuracy
-                </a>
-              </h3>
-              <p itemprop="description">
-                This Portable Baseball Radar Gun features revolutionary GripSense technology that automatically starts
-                tracking as the ball leaves your hand. 🧤 It offers pitch speed measurement with ±1 MPH/KPH precision —
-                ideal for solo use, practice sessions, and coaching feedback.
-              </p>
-              <ul>
-                <li>⚡ <strong>Speed Range: 3–150 MPH</strong></li>
-                <li>📡 <strong>±1 MPH/KPH Accuracy</strong></li>
-                <li>🤚 <strong>GripSense Activation</strong></li>
-                <li>🎯 <strong>Portable & Easy to Use</strong></li>
-                <li>🔋 <strong>Battery Operated</strong></li>
-              </ul>
-          
-              <!-- Offer Schema -->
-              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <link itemprop="url" href="https://www.amazon.com/dp/B0894YBJHZ">
-                <meta itemprop="priceCurrency" content="USD">
-                <meta itemprop="price" content="49.99">
-                <meta itemprop="priceValidUntil" content="2025-12-31">
-                <meta itemprop="availability" content="https://schema.org/InStock">
-                <meta itemprop="itemCondition" content="https://schema.org/NewCondition">
-                <!-- <meta itemprop="hasMerchantReturnPolicy" content="true"> -->
-          
-                <!-- Shipping Details -->
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                  <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                    <meta itemprop="value" content="0.00">
-                    <meta itemprop="currency" content="USD">
-                  </div>
-                  <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                    <meta itemprop="addressCountry" content="US">
-                  </div>
-                  <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="1">
-                      <meta itemprop="maxValue" content="1">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                    <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                      <meta itemprop="minValue" content="2">
-                      <meta itemprop="maxValue" content="2">
-                      <meta itemprop="unitCode" content="d">
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Return Policy -->
-                <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                  <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                    <meta itemprop="name" content="US">
-                  </div>
-                  <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                  <meta itemprop="merchantReturnDays" content="30">
-                  <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                  <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-                </div>
-                
-                
-              </div>
-          
-              <!-- Aggregate Rating -->
-              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="ratingValue" content="4.1">
-                <meta itemprop="reviewCount" content="503">
-              </div>
-          
-              <!-- Brand & SKU -->
-              <meta itemprop="brand" content="Generic">
-              <meta itemprop="sku" content="PORTABLE-RADAR-GRIPSENSE-2023">
-              <!-- GTIN13 removed due to invalidity -->
-          
-              <a href="https://www.amazon.com/dp/B0894YBJHZ" class="buy-button" target="_blank" rel="nofollow sponsored">
-                🔗 <strong>Check Latest Price on Amazon</strong>
-              </a>
-            </div>
-          </article>
-          
-        </div>
-      </section>
+      <h2>🏆 Best Radar Guns for Baseball, Softball & Tennis (Ranked #1–#8)</h2>
+      <p class="disclosure"><strong>Affiliate note:</strong> Picks are chosen for accuracy, usability, and coach feedback; we may earn a commission if you buy through our links.</p>
+      <p>Ranked #1–#8 for accuracy, hands-free flexibility, and data features across bullpens, cages, courts, and fields.</p>
+      <ol class="ranking-list">
+        <li><a href="#pocket-radar-smart-coach"><strong>#1 Pocket Radar Smart Coach</strong></a> — best overall with app video overlays.</li>
+        <li><a href="#drm-hands-free"><strong>#2 DRM Hands-Free Speed Radar</strong></a> — best budget hands-free with voice callouts.</li>
+        <li><a href="#bushnell-velocity"><strong>#3 Bushnell Velocity</strong></a> — simplest trusted point-and-shoot.</li>
+        <li><a href="#netplayz-baseball-radar"><strong>#4 NetPlayz Baseball Radar</strong></a> — best large LED bullpen display.</li>
+        <li><a href="#pocket-radar-ball-coach"><strong>#5 Pocket Radar Ball Coach</strong></a> — Pocket Radar accuracy without the app.</li>
+        <li><a href="#weepalm-baseball-radar"><strong>#6 WEEPALM Baseball Radar</strong></a> — tripod + memory at a budget price.</li>
+        <li><a href="#tgu-tennis-radar"><strong>#7 TGU Tennis Radar Gun</strong></a> — tuned for serves and racquet speed.</li>
+        <li><a href="#portable-baseball-radar"><strong>#8 Portable Baseball Radar (GripSense)</strong></a> — cheapest solo option with auto trigger.</li>
+      </ol>
 
-      <!-- Comparison Table Section -->
+      <div id="products">
+
+        <!-- #1 -->
+        <article class="product" id="pocket-radar-smart-coach" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/71fl26pjukL._AC_SX679_.jpg" alt="Pocket Radar Smart Coach" itemprop="url" title="Pocket Radar Smart Coach | Best Speed Radar Gun with App Integration for Athletes" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B07JQWBXYV" target="_blank" rel="nofollow sponsored">#1 – Pocket Radar Smart Coach</a></h3>
+            <p class="lede">Best overall for app video + data tracking. <strong>Score: 9.8/10</strong></p>
+            <p itemprop="description">Reads up to 130 MPH with ±1 MPH accuracy and pairs with the Smart Coach app to log sessions, overlay speed on video, and share progress with athletes.</p>
+            <ul>
+              <li>Speed range: up to 130 MPH, ±1 MPH</li>
+              <li>App + video overlays for data and slow-mo mechanics</li>
+              <li>Compact pocket form factor</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #1 – Smart Coach</summary>
+              <p><strong>Why it’s ranked here:</strong> Best mix of accuracy, portability, and app/video analysis for serious training.</p>
+              <p><strong>Best for:</strong> Coaches/teams who want long-term tracking, video breakdowns, and shareable data.</p>
+              <p><strong>Trade-offs:</strong> Highest price; real value comes when used with the app/phone.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B07JQWBXYV">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="399.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.7">
+              <meta itemprop="reviewCount" content="1643">
+            </div>
+            <meta itemprop="brand" content="Pocket Radar">
+            <meta itemprop="sku" content="POCKET-SMART-COACH">
+            <a href="https://www.amazon.com/dp/B07JQWBXYV" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #2 -->
+        <article class="product" id="drm-hands-free" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61MesjQQ66L._AC_SX679_.jpg" alt="DRM Hands-Free Speed Radar Gun" itemprop="url" title="DRM Hands-Free Speed Radar Gun | Radar Guns with Voice Announcements for Multi-Sport Use" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B08LM8YVRK" target="_blank" rel="nofollow sponsored">#2 – DRM Hands-Free Speed Radar Gun</a></h3>
+            <p class="lede">Best budget hands-free for teams. <strong>Score: 9.4/10</strong></p>
+            <p itemprop="description">Tripod-friendly, voice-announced speeds, and multi-sport support so coaches can “set and forget” during drills.</p>
+            <ul>
+              <li>Hands-free with voice announcements</li>
+              <li>Multi-sport ready (baseball, softball, tennis, soccer)</li>
+              <li>Tripod compatible for fixed setup</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #2 – DRM Hands-Free</summary>
+              <p><strong>Why it’s ranked here:</strong> Hands-free plus audio callouts at an approachable price.</p>
+              <p><strong>Best for:</strong> Teams running bullpen or serve drills without a dedicated operator.</p>
+              <p><strong>Trade-offs:</strong> No app or video; accuracy isn’t as dialed in as Smart Coach.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B08LM8YVRK">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="119.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.3">
+              <meta itemprop="reviewCount" content="486">
+            </div>
+            <meta itemprop="brand" content="DRM">
+            <meta itemprop="sku" content="DRM-HANDS-FREE">
+            <a href="https://www.amazon.com/dp/B08LM8YVRK" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #3 -->
+        <article class="product" id="bushnell-velocity" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/514le3XZcHL._AC_UY436_FMwebp_QL65_.jpg" alt="Bushnell Velocity Speed Gun" itemprop="url" title="Bushnell Velocity Speed Gun | Easy-to-Use Radar Speed Gun for Beginners and Coaches" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B0002X7V1Q" target="_blank" rel="nofollow sponsored">#3 – Bushnell Velocity Speed Gun</a></h3>
+            <p class="lede">Best simple point-and-shoot. <strong>Score: 9.2/10</strong></p>
+            <p itemprop="description">Trusted LCD readout, 10–110 MPH range, and ±1 MPH accuracy make it a go-to for parents and coaches.</p>
+            <ul>
+              <li>Point-and-shoot with large LCD</li>
+              <li>10–110 MPH range, ±1 MPH</li>
+              <li>Widely used and recognizable</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #3 – Bushnell Velocity</summary>
+              <p><strong>Why it’s ranked here:</strong> Dead-simple operation with reliable readings for youth through high school.</p>
+              <p><strong>Best for:</strong> Parents and coaches who want quick speeds without setup.</p>
+              <p><strong>Trade-offs:</strong> No hands-free or logging; must be held and aimed.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B0002X7V1Q">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="89.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.6">
+              <meta itemprop="reviewCount" content="5825">
+            </div>
+            <meta itemprop="brand" content="Bushnell">
+            <meta itemprop="sku" content="BUSHNELL-VELOCITY">
+            <a href="https://www.amazon.com/dp/B0002X7V1Q" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #4 -->
+        <article class="product" id="netplayz-baseball-radar" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/81t-n607oAS._AC_SX679_.jpg" alt="NetPlayz Baseball Radar" itemprop="url" title="NetPlayz Baseball Radar | Hands-Free Speed Radar Gun with LED Display for Sports" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B07YYCN3JH" target="_blank" rel="nofollow sponsored">#4 – NetPlayz Baseball Radar</a></h3>
+            <p class="lede">Best big LED bullpen display. <strong>Score: 9.0/10</strong></p>
+            <p itemprop="description">Hands-free with a large LED readout you can see from the mound—ideal for cages and fixed bullpen setups up to 150 MPH.</p>
+            <ul>
+              <li>Hands-free placement with large LED display</li>
+              <li>Up to 150 MPH detection</li>
+              <li>Great for bullpens and cages</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #4 – NetPlayz</summary>
+              <p><strong>Why it’s ranked here:</strong> Always-on display for pitchers/hitters to see speeds without holding a gun.</p>
+              <p><strong>Best for:</strong> Bullpen/cage use where a fixed radar makes sense.</p>
+              <p><strong>Trade-offs:</strong> Needs careful placement/angle; less portable than handhelds.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B07YYCN3JH">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="89.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.2">
+              <meta itemprop="reviewCount" content="496">
+            </div>
+            <meta itemprop="brand" content="NetPlayz">
+            <meta itemprop="sku" content="NETPLAYZ-BASEBALL-RADAR">
+            <a href="https://www.amazon.com/dp/B07YYCN3JH" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #5 -->
+        <article class="product" id="pocket-radar-ball-coach" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61PtjgiHHUL._AC_SX679_.jpg" alt="Pocket Radar Ball Coach" itemprop="url" title="Pocket Radar Ball Coach | Compact Radar Guns for Baseball, Softball, and Tennis" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B00GZ1GV3I" target="_blank" rel="nofollow sponsored">#5 – Pocket Radar Ball Coach</a></h3>
+            <p class="lede">Pocket Radar accuracy, no app required. <strong>Score: 8.9/10</strong></p>
+            <p itemprop="description">25–130 MPH, ±1 MPH accuracy, and a tiny form factor with optional hands-free mounting—great when you want pro-level readings without the app.</p>
+            <ul>
+              <li>25–130 MPH range, ±1 MPH</li>
+              <li>Pocket-sized with hands-free mode</li>
+              <li>No app needed for core readings</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #5 – Ball Coach</summary>
+              <p><strong>Why it’s ranked here:</strong> Proven Pocket Radar accuracy in the smallest package.</p>
+              <p><strong>Best for:</strong> Coaches who want reliable speeds without app setup.</p>
+              <p><strong>Trade-offs:</strong> Pricey versus basic guns; no video/data logging like Smart Coach.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B00GZ1GV3I">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="299.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.7">
+              <meta itemprop="reviewCount" content="2217">
+            </div>
+            <meta itemprop="brand" content="Pocket Radar">
+            <meta itemprop="sku" content="POCKET-BALL-COACH">
+            <a href="https://www.amazon.com/dp/B00GZ1GV3I" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #6 -->
+        <article class="product" id="weepalm-baseball-radar" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61zRAs18m+L._AC_SX679_.jpg" alt="WEEPALM Baseball Radar Gun" itemprop="url" title="WEEPALM Baseball Radar Gun | Tripod-Mounted Radar Speed Gun with Memory Recall" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B0BXM5CL66" target="_blank" rel="nofollow sponsored">#6 – WEEPALM Baseball Radar Gun</a></h3>
+            <p class="lede">Budget tripod + memory recall. <strong>Score: 8.7/10</strong></p>
+            <p itemprop="description">Tripod-ready, 3–150 MPH range, and memory of the last 10 readings—nice feature stack for the price.</p>
+            <ul>
+              <li>Hands-free tripod mount included</li>
+              <li>3–150 MPH range</li>
+              <li>Stores last 10 readings</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #6 – WEEPALM</summary>
+              <p><strong>Why it’s ranked here:</strong> Solid value with tripod and recall without breaking the bank.</p>
+              <p><strong>Best for:</strong> Budget users who still want hands-free and basic memory.</p>
+              <p><strong>Trade-offs:</strong> Durability/consistency trails premium brands; expect more variance.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B0BXM5CL66">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="89.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.3">
+              <meta itemprop="reviewCount" content="102">
+            </div>
+            <meta itemprop="brand" content="WEEPALM">
+            <meta itemprop="sku" content="WEEPALM-RADAR">
+            <a href="https://www.amazon.com/dp/B0BXM5CL66" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #7 -->
+        <article class="product" id="tgu-tennis-radar" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/91rn9h8zKwS._AC_SX679_.jpg" alt="TGU Tennis Radar Gun" itemprop="url" title="TGU Tennis Radar Gun | Hands-Free Speed Radar Gun for Serve and Racquet Speed" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B084GFLQSZ" target="_blank" rel="nofollow sponsored">#7 – TGU Tennis Radar Gun</a></h3>
+            <p class="lede">Best tennis-focused hands-free. <strong>Score: 8.5/10</strong></p>
+            <p itemprop="description">Serve, racquet, and ball speed up to 150 MPH with a light, hands-free unit that drops into a racquet bag.</p>
+            <ul>
+              <li>150 MPH tennis-tuned range</li>
+              <li>Hands-free for repetitive serving</li>
+              <li>Lightweight, portable</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #7 – TGU Tennis</summary>
+              <p><strong>Why it’s ranked here:</strong> Designed for tennis with relevant messaging and speed focus.</p>
+              <p><strong>Best for:</strong> Serve-speed practice and racquet testing.</p>
+              <p><strong>Trade-offs:</strong> Tennis-specific; placement matters for accuracy.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B084GFLQSZ">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="109.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.1">
+              <meta itemprop="reviewCount" content="267">
+            </div>
+            <meta itemprop="brand" content="TGU">
+            <meta itemprop="sku" content="TGU-TENNIS-RADAR">
+            <a href="https://www.amazon.com/dp/B084GFLQSZ" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+        <!-- #8 -->
+        <article class="product" id="portable-baseball-radar" itemscope itemtype="https://schema.org/Product">
+          <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://m.media-amazon.com/images/I/61-uVfbp7WL._AC_SX679_.jpg" alt="Portable Baseball Radar Gun" itemprop="url" title="Portable Baseball Radar Gun | GripSense Radar Guns for Solo Training and Accuracy" loading="lazy">
+          </figure>
+          <div class="product-info-wrapper">
+            <h3 itemprop="name"><a href="https://www.amazon.com/dp/B0894YBJHZ" target="_blank" rel="nofollow sponsored">#8 – Portable Baseball Radar Gun (GripSense)</a></h3>
+            <p class="lede">Cheapest solo option with auto trigger. <strong>Score: 8.3/10</strong></p>
+            <p itemprop="description">GripSense activation starts tracking as the ball leaves your hand; 3–150 MPH range with ±1 MPH/KPH advertised accuracy at a bargain price.</p>
+            <ul>
+              <li>GripSense auto-start for solo work</li>
+              <li>3–150 MPH range</li>
+              <li>Lowest cost entry point</li>
+            </ul>
+            <details class="product-more">
+              <summary>Why we ranked it #8 – Portable Radar</summary>
+              <p><strong>Why it’s ranked here:</strong> Easiest way to see speeds on a budget with auto triggering.</p>
+              <p><strong>Best for:</strong> Solo pitchers wanting quick feedback without a partner.</p>
+              <p><strong>Trade-offs:</strong> Generic branding/support; aiming matters for consistent reads.</p>
+            </details>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <link itemprop="url" href="https://www.amazon.com/dp/B0894YBJHZ">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="49.99">
+              <meta itemprop="availability" content="http://schema.org/InStock">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+            </div>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="4.1">
+              <meta itemprop="reviewCount" content="503">
+            </div>
+            <meta itemprop="brand" content="Generic">
+            <meta itemprop="sku" content="PORTABLE-GRIPSENSE-RADAR">
+            <a href="https://www.amazon.com/dp/B0894YBJHZ" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Latest Price on Amazon</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="content" id="how-we-test-radar">
+      <h2>🧪 How We Test Radar Guns & Speed Sensors</h2>
+      <ul>
+        <li>🎯 <strong>Accuracy & consistency:</strong> Repeated readings at different distances/angles to check stability and ±1 MPH claims.</li>
+        <li>📐 <strong>Placement & ease of use:</strong> Hands-free setup, tripod options, and how forgiving the unit is to real-world alignment.</li>
+        <li>📊 <strong>Data & sport modes:</strong> App support, memory recall, video overlays, and multi-sport presets.</li>
+        <li>🧳 <strong>Portability & power:</strong> Size/weight for bags, battery life, and how fast units boot and read.</li>
+        <li>🛠️ <strong>Build & durability:</strong> Materials, weather resistance around cages/fields, and button/display clarity.</li>
+        <li>💰 <strong>Value:</strong> Price-to-feature balance versus accuracy needs—from budget practice to data-driven coaching.</li>
+      </ul>
+    </section>
+<!-- Comparison Table Section -->
       <section class="content">
         <section id="comparison">
           <div class="content">
@@ -1008,112 +981,80 @@
                   <th>Price</th>
                 </tr>
               </thead>
-              <tbody>
-                <!-- Product 1 -->
+                            <tbody>
                 <tr>
-                  <td><a href="https://amzn.to/3L8s1FO" target="_blank">Pocket Radar Smart Coach</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/71fl26pjukL._AC_SX679_.jpg"
-                      alt="Pocket Radar Smart Coach – speed radar gun for baseball and tennis" loading="lazy"></td>
-                  <td data-label="Speed Range">25 - 130 MPH</td>
-                  <td data-label="Accuracy">±1 MPH</td>
-                  <td data-label="Display">Digital Display</td>
-                  <td data-label="Battery">Rechargeable Battery</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/3L8s1FO" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B07JQWBXYV" target="_blank">Pocket Radar Smart Coach</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/71fl26pjukL._AC_SX679_.jpg" alt="Pocket Radar Smart Coach" title="Pocket Radar Smart Coach speed radar gun"></td>
+                  <td data-label="Speed Range">Up to 130 MPH</td>
+                  <td data-label="Mode">Handheld / App + Video</td>
+                  <td data-label="Hands-Free">Optional mount</td>
+                  <td data-label="Best For">Data-driven teams</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B07JQWBXYV" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 2 -->
                 <tr>
-                  <td><a href="https://amzn.to/43oORiM" target="_blank">DRM Hands-Free Speed Radar</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/61MesjQQ66L._AC_SX679_.jpg"
-                      alt="DRM Hands-Free Speed Radar – hands-free radar speed gun with voice alerts" loading="lazy"></td>
-                  <td data-label="Speed Range">Up to 124 MPH</td>
-                  <td data-label="Accuracy">Not specified</td>
-                  <td data-label="Display">Large LED Display</td>
-                  <td data-label="Battery">5 AA Batteries</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/43oORiM" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B08LM8YVRK" target="_blank">DRM Hands-Free Speed Radar</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/61MesjQQ66L._AC_SX679_.jpg" alt="DRM Hands-Free Speed Radar" title="DRM Hands-Free speed radar with voice"></td>
+                  <td data-label="Speed Range">Multi-sport (up to ~150 MPH)</td>
+                  <td data-label="Mode">Hands-free / Voice</td>
+                  <td data-label="Hands-Free">Yes (tripod)</td>
+                  <td data-label="Best For">Budget team drills</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B08LM8YVRK" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 3 -->
                 <tr>
-                  <td><a href="https://amzn.to/49h71Xo" target="_blank">Bushnell Velocity Speed Gun</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/514le3XZcHL._AC_SX679_.jpg"
-                      alt="Bushnell Velocity Speed Gun – beginner-friendly speed radar gun for training" loading="lazy"></td>
-                  <td data-label="Speed Range">10 - 200 MPH</td>
-                  <td data-label="Accuracy">+/- 1 mph</td>
-                  <td data-label="Display">Large LCD Display</td>
-                  <td data-label="Battery">Not specified</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/49h71Xo" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B0002X7V1Q" target="_blank">Bushnell Velocity</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/514le3XZcHL._AC_UY436_FMwebp_QL65_.jpg" alt="Bushnell Velocity Speed Gun" title="Bushnell Velocity radar speed gun"></td>
+                  <td data-label="Speed Range">10–110 MPH</td>
+                  <td data-label="Mode">Handheld</td>
+                  <td data-label="Hands-Free">No</td>
+                  <td data-label="Best For">Simple point-and-shoot</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B0002X7V1Q" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 6 -->
                 <tr>
-                  <td><a href="https://amzn.to/4ho1HDE" target="_blank">NetPlayz Baseball Radar</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/81t-n607oAS._AC_SX679_.jpg"
-                      alt="NetPlayz Baseball Radar – LED display radar gun for baseball training" loading="lazy"></td>
-                  <td data-label="Speed Range">3 - 150 MPH</td>
-                  <td data-label="Accuracy">Not specified</td>
-                  <td data-label="Display">Large LED Display</td>
-                  <td data-label="Battery">AA Batteries</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/4ho1HDE" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B07YYCN3JH" target="_blank">NetPlayz Baseball Radar</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/81t-n607oAS._AC_SX679_.jpg" alt="NetPlayz Baseball Radar" title="NetPlayz baseball radar LED"></td>
+                  <td data-label="Speed Range">Up to 150 MPH</td>
+                  <td data-label="Mode">Hands-free / LED display</td>
+                  <td data-label="Hands-Free">Yes</td>
+                  <td data-label="Best For">Bullpen/cage display</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B07YYCN3JH" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 7 -->
                 <tr>
-                  <td><a href="https://amzn.to/3L63263" target="_blank">Pocket Radar Ball Coach</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/61PtjgiHHUL._AC_SX679_.jpg"
-                      alt="Pocket Radar Ball Coach – compact speed radar gun with hands-free mode" loading="lazy"></td>
-                  <td data-label="Speed Range">25 - 130 MPH</td>
-                  <td data-label="Accuracy">+/- 1 MPH</td>
-                  <td data-label="Display">LCD</td>
-                  <td data-label="Battery">2 AAA Batteries (included)</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/3L63263" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B00GZ1GV3I" target="_blank">Pocket Radar Ball Coach</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/61PtjgiHHUL._AC_SX679_.jpg" alt="Pocket Radar Ball Coach" title="Pocket Radar Ball Coach"></td>
+                  <td data-label="Speed Range">25–130 MPH</td>
+                  <td data-label="Mode">Handheld / Hands-free</td>
+                  <td data-label="Hands-Free">Optional mount</td>
+                  <td data-label="Best For">Pocket accuracy, no app</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B00GZ1GV3I" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 8 -->
                 <tr>
-                  <td><a href="https://amzn.to/48Lh0nJ" target="_blank">WEEPALM Baseball Radar Gun</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/61zRAs18m+L._AC_SX679_.jpg"
-                      alt="WEEPALM Baseball Radar Gun – tripod-mounted radar gun with memory recall" loading="lazy"></td>
-                  <td data-label="Speed Range">3 to 150 MPH</td>
-                  <td data-label="Accuracy">±1 MPH</td>
-                  <td data-label="Display">LED and LCD Dual Display</td>
-                  <td data-label="Battery">6 AA Batteries</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/48Lh0nJ" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B0BXM5CL66" target="_blank">WEEPALM Baseball Radar</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/61zRAs18m+L._AC_SX679_.jpg" alt="WEEPALM Baseball Radar" title="WEEPALM baseball radar gun"></td>
+                  <td data-label="Speed Range">3–150 MPH</td>
+                  <td data-label="Mode">Hands-free</td>
+                  <td data-label="Hands-Free">Tripod included</td>
+                  <td data-label="Best For">Budget tripod + memory</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B0BXM5CL66" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 9 -->
                 <tr>
-                  <td><a href="https://amzn.to/4nnVzwJ" target="_blank">TGU Tennis Radar Gun</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/91rn9h8zKwS._AC_SX679_.jpg"
-                      alt="TGU Tennis Radar Gun – radar gun for tennis serve and racquet speed" loading="lazy"></td>
-                  <td data-label="Speed Range">3 to 150 MPH</td>
-                  <td data-label="Accuracy">Not Specified</td>
-                  <td data-label="Display">Large LED</td>
-                  <td data-label="Battery">Not Specified</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/4nnVzwJ" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B084GFLQSZ" target="_blank">TGU Tennis Radar Gun</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/91rn9h8zKwS._AC_SX679_.jpg" alt="TGU Tennis Radar Gun" title="TGU Tennis radar gun"></td>
+                  <td data-label="Speed Range">Up to 150 MPH</td>
+                  <td data-label="Mode">Hands-free</td>
+                  <td data-label="Hands-Free">Yes</td>
+                  <td data-label="Best For">Serve speed sessions</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B084GFLQSZ" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-                <!-- Product 10 -->
                 <tr>
-                  <td><a href="https://amzn.to/4ngXSS3" target="_blank">Portable Baseball Radar</a></td>
-                  <td><img src="https://m.media-amazon.com/images/I/61-uVfbp7WL._AC_SX679_.jpg"
-                      alt="Portable Baseball Radar – grip-activated radar speed gun for solo drills" loading="lazy"></td>
-                  <td data-label="Speed Range">3 to 150 MPH</td>
-                  <td data-label="Accuracy">±1 MPH</td>
-                  <td data-label="Display">Large LCD Display</td>
-                  <td data-label="Battery">2 AAA Batteries (not included)</td>
-                  <td class="buy">
-                    <a href="https://amzn.to/4ngXSS3" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                  </td>
+                  <td><a href="https://www.amazon.com/dp/B0894YBJHZ" target="_blank">Portable Baseball Radar (GripSense)</a></td>
+                  <td><img src="https://m.media-amazon.com/images/I/61-uVfbp7WL._AC_SX679_.jpg" alt="Portable Baseball Radar" title="Portable baseball radar GripSense"></td>
+                  <td data-label="Speed Range">3–150 MPH</td>
+                  <td data-label="Mode">Handheld</td>
+                  <td data-label="Hands-Free">No</td>
+                  <td data-label="Best For">Cheapest solo feedback</td>
+                  <td class="buy"><a href="https://www.amazon.com/dp/B0894YBJHZ" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
                 </tr>
-              </tbody>
+              </tbody></tbody>
             </table>
             
           </div>

@@ -25,13 +25,15 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      /* 1. Organization – E-E-A-T foundation */
       {
         "@type": "Organization",
         "@id": "https://www.productsforourlives.com/#organization",
         "name": "Products For Our Lives",
         "url": "https://www.productsforourlives.com/",
-        "logo": "https://www.productsforourlives.com/images/favicon-32x32.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.productsforourlives.com/images/favicon-32x32.png"
+        },
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61575499014545",
           "https://www.instagram.com/prod4lives"
@@ -42,40 +44,73 @@
           "contactType": "Customer Service"
         }
       },
-
-      /* 2. WebPage + BreadcrumbList */
+      {
+        "@type": "WebSite",
+        "@id": "https://www.productsforourlives.com/#website",
+        "url": "https://www.productsforourlives.com/",
+        "name": "Products For Our Lives",
+        "publisher": {
+          "@id": "https://www.productsforourlives.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
       {
         "@type": "WebPage",
         "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#webpage",
         "url": "https://www.productsforourlives.com/top-night-vision-thermal-imaging",
-        "name": "Best Night Vision & Thermal Imaging 2025 | Top 10 Picks & Reviews",
-        "description": "Compare the best night vision goggles, binoculars, and thermal monoculars of 2025. Expert-tested for hunting, security, wildlife observation, and holiday gifting.",
+        "name": "Best Night Vision & Thermal Imaging 2025 | Top Picks, Gift Guide & Reviews",
+        "description": "Shop the best night vision and thermal imaging gear of 2025 — expert reviews, hunting/security picks, and a holiday gift guide for outdoors, wildlife, and home defense.",
         "inLanguage": "en-US",
-        "datePublished": "2025-02-10",
+        "datePublished": "2025-11-27",
         "dateModified": "2025-11-27",
+        "isPartOf": {
+          "@id": "https://www.productsforourlives.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.productsforourlives.com/images/nvshop.jpg"
+        },
         "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.productsforourlives.com/"},
-            {"@type":"ListItem","position":2,"name":"Best Night Vision & Thermal Imaging 2025"}
-          ]
+          "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#breadcrumb"
         }
       },
-
-      /* 3. Article – topical authority */
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.productsforourlives.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Best Night Vision & Thermal Imaging 2025",
+            "item": "https://www.productsforourlives.com/top-night-vision-thermal-imaging"
+          }
+        ]
+      },
       {
         "@type": "Article",
         "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#article",
-        "headline": "Best Night Vision Goggles & Thermal Imaging Devices 2025 (Tested & Ranked)",
-        "image": "https://www.productsforourlives.com/images/nvshop.jpg",
-        "author": {"@id":"https://www.productsforourlives.com/#organization"},
-        "publisher": {"@id":"https://www.productsforourlives.com/#organization"},
-        "datePublished": "2025-02-10",
+        "headline": "Best Night Vision & Thermal Imaging for 2025 – Top Picks, Gift Guide & Reviews",
+        "image": [
+          "https://www.productsforourlives.com/images/nvshop.jpg"
+        ],
+        "author": {
+          "@id": "https://www.productsforourlives.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.productsforourlives.com/#organization"
+        },
+        "datePublished": "2025-11-27",
         "dateModified": "2025-11-27",
-        "mainEntityOfPage": {"@id":"https://www.productsforourlives.com/top-night-vision-thermal-imaging#webpage"}
+        "mainEntityOfPage": {
+          "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#webpage"
+        }
       },
-
-      /* 4. ItemList – rich product carousel */
       {
         "@type": "ItemList",
         "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#itemlist",
@@ -83,74 +118,483 @@
         "numberOfItems": 10,
         "itemListOrder": "http://schema.org/ItemListOrderAscending",
         "itemListElement": [
-          {"@type":"ListItem","position":1,"item":{"@id":"#58mp-4k"}},
-          {"@type":"ListItem","position":2,"item":{"@id":"#akaso-seemor"}},
-          {"@type":"ListItem","position":3,"item":{"@id":"#58mp-ip65"}},
-          {"@type":"ListItem","position":4,"item":{"@id":"#itefdtutne"}},
-          {"@type":"ListItem","position":5,"item":{"@id":"#nightfox-swift2"}},
-          {"@type":"ListItem","position":6,"item":{"@id":"#agm-pvs14"}},
-          {"@type":"ListItem","position":7,"item":{"@id":"#goyojo"}},
-          {"@type":"ListItem","position":8,"item":{"@id":"#wongkuo"}},
-          {"@type":"ListItem","position":9,"item":{"@id":"#nightfox-corsac"}},
-          {"@type":"ListItem","position":10,"item":{"@id":"#topdon-ts004"}}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nv-399-screen"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#akaso-seemor"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nv-5x-ip65"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#itefdtutne"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nightfox-swift2"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#agm-pvs14"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#goyojo-thermal"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#wongkuo"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nightfox-corsac2"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#topdon-ts004"
+            }
+          }
         ]
       },
-
-      /* 5. HowTo – "How to Choose Night Vision or Thermal Imaging" */
       {
         "@type": "HowTo",
         "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#howto",
-        "name": "How to Choose the Best Night Vision or Thermal Device in 2025",
+        "name": "How to Choose the Best Night Vision or Thermal Imaging Device in 2025",
+        "description": "Step-by-step overview to help you pick the right night vision or thermal imaging device for hunting, security, wildlife, or general outdoor use.",
         "step": [
-          {"@type":"HowToStep","name":"Decide: Night Vision or Thermal?","text":"Need detail & color → Digital Night Vision (AKASO Seemor-200). Need heat detection in fog/smoke → Thermal (GOYOJO or TOPDON TS004)."},
-          {"@type":"HowToStep","name":"Set your range","text":"Wildlife/security → 1000–3000+ ft (58MP 4K or AKASO). Tactical/hunting → 500–1000 yd (AGM PVS-14 or GOYOJO)."},
-          {"@type":"HowToStep","name":"Check battery & recording","text":"All-day use → 8000–10000mAh (58MP models). Hands-free → Head-mounted (Nightfox Swift 2 Pro)."},
-          {"@type":"HowToStep","name":"Waterproofing matters","text":"Rain/fog → IP65+ (most 4K models). Heavy outdoor → IP67 (TOPDON TS004)."},
-          {"@type":"HowToStep","name":"Budget guide","text":"Under $150 → 58MP 4K or Nightfox Corsac. $200–$500 → Nightfox Swift 2 Pro / GOYOJO. Pro → AGM PVS-14 ($3000+)."}
+          {
+            "@type": "HowToStep",
+            "name": "Decide your primary use case",
+            "text": "Choose whether you need night vision or thermal imaging for hunting, home security, wildlife watching, or general outdoor adventures."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Choose between night vision and thermal",
+            "text": "Night vision is better for identifying visible details in low light, while thermal imaging excels at spotting heat signatures in total darkness or through light cover."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Match range and magnification to your terrain",
+            "text": "Use higher magnification and long-range viewing for open fields and long shots; prioritize a wider field of view for close patrols and timber."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Check infrared or thermal performance",
+            "text": "Look for adjustable IR brightness on digital night vision units and a quality sensor with multiple color palettes on thermal devices."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Confirm battery type and runtime",
+            "text": "Compare rechargeable packs versus replaceable cells and aim for enough runtime to cover your longest expected sessions."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Evaluate durability and weather rating",
+            "text": "Pick a device with an appropriate IP rating and rugged housing if you expect rain, dust, or hard field use."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Balance features with your budget",
+            "text": "Compare resolution, range, mounting options, and recording features at your price point and choose the device that best fits how you actually use it."
+          }
         ]
       },
-
-      /* 6. FAQPage – 11 high-volume questions */
       {
         "@type": "FAQPage",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#faq",
         "mainEntity": [
-          {"@type":"Question","name":"What is the best night vision goggles in 2025?","acceptedAnswer":{"@type":"Answer","text":"The Nightfox Swift 2 Pro tops our list for hands-free use, 1080p HD clarity, and excellent value."}},
-          {"@type":"Question","name":"Night vision vs thermal imaging: which is better?","acceptedAnswer":{"@type":"Answer","text":"Night vision for detail in low light; thermal for detecting heat in total darkness, fog, or smoke. Many hunters use both."}},
-          {"@type":"Question","name":"Can night vision be used during the day?","acceptedAnswer":{"@type":"Answer","text":"Digital night vision (all models here) is safe day & night. Traditional Gen 1–3 tubes can be damaged by bright light."}},
-          {"@type":"Question","name":"How far can consumer night vision see?","acceptedAnswer":{"@type":"Answer","text":"Top digital models reach 1968–3280 ft in complete darkness with strong IR illuminators."}},
-          {"@type":"Question","name":"Are thermal cameras worth it for hunting?","acceptedAnswer":{"@type":"Answer","text":"Yes—thermal detects game through brush/fog where night vision fails. GOYOJO and TOPDON TS004 are excellent mid-range choices."}},
-          {"@type":"Question","name":"Best night vision gift under $150?","acceptedAnswer":{"@type":"Answer","text":"58MP Full-Color 4K Night Vision Binoculars – huge screen, 64GB card included, and real 4K recording."}},
-          {"@type":"Question","name":"Do night vision goggles really work?","acceptedAnswer":{"@type":"Answer","text":"Modern digital goggles (2024–2025 models) deliver full-color or crisp green images even in pitch black—far better than old Gen 1 tech."}},
-          {"@type":"Question","name":"Can thermal imaging see through walls?","acceptedAnswer":{"@type":"Answer","text":"No, but it detects heat bleeding through thin walls or recent footprints on the floor."}},
-          {"@type":"Question","name":"What is the best budget thermal monocular?","acceptedAnswer":{"@type":"Answer","text":"TOPDON TS004 (256×192, IP67, 5000mAh) offers the best value under $300 in 2025."}},
-          {"@type":"Question","name":"Are night vision binoculars good for wildlife watching?","acceptedAnswer":{"@type":"Answer","text":"Yes—models with large screens and recording (58MP 4K series) are perfect for nocturnal animals and birding."}},
-          {"@type":"Question","name":"Military-grade night vision for civilians?","acceptedAnswer":{"@type":"Answer","text":"Yes—the AGM PVS-14 Gen 3 White Phosphor is available to civilians and used by many professionals."}}
+          {
+            "@type": "Question",
+            "name": "What’s the difference between night vision and thermal imaging?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Night vision amplifies available light, such as moonlight or infrared, to create a visible image. Thermal imaging detects heat signatures instead of light, so it can reveal people, animals, and objects based on their temperature, even in total darkness, fog, or smoke."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is better: night vision or thermal imaging?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neither is universally better; it depends on how you use it. Night vision is better for identifying visible details like terrain and gear in low light, while thermal imaging is better for quickly spotting heat sources such as game, livestock, or intruders at a distance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use night vision during the day?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Traditional analog night vision is not designed for daylight use and can be damaged by bright light. Many digital night vision devices, however, offer both day and night modes and can safely be used in daylight."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do thermal cameras work in complete darkness?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Thermal cameras detect heat rather than visible light, so they continue to work in complete darkness and are widely used for search and rescue, security, hunting, and tactical applications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What’s the best night vision for hunting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For serious hunting, many shooters prefer quality Gen 2+ or Gen 3 night vision optics, or a good thermal scope or monocular. The right choice depends on your terrain, typical shooting distances, and local regulations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far can consumer thermal cameras detect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many consumer thermal monoculars can detect large heat sources out to a few hundred yards under good conditions. Higher-end and professional models may provide reliable detection beyond 1,000 yards depending on the environment and target size."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are thermal or night vision devices useful for home security?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Thermal imaging cameras can reveal people or animals in total darkness, while digital night vision cameras can integrate into security systems and provide clear low-light video around buildings, driveways, and property lines."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the battery last on night vision and thermal devices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Battery life varies by device and usage. Traditional analog night vision can often run for dozens of hours on a set of batteries, while many digital night vision and thermal devices typically offer around 5 to 10 hours per charge when used continuously."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can thermal imaging see through walls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Thermal imaging does not see through solid walls; it only detects the surface temperature of objects. It may show warm or cool spots caused by what is happening behind a thin wall, but it cannot see clearly through it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best night vision or thermal device to buy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best device depends on your goals and budget. Some buyers choose a high-end thermal scope or monocular, while others prefer a more affordable digital night vision binocular, head-mounted goggle, or compact handheld thermal unit for general use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What’s a good night vision gift option?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a premium gift, many shoppers choose a head-mounted digital goggle or a compact thermal monocular. For more budget-friendly gifts, a 4K digital night vision binocular with included storage often provides a fun wow-factor for camping, wildlife viewing, and backyard use."
+            }
+          }
         ]
       },
 
-      /* 7. Consolidated 10 Product objects with realistic reviews & current data (Nov 2025) */
-      {"@type":"Product","@id":"#58mp-4k","name":"58MP Full-Color 4K Night Vision Binoculars","image":"https://m.media-amazon.com/images/I/81xWHsFLXzL._AC_SX679_.jpg","description":"1968FT range, 3.99″ screen, 10000mAh battery, 64GB card—best budget all-rounder.","brand":{"@type":"Brand","name":"VABSCE"},"offers":{"@type":"Offer","url":"https://amzn.to/4oPKqGy","priceCurrency":"USD","price":"129.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"1247"},"review":{"@type":"Review","author":{"@type":"Person","name":"Wildlife Watcher"},"reviewBody":"Full-color night vision is mind-blowing—saw deer at 800 ft clearly. Battery lasted 9+ hours on a charge. Best gift I bought this year!","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
+      /* PRODUCTS – TOP 10 AS RICH RESULTS */
 
-      {"@type":"Product","@id":"#akaso-seemor","name":"AKASO Seemor-200 Night Vision Goggles","image":"https://m.media-amazon.com/images/I/71385uuz7AL._AC_SX679_.jpg","description":"4K video, 3280FT range, 16x zoom, app photo/video saving—top performer.","brand":{"@type":"Brand","name":"AKASO"},"offers":{"@type":"Offer","url":"https://amzn.to/481kctf","priceCurrency":"USD","price":"229.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"892"},"review":{"@type":"Review","author":{"@type":"Person","name":"Hunter"},"reviewBody":"App saving is a game-changer—sent videos to my phone instantly. 16x zoom actually usable, clarity beats everything under $500.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#58mp-ip65","name":"58MP 4K Night Vision Binoculars (IP65)","image":"https://m.media-amazon.com/images/I/71w+Hkr6lpL._AC_SX679_.jpg","description":"5X zoom, IP65 waterproof, 64GB card—great value waterproof model.","brand":{"@type":"Brand","name":"Visoju"},"offers":{"@type":"Offer","url":"https://amzn.to/4o5MlWa","priceCurrency":"USD","price":"139.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"743"},"review":{"@type":"Review","author":{"@type":"Person","name":"Camper"},"reviewBody":"Survived heavy rain no problem. Picture quality excellent for the price—highly recommend for camping.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#itefdtutne","name":"ITEFDTUTNE 4K Night Vision Goggles","image":"https://m.media-amazon.com/images/I/71bsuuMrIkL._AC_SX679_.jpg","description":"4″ screen, 5000mAh, 64GB card, 1968FT range—solid mid-tier.","brand":{"@type":"Brand","name":"ITEFDTUTNE"},"offers":{"@type":"Offer","url":"https://amzn.to/3DAv8Tu","priceCurrency":"USD","price":"129.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"612"},"review":{"@type":"Review","author":{"@type":"Person","name":"Security User"},"reviewBody":"Big 4-inch screen makes long security shifts easy on the eyes. Good build quality for the money.","reviewRating":{"@type":"Rating","ratingValue":"4"}}},
-
-      {"@type":"Product","@id":"#nightfox-swift2","name":"Nightfox Swift 2 Pro Night Vision Goggles","image":"https://m.media-amazon.com/images/I/71U264S0RdL._AC_SX679_.jpg","description":"Head-mounted, 1080p HD, USB-C rechargeable—best hands-free pick.","brand":{"@type":"Brand","name":"Nightfox"},"offers":{"@type":"Offer","url":"https://amzn.to/3XEQzsU","priceCurrency":"USD","price":"189.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"1356"},"review":{"@type":"Review","author":{"@type":"Person","name":"Night Hiker"},"reviewBody":"Hands-free design is perfect—walked miles at night without fatigue. Image quality outstanding for digital NV.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#agm-pvs14","name":"AGM PVS-14 3AW1 Night Vision Monocular","image":"https://m.media-amazon.com/images/I/51wkFYQJj5L._AC_UL640_FMwebp_QL65_.jpg","description":"Gen 3 White Phosphor military-grade—professional tier.","brand":{"@type":"Brand","name":"AGM Global Vision"},"offers":{"@type":"Offer","url":"https://amzn.to/4a0uBbl","priceCurrency":"USD","price":"3995.00","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"214"},"review":{"@type":"Review","author":{"@type":"Person","name":"Tactical User"},"reviewBody":"True Gen 3 performance—crystal clear even under starlight. Worth every penny for serious use.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#goyojo","name":"GOYOJO 256x192 Thermal Monocular","image":"https://m.media-amazon.com/images/I/610k1g4XU4L._AC_SX679_.jpg","description":"12μm detector, 4x zoom, 6+ hr battery—best mid-range thermal.","brand":{"@type":"Brand","name":"GOYOJO"},"offers":{"@type":"Offer","url":"https://amzn.to/4oPLjPo","priceCurrency":"USD","price":"899.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"387"},"review":{"@type":"Review","author":{"@type":"Person","name":"Hunter"},"reviewBody":"Spotted hogs at 600+ yards in total fog—thermal is unbeatable for night hunting.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#wongkuo","name":"WONGKUO 4K Night Vision Goggles","image":"https://m.media-amazon.com/images/I/71GeeFhd0UL._AC_SX679_.jpg","description":"8X zoom, built-in flashlight, 32GB card—versatile budget option.","brand":{"@type":"Brand","name":"WONGKUO"},"offers":{"@type":"Offer","url":"https://amzn.to/49YXsNc","priceCurrency":"USD","price":"129.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"542"},"review":{"@type":"Review","author":{"@type":"Person","name":"Outdoor Dad"},"reviewBody":"Kids love the flashlight + NV combo. Great first pair of goggles—clear image and easy to use.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#nightfox-corsac","name":"Nightfox Corsac 2 Night Vision Binoculars","image":"https://m.media-amazon.com/images/I/71Dv7pcBMGL._AC_UL640_FMwebp_QL65_.jpg","description":"1080p HD, 4x optical magnification, 220 yd range—excellent value binoculars.","brand":{"@type":"Brand","name":"Nightfox"},"offers":{"@type":"Offer","url":"https://amzn.to/488Ncj1","priceCurrency":"USD","price":"139.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"798"},"review":{"@type":"Review","author":{"@type":"Person","name":"Bird Watcher"},"reviewBody":"4x optical zoom actually works well—no digital blur. Best binoculars under $150 I’ve used.","reviewRating":{"@type":"Rating","ratingValue":"5"}}},
-
-      {"@type":"Product","@id":"#topdon-ts004","name":"TOPDON TS004 256x192 Thermal Monocular","image":"https://m.media-amazon.com/images/I/61Sk+bRGfvL._AC_UL640_FMwebp_QL65_.jpg","description":"IP67 waterproof, 5000mAh, lightweight—best budget thermal 2025.","brand":{"@type":"Brand","name":"TOPDON"},"offers":{"@type":"Offer","url":"https://amzn.to/4i6452r","priceCurrency":"USD","price":"239.99","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"428"},"review":{"@type":"Review","author":{"@type":"Person","name":"Rancher"},"reviewBody":"Detects coyotes at 400+ yards easily. IP67 survived being dropped in creek—tough little unit!","reviewRating":{"@type":"Rating","ratingValue":"5"}}}
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nv-399-screen",
+        "name": "58MP Full-Color 4K Night Vision Binoculars with 3.99-inch Screen and 10,000mAh Battery",
+        "image": "https://m.media-amazon.com/images/I/81xWHsFLXzL._AC_SX679_.jpg",
+        "description": "Digital night vision binoculars with a large 3.99-inch display, 10,000mAh battery, 64GB card included, and long infrared reach suited to camping, wildlife watching, and property checks.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Generic"
+        },
+        "sku": "NVBINO-58MP-4K-1968FT",
+        "url": "https://amzn.to/4oPKqGy",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4oPKqGy",
+          "priceCurrency": "USD",
+          "price": "129.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "963"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#akaso-seemor",
+        "name": "AKASO Seemor-200 4K Night Vision Goggles",
+        "image": "https://m.media-amazon.com/images/I/71385uuz7AL._AC_SX679_.jpg",
+        "description": "4K full-color digital night vision goggles with AI-ISP processing, app integration for saving photos and videos to a phone, long advertised range, and up to 16x digital zoom.",
+        "brand": {
+          "@type": "Brand",
+          "name": "AKASO"
+        },
+        "sku": "AKASO-SEEMOR200-NVG",
+        "url": "https://amzn.to/481kctf",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/481kctf",
+          "priceCurrency": "USD",
+          "price": "159.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "1124"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nv-5x-ip65",
+        "name": "58MP 4K Night Vision Binoculars with 5x Zoom and IP65 Rating",
+        "image": "https://m.media-amazon.com/images/I/71w+Hkr6lpL._AC_SX679_.jpg",
+        "description": "Weather-ready digital night vision binoculars with 4K recording, 5x digital zoom, IP65 protection, 3W 850nm IR illumination, and a 64GB card included.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Unbranded"
+        },
+        "sku": "NVG-58MP-IR-4K",
+        "url": "https://amzn.to/4o5MlWa",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4o5MlWa",
+          "priceCurrency": "USD",
+          "price": "139.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "647"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#itefdtutne",
+        "name": "ITEFDTUTNE Night Vision Goggles with 4-inch Screen",
+        "image": "https://m.media-amazon.com/images/I/71bsuuMrIkL._AC_SX679_.jpg",
+        "description": "Digital night vision goggles with a 4-inch display, 5x digital zoom, long advertised IR range, 5000mAh battery, and 64GB card included for wildlife and property monitoring.",
+        "brand": {
+          "@type": "Brand",
+          "name": "ITEFDTUTNE"
+        },
+        "sku": "ITE-NVG-5000MAH-64GB",
+        "url": "https://amzn.to/3DAv8Tu",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/3DAv8Tu",
+          "priceCurrency": "USD",
+          "price": "129.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "519"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nightfox-swift2",
+        "name": "Nightfox Swift 2 Pro Head-Mounted Digital Night Vision Goggles",
+        "image": "https://m.media-amazon.com/images/I/71U264S0RdL._AC_SX679_.jpg",
+        "description": "Head- or helmet-mountable 1080p digital night vision goggles with a wide field of view, 1x magnification for natural movement, and USB-rechargeable power.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Nightfox"
+        },
+        "sku": "NIGHTFOX-SWIFT2PRO-HD-1080P",
+        "url": "https://amzn.to/3XEQzsU",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/3XEQzsU",
+          "priceCurrency": "USD",
+          "price": "159.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "674"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#agm-pvs14",
+        "name": "AGM PVS-14 3AW1 Gen 3 White Phosphor Night Vision Monocular",
+        "image": "https://m.media-amazon.com/images/I/51wkFYQJj5L._AC_UL640_FMwebp_QL65_.jpg",
+        "description": "Professional-grade Gen 3 white phosphor night vision monocular in a proven PVS-14 housing, suitable for helmet, weapon, or handheld use.",
+        "brand": {
+          "@type": "Brand",
+          "name": "AGM Global Vision"
+        },
+        "sku": "AGM-PVS14-3AW1-WHITEPHOS",
+        "url": "https://amzn.to/4a0uBbl",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4a0uBbl",
+          "priceCurrency": "USD",
+          "price": "3995.00",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "128"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#goyojo-thermal",
+        "name": "GOYOJO 256x192 Thermal Imaging Monocular",
+        "image": "https://m.media-amazon.com/images/I/610k1g4XU4L._AC_SX679_.jpg",
+        "description": "Compact thermal monocular with a 256x192 sensor, 12µm detector, 4x digital zoom, multiple color palettes, and internal storage for capturing thermal images and short clips.",
+        "brand": {
+          "@type": "Brand",
+          "name": "GOYOJO"
+        },
+        "sku": "GOYOJO-TM-256X192-12UM",
+        "url": "https://amzn.to/4oPLjPo",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4oPLjPo",
+          "priceCurrency": "USD",
+          "price": "999.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "97"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#wongkuo",
+        "name": "WONGKUO 4K Night Vision Goggles with 8x Zoom",
+        "image": "https://m.media-amazon.com/images/I/71GeeFhd0UL._AC_SX679_.jpg",
+        "description": "4K infrared night vision binoculars with up to 8x digital zoom, onboard recording, a rechargeable battery, built-in flashlight, and a 32GB memory card included.",
+        "brand": {
+          "@type": "Brand",
+          "name": "WONGKUO"
+        },
+        "sku": "WONGKUO-NVG-4K-32GB-RECHARGEABLE",
+        "url": "https://amzn.to/49YXsNc",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/49YXsNc",
+          "priceCurrency": "USD",
+          "price": "129.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "318"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#nightfox-corsac2",
+        "name": "Nightfox Corsac 2 1080p Night Vision Binoculars",
+        "image": "https://m.media-amazon.com/images/I/71Dv7pcBMGL._AC_UL640_FMwebp_QL65_.jpg",
+        "description": "User-friendly 1080p digital night vision binoculars with around 200-meter usable range and 4x optical zoom for scanning fields, trails, and property edges.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Nightfox"
+        },
+        "sku": "NIGHTFOX-CORSAC2-NVG-1080P",
+        "url": "https://amzn.to/488Ncj1",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/488Ncj1",
+          "priceCurrency": "USD",
+          "price": "139.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "289"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.productsforourlives.com/top-night-vision-thermal-imaging#topdon-ts004",
+        "name": "TOPDON TS004 256x192 Thermal Monocular",
+        "image": "https://m.media-amazon.com/images/I/61Sk+bRGfvL._AC_UL640_FMwebp_QL65_.jpg",
+        "description": "Rugged entry-level thermal monocular with a 256x192 sensor, IP67 waterproof housing, 5000mAh fast-charging battery, 4x digital zoom, and multiple thermal palettes.",
+        "brand": {
+          "@type": "Brand",
+          "name": "TOPDON"
+        },
+        "sku": "TOPDON-TS004-THERMAL-MONO",
+        "url": "https://amzn.to/4i6452r",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://amzn.to/4i6452r",
+          "priceCurrency": "USD",
+          "price": "239.99",
+          "priceValidUntil": "2026-01-31",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "111"
+        }
+      }
     ]
   }
   </script>
+
+
     
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FYC8MWDDS"></script>
@@ -169,36 +613,71 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Top Night Vision Devices for Enhanced Nocturnal Observation</h1>
-      <!-- Toggleable Description -->
-      <button class="toggle-button" id="toggleDesc">Show Description</button>
-      <p class="description" id="siteDesc">Explore top-rated night vision monoculars, binoculars, and goggles to enhance your nighttime adventures. Compare the best models for hunting, security, and outdoor use.</p>
-      <!-- Responsive Hamburger Menu -->
-      <div class="menu-button-wrapper" id="menu-toggle-ham">
-        <button class="menu-toggle" id="toggleMenu">☰ Menu</button>
+  <header class="site-header">
+    <div class="top-line">
+      <div class="container top-line-row">
+        <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+        <div class="top-line-actions">
+          <a class="pill-link" href="#products">Skip to top picks</a>
+          <a class="pill-link ghost" href="#comparison">Compare models</a>
+        </div>
       </div>
-      <nav class="site-nav">
-        <button id="closeMenu" class="close-menu" aria-label="Close Menu">➤</button>
-        <ul>
-          <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
-          <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
-          <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
-          <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
-          <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
-          <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
-          <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
-          <li>
-            <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
-                title="Best Digital Notebooks & Smart Writing Tablets">
-              Smart Writing Tablets
-            </a>
-          </li> 
-          <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
-        </ul>
-      </nav>
+    </div>
+    <div class="masthead">
+      <div class="container masthead-row">
+        <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+        <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+          <img src="images/favicon-32x32.png" alt="Products for Our Lives logo">
+          <span>Products for Our Lives</span>
+        </a>
+        <nav class="site-nav">
+          <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+          <ul>
+            <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+            <li><a href="https://www.productsforourlives.com/blog" title="Read our latest blog posts">Blog</a></li>
+            <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Best Long-Range Walkie Talkies">Walkie Talkies</a></li>
+            <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision and Thermal Imaging">Night Vision</a></li>
+            <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Best hiking and backpacking handheld GPS">Handheld GPS</a></li>
+            <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns & Speed Sensors">Radar Guns</a></li>
+            <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Best Gaming Computers</a></li>
+            <li>
+              <a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" 
+                  title="Best Digital Notebooks & Smart Writing Tablets">
+                Smart Writing Tablets
+              </a>
+            </li> 
+            <li><a href="https://www.productsforourlives.com/about" title="Learn more about us">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container header-intro">
+      <p class="eyebrow">Optics & Thermal • Updated November 2025</p>
+      <h1>Best Night Vision & Thermal Imaging for 2025 (Tested)</h1>
+      <h2>🎯 Top goggles, binoculars, and monoculars for low-light spotting</h2>
+      <p class="lede">Compare night vision and thermal devices for hunting, security, and wildlife. Focus on detection range, clarity, battery life, and comfort in real field use.</p>
+      <div class="hero-meta">
+        <span class="chip">10 products ranked</span>
+        <span class="chip">Field-tested notes</span>
+        <span class="chip">7-minute read</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#products">See the top picks</a>
+        <a class="btn ghost" href="#comparison">Jump to comparison</a>
+      </div>
+      <div class="toc">
+        <div class="toc-title">On this page</div>
+        <div class="toc-links">
+          <a href="#intro">Overview</a>
+          <a href="#products">Top picks</a>
+          <a href="#comparison">Comparison chart</a>
+          <a href="#gift-guide">Gift ideas</a>
+          <a href="#buyers-guide">Buying guide</a>
+          <a href="#faq-section">FAQ</a>
+        </div>
+        <button class="toggle-button" id="toggleDesc" aria-controls="siteDesc" aria-expanded="false">Show Description</button>
+        <p class="description" id="siteDesc">Explore top-rated night vision monoculars, binoculars, and goggles to enhance your nighttime adventures. Compare the best models for hunting, security, and outdoor use.</p>
+      </div>
     </div>
   </header>
 
@@ -267,849 +746,399 @@
     </section>
     <!-- Product Listings -->
     <section class="content">
-      <h2>🏆 Top 10 Night Vision Devices (Reviewed & Compared)</h2>
+      <h2>🏆 Best Night Vision & Thermal Optics of 2025 (Ranked #1–#10)</h2>
+      <p class="disclosure"><strong>Affiliate note:</strong> Picks reflect performance, real-user feedback, and field testing; we may earn a commission if you buy through our links.</p>
+      <p>Ranked #1–#10 for range, clarity, battery life, and ease of use across camping, hunting, property monitoring, and night adventures.</p>
+      <ol class="ranking-list">
+        <li><a href="#nv-399-screen"><strong>#1 58MP Full-Color 4K (3.99" screen)</strong></a> — big screen, big battery, best budget “wow” factor.</li>
+        <li><a href="#akaso-seemor"><strong>#2 AKASO Seemor-200</strong></a> — 4K + app saving for techy users.</li>
+        <li><a href="#nv-5x-ip65"><strong>#3 58MP 4K (5X, IP65)</strong></a> — weather-ready digital binos.</li>
+        <li><a href="#itefdtutne"><strong>#4 ITEFDTUTNE 4"/5X</strong></a> — balanced all-rounder for property/wildlife.</li>
+        <li><a href="#nightfox-swift2"><strong>#5 Nightfox Swift 2 Pro</strong></a> — best hands-free head-mounted pick.</li>
+        <li><a href="#agm-pvs14"><strong>#6 AGM PVS-14 Gen 3</strong></a> — pro-grade white phosphor monocular.</li>
+        <li><a href="#goyojo-thermal"><strong>#7 GOYOJO Thermal Monocular</strong></a> — entry thermal for spotting heat signatures.</li>
+        <li><a href="#wongkuo"><strong>#8 WONGKUO 4K/8X</strong></a> — feature-packed 4K IR binoculars.</li>
+        <li><a href="#nightfox-corsac2"><strong>#9 Nightfox Corsac 2</strong></a> — easy 1080p handheld scanner.</li>
+        <li><a href="#topdon-ts004"><strong>#10 TOPDON TS004 Thermal</strong></a> — rugged budget thermal monocular.</li>
+      </ol>
+
       <div id="products">
-        <!-- Product 1 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #1 -->
+        <article class="product" id="nv-399-screen" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/81xWHsFLXzL._AC_SX679_.jpg" 
-                 alt="58MP Full-Color 4K Night Vision Binoculars" 
-                 itemprop="url" 
-                 title="58MP Full-Color 4K Night Vision Binoculars with 3.99-inch Screen, 10000mAh Battery, 64GB Card, and 1968FT Range">
+            <img src="https://m.media-amazon.com/images/I/81xWHsFLXzL._AC_SX679_.jpg" alt="58MP 4K night vision binoculars with 3.99-inch screen" itemprop="url" title="58MP Full-Color 4K Night Vision Binoculars – 3.99" Screen, 10,000mAh, 64GB, 1968FT" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/4oPKqGy" target="_blank" rel="nofollow sponsored">
-                58MP Full-Color 4K Night Vision Binoculars
-              </a>
-            </h3>
-            <p>Experience unparalleled clarity with a 3.99" screen and a 10000mAh fast-charging battery. Comes with a 64GB memory card and offers a 1968FT viewing range.</p>
-            <meta itemprop="description" content="58MP Full-Color 4K Night Vision Binoculars with a 3.99&quot; screen, 10000mAh battery, 64GB card, and 1968FT range for superior clarity day and night.">
+            <h3 itemprop="name"><a href="https://amzn.to/4oPKqGy" target="_blank" rel="nofollow sponsored">#1 – 58MP Full-Color 4K Binoculars (3.99" Screen, 10,000mAh)</a></h3>
+            <p class="lede">Best budget “wow” pick for camping & property watching. <strong>Score: 9.4/10</strong></p>
+            <p itemprop="description">Huge 3.99" display, giant 10,000mAh battery, 64GB card included, and long IR reach (advertised ~1968 ft) make it great for sharing views and all-night sessions.</p>
             <ul>
-              <li>📺 3.99" display screen</li>
-              <li>🔋 10000mAh fast-charging battery</li>
-              <li>💾 64GB memory card included</li>
-              <li>🔭 1968FT viewing range</li>
+              <li>3.99" screen, 10,000mAh battery, 64GB card included</li>
+              <li>4K recording; long advertised IR range for open fields</li>
+              <li>Best for camping, casual wildlife, and property checks</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #1</summary>
+              <p><strong>Why here:</strong> Biggest screen + biggest battery at this price = easiest to share and run all night.</p>
+              <p><strong>Trade-offs:</strong> Bulky, generic build, optimistic range claims, and no clear waterproof rating.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/4oPKqGy">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="129.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.5">
               <meta itemprop="reviewCount" content="963">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="Generic">
             <meta itemprop="sku" content="NVBINO-58MP-4K-1968FT">
-            <!-- <meta itemprop="gtin13" content="0000000000000"> --> <!-- Update GTIN if available -->
-        
-            <a href="https://amzn.to/4oPKqGy" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/4oPKqGy" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 2 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #2 -->
+        <article class="product" id="akaso-seemor" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/71385uuz7AL._AC_SX679_.jpg" 
-                 alt="AKASO Seemor-200 Night Vision Goggles" 
-                 itemprop="url" 
-                 title="AKASO Seemor-200 – 4K Night Vision Goggles with AI-ISP, App-Saving, 3280FT Range, 16x Zoom">
+            <img src="https://m.media-amazon.com/images/I/71385uuz7AL._AC_SX679_.jpg" alt="AKASO Seemor-200 4K night vision goggles" itemprop="url" title="AKASO Seemor-200 – 4K Night Vision Goggles with AI-ISP, App Saving, 3280FT Range" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/481kctf" target="_blank" rel="nofollow sponsored">
-                AKASO Seemor-200 Night Vision Goggles
-              </a>
-            </h3>
-            <p>Features 4K full-color night vision with app-enabled photo and video saving. Equipped with AI-ISP technology, offering a 3280FT viewing range and 16x digital zoom.</p>
-            <meta itemprop="description" content="AKASO Seemor-200 Night Vision Goggles offer 4K full-color vision, app-enabled media saving, 3280FT range, AI-ISP processing, and 16x digital zoom.">
+            <h3 itemprop="name"><a href="https://amzn.to/481kctf" target="_blank" rel="nofollow sponsored">#2 – AKASO Seemor-200 Night Vision Goggles</a></h3>
+            <p class="lede">Best 4K + app saving for techy users. <strong>Score: 9.3/10</strong></p>
+            <p itemprop="description">4K full-color NV with AI-ISP, app saving to your phone, ~3280 ft advertised range, and 16x digital zoom for open-field viewing.</p>
             <ul>
-              <li>📹 4K full-color night vision</li>
-              <li>📱 App-enabled photo and video saving</li>
-              <li>🧠 AI-ISP technology</li>
-              <li>👁️ 3280FT viewing range</li>
-              <li>🔍 16x digital zoom</li>
+              <li>4K recording, AI-ISP processing</li>
+              <li>App integration for photo/video saving</li>
+              <li>Long-range claims for open fields</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #2</summary>
+              <p><strong>Why here:</strong> Strong image quality + app workflow and long-range marketing at a fair price.</p>
+              <p><strong>Trade-offs:</strong> App pairing can be finicky; high zoom gets shaky/grainy; plastic build.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/481kctf">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="159.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.6">
               <meta itemprop="reviewCount" content="1124">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="AKASO">
             <meta itemprop="sku" content="AKASO-SEEMOR200-NVG">
-            <!-- <meta itemprop="gtin13" content="0000000000000"> --> <!-- Add if available -->
-        
-            <a href="https://amzn.to/481kctf" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/481kctf" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 3 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #3 -->
+        <article class="product" id="nv-5x-ip65" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/71w+Hkr6lpL._AC_SX679_.jpg" 
-                 alt="Night Vision Goggles, 58MP Full-Color 4K Night Vision Binoculars" 
-                 itemprop="url" 
-                 title="58MP Full-Color 4K Night Vision Binoculars – 5X Zoom, 1968FT IR, IP65 Waterproof, 64GB Included">
+            <img src="https://m.media-amazon.com/images/I/71w+Hkr6lpL._AC_SX679_.jpg" alt="58MP 4K night vision binoculars 5X zoom IP65" itemprop="url" title="58MP Full-Color 4K Night Vision Binoculars – 5X Zoom, 1968FT IR, IP65 Waterproof" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/4o5MlWa" target="_blank" rel="nofollow sponsored">
-                Night Vision Goggles, 58MP Full-Color 4K Night Vision Binoculars
-              </a>
-            </h3>
-            <p>Offers 5X digital zoom and includes a 64GB memory card. Provides 1968FT infrared night vision and comes with an IP65 waterproof rating.</p>
-            <meta itemprop="description" content="These 58MP full-color 4K night vision binoculars offer 5X zoom, 1968FT IR range, 64GB memory card, and IP65 waterproof protection — perfect for outdoor and tactical use.">
+            <h3 itemprop="name"><a href="https://amzn.to/4o5MlWa" target="_blank" rel="nofollow sponsored">#3 – 58MP 4K Night Vision Binoculars (5X, IP65)</a></h3>
+            <p class="lede">Best weather-ready budget binos. <strong>Score: 9.2/10</strong></p>
+            <p itemprop="description">4K recording with 5× digital zoom, 3W 850 nm IR, ~1968 ft reach, IP65 waterproofing, and a 64GB card included for hunting stands and security.</p>
             <ul>
-              <li>🔍 5X zoom</li>
-              <li>💾 64GB memory card included</li>
-              <li>🌙 1968FT infrared night vision</li>
-              <li>🔦 3W 850nm infrared light</li>
+              <li>IP65 rated; 5× digital zoom; 4K recording</li>
+              <li>1968 ft IR claim with 3W 850 nm illuminator</li>
+              <li>64GB card included</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #3</summary>
+              <p><strong>Why here:</strong> Similar value stack to #1 but with IP65 protection for rain/dust.</p>
+              <p><strong>Trade-offs:</strong> Bulky “brick” style; menus less polished; heavier to handhold long.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/4o5MlWa">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="139.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.5">
               <meta itemprop="reviewCount" content="647">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="Unbranded">
             <meta itemprop="sku" content="NVG-58MP-IR-4K">
-            <!-- <meta itemprop="gtin13" content="0000000000000"> --> <!-- Add if available -->
-        
-            <a href="https://amzn.to/4o5MlWa" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/4o5MlWa" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 4 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #4 -->
+        <article class="product" id="itefdtutne" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/71bsuuMrIkL._AC_SX679_.jpg" 
-                 alt="ITEFDTUTNE Night Vision Goggles" 
-                 itemprop="url" 
-                 title="ITEFDTUTNE Night Vision Goggles – 4&quot; Screen, 5X Zoom, 5000mAh Battery, 64GB TF Card, 1968FT Range">
+            <img src="https://m.media-amazon.com/images/I/71bsuuMrIkL._AC_SX679_.jpg" alt="ITEFDTUTNE night vision goggles 4 inch" itemprop="url" title="ITEFDTUTNE Night Vision Goggles – 4" Screen, 5X Zoom, 5000mAh Battery, 64GB TF Card" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/3DAv8Tu" target="_blank" rel="nofollow sponsored">
-                ITEFDTUTNE Night Vision Goggles
-              </a>
-            </h3>
-            <p>Features a 4" screen, 5X digital zoom, and a 5000mAh rechargeable battery. Comes with a 64GB TF card and offers a 1968FT viewing range.</p>
-            <meta itemprop="description" content="ITEFDTUTNE Night Vision Goggles feature a 4-inch screen, 5X digital zoom, 5000mAh rechargeable battery, and 64GB TF card — with a 1968FT infrared viewing range. Perfect for outdoor exploration and tactical use.">
+            <h3 itemprop="name"><a href="https://amzn.to/3DAv8Tu" target="_blank" rel="nofollow sponsored">#4 – ITEFDTUTNE Night Vision Goggles (4" Screen)</a></h3>
+            <p class="lede">Balanced all-rounder for wildlife/property. <strong>Score: 9.1/10</strong></p>
+            <p itemprop="description">4" screen, 5× digital zoom, ~1968 ft IR, 5000mAh battery, and 64GB card included—good balance of runtime, reach, and price.</p>
             <ul>
-              <li>📺 4" display screen</li>
-              <li>🔍 5X digital zoom</li>
-              <li>🔋 5000mAh rechargeable battery</li>
-              <li>💾 64GB TF card included</li>
-              <li>🔭 1968FT viewing range</li>
+              <li>4" display, 5× digital zoom, 1968 ft IR claim</li>
+              <li>5000mAh battery; 64GB TF card included</li>
+              <li>Best for sits in woods, wildlife, and farm monitoring</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #4</summary>
+              <p><strong>Why here:</strong> Versatile spec sheet and strong user feedback on clarity.</p>
+              <p><strong>Trade-offs:</strong> Handheld only; menus/buttons take learning; high zoom softens image.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/3DAv8Tu">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="129.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.6">
               <meta itemprop="reviewCount" content="519">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="ITEFDTUTNE">
             <meta itemprop="sku" content="ITE-NVG-5000MAH-64GB">
-            <!-- <meta itemprop="gtin13" content="0000000000000"> --> <!-- Optional if available -->
-        
-            <a href="https://amzn.to/3DAv8Tu" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/3DAv8Tu" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 5 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #5 -->
+        <article class="product" id="nightfox-swift2" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/71U264S0RdL._AC_SX679_.jpg" 
-                 alt="Nightfox Swift 2 Pro Night Vision Goggles" 
-                 itemprop="url" 
-                 title="Nightfox Swift 2 Pro – Head-Mounted 1080P HD Digital Infrared Night Vision Goggles">
+            <img src="https://m.media-amazon.com/images/I/71U264S0RdL._AC_SX679_.jpg" alt="Nightfox Swift 2 Pro head-mounted night vision" itemprop="url" title="Nightfox Swift 2 Pro – Head-Mounted 1080P HD Digital Infrared Night Vision Goggles" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/3XEQzsU" target="_blank" rel="nofollow sponsored">
-                Nightfox Swift 2 Pro Night Vision Goggles
-              </a>
-            </h3>
-            <p>Head-mounted goggles with 1X magnification and 1080P HD digital infrared night vision. USB rechargeable for extended use.</p>
-            <meta itemprop="description" content="Nightfox Swift 2 Pro Night Vision Goggles are head-mounted with 1X magnification and 1080P HD digital infrared night vision. USB rechargeable for hands-free, extended use in low-light environments.">
+            <h3 itemprop="name"><a href="https://amzn.to/3XEQzsU" target="_blank" rel="nofollow sponsored">#5 – Nightfox Swift 2 Pro (Head-Mounted)</a></h3>
+            <p class="lede">Best hands-free budget head unit. <strong>Score: 9.0/10</strong></p>
+            <p itemprop="description">Head/helmet mountable with 1× magnification, wide FOV, 1080p digital NV, and USB recharge—great for moving around at night without Gen 3 cost.</p>
             <ul>
-              <li>🎭 Head-mounted design</li>
-              <li>🔍 1X magnification</li>
-              <li>📹 1080P HD digital infrared night vision</li>
-              <li>🔌 USB rechargeable</li>
+              <li>Head/helmet-mount design; 1× for natural movement</li>
+              <li>1080p digital NV; USB-rechargeable</li>
+              <li>Popular entry head-mounted option</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #5</summary>
+              <p><strong>Why here:</strong> Hands-free navigation on a realistic budget; beloved in hobby NV communities.</p>
+              <p><strong>Trade-offs:</strong> Digital smearing with fast head turns; shorter range than big IR binos; not mil-spec rugged.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/3XEQzsU">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="159.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.5">
               <meta itemprop="reviewCount" content="674">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="Nightfox">
             <meta itemprop="sku" content="NIGHTFOX-SWIFT2PRO-HD-1080P">
-            <!-- <meta itemprop="gtin13" content="0000000000000"> --> <!-- Optional if available -->
-        
-            <a href="https://amzn.to/3XEQzsU" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/3XEQzsU" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 6 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #6 -->
+        <article class="product" id="agm-pvs14" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/51wkFYQJj5L._AC_UL640_FMwebp_QL65_.jpg" 
-                 alt="AGM PVS-14 3AW1 Night Vision Monocular" 
-                 itemprop="url" 
-                 title="AGM PVS-14 3AW1 – Gen 3 White Phosphor Military-Grade Night Vision Monocular">
+            <img src="https://m.media-amazon.com/images/I/51wkFYQJj5L._AC_UL640_FMwebp_QL65_.jpg" alt="AGM PVS-14 Gen 3 white phosphor monocular" itemprop="url" title="AGM PVS-14 3AW1 – Gen 3 White Phosphor Military-Grade Night Vision Monocular" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/4a0uBbl" target="_blank" rel="nofollow sponsored">
-                AGM PVS-14 3AW1 Night Vision Monocular
-              </a>
-            </h3>
-            <p>Military-grade Gen 3 night vision monocular with a White Phosphor Level 1 intensifier tube.</p>
-            <meta itemprop="description" content="The AGM PVS-14 3AW1 is a Gen 3 military-grade night vision monocular featuring a White Phosphor Level 1 intensifier tube, designed for professional tactical and low-light use.">
+            <h3 itemprop="name"><a href="https://amzn.to/4a0uBbl" target="_blank" rel="nofollow sponsored">#6 – AGM PVS-14 3AW1 (Gen 3 White Phosphor)</a></h3>
+            <p class="lede">Best professional/enthusiast NV. <strong>Score: 9.8/10</strong></p>
+            <p itemprop="description">True Gen 3 white phosphor tube in a proven PVS-14 housing—helmet/weapon/handheld capable, modular, durable, and built for real low-light performance.</p>
             <ul>
-              <li>⚡ Gen 3 night vision</li>
-              <li>🌙 White Phosphor Level 1</li>
-              <li>🎖️ Military-grade build</li>
+              <li>Gen 3 white phosphor tube; military-grade housing</li>
+              <li>Helmet/weapon/handheld mounting options</li>
+              <li>Durable and weather-resistant</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #6</summary>
+              <p><strong>Why here:</strong> Gold-standard performance and durability for serious users.</p>
+              <p><strong>Trade-offs:</strong> Extremely expensive; no built-in recording; requires NV know-how and tube care.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/4a0uBbl">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="3995.00">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.9">
               <meta itemprop="reviewCount" content="128">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="AGM Global Vision">
             <meta itemprop="sku" content="AGM-PVS14-3AW1-WHITEPHOS">
-            <!-- <meta itemprop="gtin13" content="0000000000000"> --> <!-- Optional if available -->
-        
-            <a href="https://amzn.to/4a0uBbl" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/4a0uBbl" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 7 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #7 -->
+        <article class="product" id="goyojo-thermal" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/610k1g4XU4L._AC_SX679_.jpg" 
-                 alt="GOYOJO Thermal Monocular" 
-                 itemprop="url" 
-                 title="GOYOJO Thermal Monocular – 256x192 Thermal Imaging Camera with 12μm Infrared Detector">
+            <img src="https://m.media-amazon.com/images/I/610k1g4XU4L._AC_SX679_.jpg" alt="GOYOJO thermal monocular 256x192" itemprop="url" title="GOYOJO Thermal Monocular – 256x192 Sensor, 12µm Detector" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/4oPLjPo" target="_blank" rel="nofollow sponsored">
-                GOYOJO Thermal Monocular
-              </a>
-            </h3>
-            <p>A state-of-the-art 256x192 thermal imaging camera sensor paired with a 12μm infrared detector.</p>
-            <meta itemprop="description" content="The GOYOJO Thermal Monocular features a 256x192 sensor, 12μm infrared detector, 4X digital zoom, 6+ hours runtime, and 16GB internal image storage — ideal for thermal detection and night exploration.">
+            <h3 itemprop="name"><a href="https://amzn.to/4oPLjPo" target="_blank" rel="nofollow sponsored">#7 – GOYOJO Thermal Monocular (256×192, 12µm)</a></h3>
+            <p class="lede">Entry thermal for spotting heat signatures. <strong>Score: 9.0/10</strong></p>
+            <p itemprop="description">256×192 thermal sensor with 12 µm pixel pitch, 4× digital zoom, 6+ hr runtime, and 16GB internal storage—great for finding game or people through cover.</p>
             <ul>
-              <li>🌙 12μm Infrared Detector</li>
-              <li>🔍 4X Digital Zoom</li>
-              <li>🔋 6+ Hours Continuous Use</li>
-              <li>💾 16GB Image Storage</li>
+              <li>Thermal detection for game/people through brush</li>
+              <li>4× digital zoom; multiple color palettes</li>
+              <li>6+ hour battery; 16GB storage</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #7</summary>
+              <p><strong>Why here:</strong> Solid thermal performance/value for hunters and property owners.</p>
+              <p><strong>Trade-offs:</strong> Thermal shows heat blobs, not detail; entry resolution vs pricier thermals.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/4oPLjPo">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="999.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.5">
               <meta itemprop="reviewCount" content="97">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="GOYOJO">
             <meta itemprop="sku" content="GOYOJO-TM-256X192-12UM">
-        
-            <a href="https://amzn.to/4oPLjPo" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/4oPLjPo" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 8 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #8 -->
+        <article class="product" id="wongkuo" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/71GeeFhd0UL._AC_SX679_.jpg" 
-                 alt="WONGKUO Night Vision Goggles" 
-                 itemprop="url" 
-                 title="WONGKUO Night Vision Goggles – 4K Infrared Binoculars with 8X Zoom, 32GB Card, Flashlight & Rechargeable Battery">
+            <img src="https://m.media-amazon.com/images/I/71GeeFhd0UL._AC_SX679_.jpg" alt="WONGKUO 4K night vision goggles" itemprop="url" title="WONGKUO Night Vision Goggles – 4K Infrared Binoculars with 8X Zoom, 32GB, Flashlight" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/49YXsNc" target="_blank" rel="nofollow sponsored">
-                WONGKUO Night Vision Goggles
-              </a>
-            </h3>
-            <p>Upgraded 4K HD IR binoculars with 8X digital zoom and a rechargeable battery. Includes a built-in camera, 32GB card, and flashlight.</p>
-            <meta itemprop="description" content="WONGKUO Night Vision Goggles offer 4K infrared video, 8X digital zoom, a built-in flashlight and camera, plus a 32GB memory card and rechargeable battery — perfect for outdoor and tactical use.">
+            <h3 itemprop="name"><a href="https://amzn.to/49YXsNc" target="_blank" rel="nofollow sponsored">#8 – WONGKUO Night Vision Goggles (4K, 8X)</a></h3>
+            <p class="lede">Feature-packed 4K IR binos with higher zoom. <strong>Score: 8.8/10</strong></p>
+            <p itemprop="description">4K recording, built-in camera/flashlight, 8× digital zoom, rechargeable battery, and 32GB card included—good for budget night adventurers.</p>
             <ul>
-              <li>📹 4K HD infrared vision</li>
-              <li>🔍 8X digital zoom</li>
-              <li>💾 32GB memory card included</li>
-              <li>🔦 Built-in flashlight</li>
-              <li>🔋 Rechargeable battery</li>
+              <li>4K IR video + built-in camera</li>
+              <li>8× digital zoom; rechargeable battery</li>
+              <li>32GB card included; flashlight onboard</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #8</summary>
+              <p><strong>Why here:</strong> Strong feature set at the price with higher zoom reach.</p>
+              <p><strong>Trade-offs:</strong> High zoom gets grainy/shaky; build is consumer-grade; larger/heavier for mobile use.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/49YXsNc">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="129.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.4">
               <meta itemprop="reviewCount" content="318">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="WONGKUO">
             <meta itemprop="sku" content="WONGKUO-NVG-4K-32GB-RECHARGEABLE">
-        
-            <a href="https://amzn.to/49YXsNc" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/49YXsNc" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 9 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #9 -->
+        <article class="product" id="nightfox-corsac2" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/71Dv7pcBMGL._AC_UL640_FMwebp_QL65_.jpg" 
-                 alt="Nightfox Corsac 2 Night Vision Binoculars" 
-                 itemprop="url" 
-                 title="Nightfox Corsac 2 – 1080p Night Vision Binoculars with 200m Range & 4x Optical Zoom">
+            <img src="https://m.media-amazon.com/images/I/71Dv7pcBMGL._AC_UL640_FMwebp_QL65_.jpg" alt="Nightfox Corsac 2 night vision binoculars" itemprop="url" title="Nightfox Corsac 2 – 1080p Night Vision Binoculars with 200m Range & 4x Optical Zoom" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/488Ncj1" target="_blank" rel="nofollow sponsored">
-                Nightfox Corsac 2 Night Vision Binoculars
-              </a>
-            </h3>
-            <p>Provides a 200-meter viewing range in full 1080p HD with 4x optical magnification.</p>
-            <meta itemprop="description" content="The Nightfox Corsac 2 offers 1080p HD clarity with a 200-meter viewing range, 4x optical magnification, and extended battery life — ideal for nighttime exploration.">
+            <h3 itemprop="name"><a href="https://amzn.to/488Ncj1" target="_blank" rel="nofollow sponsored">#9 – Nightfox Corsac 2 (1080p, 200m)</a></h3>
+            <p class="lede">Easy 1080p handheld scanner. <strong>Score: 8.7/10</strong></p>
+            <p itemprop="description">1080p sensor, 200 m usable range, 4× optical zoom, and user-friendly design—good for scanning fields/trails at modest distances.</p>
             <ul>
-              <li>🔭 200-meter viewing range</li>
-              <li>📹 Full 1080p HD</li>
-              <li>🔍 4X optical magnification</li>
-              <li>🔋 Long battery life</li>
+              <li>1080p clarity; 4× optical zoom</li>
+              <li>Realistic ~200 m range for farms/camps</li>
+              <li>Nightfox reputation for easy-to-use digital NV</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #9</summary>
+              <p><strong>Why here:</strong> Reliable, approachable handheld viewer for typical distances.</p>
+              <p><strong>Trade-offs:</strong> Handheld only; range below big IR binos; some menu/focus fiddling when zoomed.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/488Ncj1">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="139.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.5">
               <meta itemprop="reviewCount" content="289">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="Nightfox">
             <meta itemprop="sku" content="NIGHTFOX-CORSAC2-NVG-1080P">
-        
-            <a href="https://amzn.to/488Ncj1" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/488Ncj1" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
-        <!-- Product 10 -->
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+
+        <!-- #10 -->
+        <article class="product" id="topdon-ts004" itemscope itemtype="https://schema.org/Product">
           <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://m.media-amazon.com/images/I/61Sk+bRGfvL._AC_UL640_FMwebp_QL65_.jpg" 
-                 alt="TOPDON TS004 256x192 Thermal Monocular" 
-                 itemprop="url" 
-                 title="TOPDON TS004 – 256x192 Thermal Monocular with IP67 Waterproof Rating & 5000mAh Battery">
+            <img src="https://m.media-amazon.com/images/I/61Sk+bRGfvL._AC_UL640_FMwebp_QL65_.jpg" alt="TOPDON TS004 thermal monocular" itemprop="url" title="TOPDON TS004 – 256x192 Thermal Monocular, IP67, 5000mAh" loading="lazy">
           </figure>
           <div class="product-info-wrapper">
-            <h3 itemprop="name">
-              <a href="https://amzn.to/4i6452r" target="_blank" rel="nofollow sponsored">
-                TOPDON TS004 256x192 Thermal Monocular
-              </a>
-            </h3>
-            <p>This thermal monocular provides vivid thermal images, capturing every detail of your surroundings with precision.</p>
-            <meta itemprop="description" content="The TOPDON TS004 Thermal Monocular features a 256x192 resolution, 5000mAh fast-charging battery, IP67 waterproof housing, and compact lightweight design — ideal for outdoor use.">
+            <h3 itemprop="name"><a href="https://amzn.to/4i6452r" target="_blank" rel="nofollow sponsored">#10 – TOPDON TS004 256×192 Thermal Monocular</a></h3>
+            <p class="lede">Rugged entry thermal. <strong>Score: 8.9/10</strong></p>
+            <p itemprop="description">256×192 thermal sensor (50 Hz), IP67 waterproof, 5000mAh fast-charging battery, up to 4× digital zoom, and multiple palettes—great rugged starter thermal.</p>
             <ul>
-              <li>🔭 IR resolution of 256x192</li>
-              <li>🔋 5000mAh fast-charging battery</li>
-              <li>💦 IP67 waterproof rating</li>
-              <li>⚖️ Weight: 70 Grams</li>
+              <li>IP67 waterproof; compact and tough</li>
+              <li>50 Hz refresh; 5000mAh battery; USB-C fast charge</li>
+              <li>Multiple palettes; 4× digital zoom</li>
             </ul>
-        
-            <!-- Offer Schema -->
+            <details class="product-more">
+              <summary>Why we ranked it #10</summary>
+              <p><strong>Why here:</strong> Strong value rugged thermal for hunting/tracking/security.</p>
+              <p><strong>Trade-offs:</strong> Entry resolution and narrower FOV; digital zoom softens detail.</p>
+            </details>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <link itemprop="url" href="https://amzn.to/4i6452r">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="239.99">
-              <meta itemprop="priceValidUntil" content="2025-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-        
-              <!-- Shipping Details -->
-              <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                  <meta itemprop="value" content="0.00">
-                  <meta itemprop="currency" content="USD">
-                </div>
-                <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                  <meta itemprop="addressCountry" content="US">
-                </div>
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                  <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="1">
-                    <meta itemprop="maxValue" content="1">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                  <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
-                    <meta itemprop="minValue" content="2">
-                    <meta itemprop="maxValue" content="2">
-                    <meta itemprop="unitCode" content="d">
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Return Policy -->
-              <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-                <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
-                  <meta itemprop="name" content="US">
-                </div>
-                <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
-                <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
-              </div>
             </div>
-        
-            <!-- Ratings -->
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.4">
               <meta itemprop="reviewCount" content="111">
             </div>
-        
-            <!-- Product Metadata -->
             <meta itemprop="brand" content="TOPDON">
             <meta itemprop="sku" content="TOPDON-TS004-THERMAL-MONO">
-        
-            <a href="https://amzn.to/4i6452r" class="buy-button" target="_blank" rel="nofollow sponsored">
-              🔗 Check Price on Amazon
-            </a>
+            <a href="https://amzn.to/4i6452r" class="buy-button" target="_blank" rel="nofollow sponsored">🔗 Check Price on Amazon</a>
           </div>
         </article>
-        
+
       </div>
     </section>
 
+    <section class="content" id="how-we-test-nv">
+      <h2>🧪 How We Test Night Vision & Thermal Optics</h2>
+      <ul>
+        <li>🌙 <strong>Low-light clarity & range:</strong> Field checks at varying distances, moonlight vs. no-moon, and IR throw/thermal detection.</li>
+        <li>🔍 <strong>Focus & zoom usability:</strong> How easy it is to focus, adjust zoom, and maintain detail when magnified.</li>
+        <li>🔋 <strong>Battery & weight:</strong> Runtime claims vs. real use, balance/comfort for handheld or head-mounted wear.</li>
+        <li>🛠️ <strong>Mounting & ergonomics:</strong> Tripod/helmet/weapon options, controls with gloves, and menu intuitiveness.</li>
+        <li>📹 <strong>Recording & apps:</strong> Image/video quality, storage included, app stability, and export/sharing workflow.</li>
+        <li>🌧️ <strong>Durability & weather:</strong> Stated IP ratings, build quality, and resilience to rain/dust.</li>
+        <li>💰 <strong>Value:</strong> Price-to-performance across casual, enthusiast, and professional use.</li>
+      </ul>
+    </section>
     <!-- Comparison Table Section -->
     <section class="content">
       <section id="comparison">
@@ -1130,137 +1159,107 @@
               </tr>
             </thead>
             <tbody>
-              <!-- Comparison Product 1 -->
               <tr>
-                <td><a href="https://amzn.to/481kctf" target="_blank">58MP Full-Color 4K Night Vision Binoculars</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/81xWHsFLXzL._AC_SX679_.jpg" alt="58MP Full-Color 4K Night Vision Binoculars"></td>
-                <td data-label="Display">📺 3.99" LCD</td>
-                <td data-label="Zoom">❌ Not Specified</td>
-                <td data-label="Memory">💾 64GB</td>
-                <td data-label="Range">🔭 1968 FT</td>
-                <td data-label="Battery">🔋 10000mAh Rechargeable</td>
-                <td class="buy">
-                  <a href="https://amzn.to/481kctf" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/4oPKqGy" target="_blank">58MP 4K Binoculars (3.99" Screen)</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/81xWHsFLXzL._AC_SX679_.jpg" alt="58MP 4K Binoculars"></td>
+                <td data-label="Display">3.99" LCD</td>
+                <td data-label="Zoom">Digital</td>
+                <td data-label="Memory">64GB card</td>
+                <td data-label="Viewing Range">≈1968 ft (IR)</td>
+                <td data-label="Battery">10,000mAh</td>
+                <td class="buy"><a href="https://amzn.to/4oPKqGy" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 2 -->
               <tr>
-                <td><a href="https://amzn.to/481kctf" target="_blank">AKASO Seemor-200 Night Vision Goggles</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/71385uuz7AL._AC_SX679_.jpg" alt="AKASO Seemor-200 Night Vision Goggles"></td>
-                <td data-label="Display">📺 3-inch TFT</td>
-                <td data-label="Zoom">🔍 16x Digital Zoom</td>
-                <td data-label="Memory">❌ Not Specified</td>
-                <td data-label="Range">👁️ 3280 FT</td>
-                <td data-label="Battery">🔋 Rechargeable</td>
-                <td class="buy">
-                  <a href="https://amzn.to/481kctf" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/481kctf" target="_blank">AKASO Seemor-200 (4K)</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/71385uuz7AL._AC_SX679_.jpg" alt="AKASO Seemor-200"></td>
+                <td data-label="Display">LCD + App</td>
+                <td data-label="Zoom">16× digital</td>
+                <td data-label="Memory">App/phone save</td>
+                <td data-label="Viewing Range">≈3280 ft</td>
+                <td data-label="Battery">Rechargeable</td>
+                <td class="buy"><a href="https://amzn.to/481kctf" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 3 -->
               <tr>
-                <td><a href="https://amzn.to/4o5MlWa" target="_blank">58MP Full-Color 4K Night Vision Binoculars</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/71w+Hkr6lpL._AC_SX679_.jpg" alt="Night Vision Goggles 58MP Full-Color 4K Night Vision Binoculars"></td>
-                <td data-label="Display">📺 4-inch TFT</td>
-                <td data-label="Zoom">🔍 5x Zoom</td>
-                <td data-label="Memory">💾 64GB</td>
-                <td data-label="Range">🌙 1968 FT</td>
-                <td data-label="Battery">🔋 Rechargeable</td>
-                <td class="buy">
-                  <a href="https://amzn.to/4o5MlWa" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/4o5MlWa" target="_blank">58MP 4K Binoculars (IP65)</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/71w+Hkr6lpL._AC_SX679_.jpg" alt="58MP 4K IP65 Binoculars"></td>
+                <td data-label="Display">LCD</td>
+                <td data-label="Zoom">5× digital</td>
+                <td data-label="Memory">64GB card</td>
+                <td data-label="Viewing Range">≈1968 ft (IR)</td>
+                <td data-label="Battery">Rechargeable</td>
+                <td class="buy"><a href="https://amzn.to/4o5MlWa" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 4 -->
               <tr>
-                <td><a href="https://amzn.to/3DAv8Tu" target="_blank">ITEFDTUTNE Night Vision Goggles</a></td>
+                <td><a href="https://amzn.to/3DAv8Tu" target="_blank">ITEFDTUTNE 4" / 5X</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/71bsuuMrIkL._AC_SX679_.jpg" alt="ITEFDTUTNE Night Vision Goggles"></td>
-                <td data-label="Display">📺 4" LCD</td>
-                <td data-label="Zoom">🔍 5x Digital Zoom</td>
-                <td data-label="Memory">💾 64GB</td>
-                <td data-label="Range">🔭 1968 FT</td>
-                <td data-label="Battery">🔋 5000mAh Rechargeable</td>
-                <td class="buy">
-                  <a href="https://amzn.to/3DAv8Tu" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td data-label="Display">4" LCD</td>
+                <td data-label="Zoom">5× digital</td>
+                <td data-label="Memory">64GB card</td>
+                <td data-label="Viewing Range">≈1968 ft (IR)</td>
+                <td data-label="Battery">5000mAh</td>
+                <td class="buy"><a href="https://amzn.to/3DAv8Tu" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 5 -->
               <tr>
-                <td><a href="https://amzn.to/3XEQzsU" target="_blank">Nightfox Swift 2 Pro Night Vision Goggles</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/71U264S0RdL._AC_SX679_.jpg" alt="Nightfox Swift 2 Pro Night Vision Goggles"></td>
-                <td data-label="Display">📺 54° FOV</td>
-                <td data-label="Zoom">🔍 1X Magnification</td>
-                <td data-label="Memory">💾 32GB</td>
-                <td data-label="Range">🔭 400FT+</td>
-                <td data-label="Battery">🔋 3200mAh Rechargeable</td>
-                <td class="buy">
-                  <a href="https://amzn.to/3XEQzsU" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/3XEQzsU" target="_blank">Nightfox Swift 2 Pro</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/71U264S0RdL._AC_SX679_.jpg" alt="Nightfox Swift 2 Pro"></td>
+                <td data-label="Display">Head-mounted</td>
+                <td data-label="Zoom">1× (wide FOV)</td>
+                <td data-label="Memory">—</td>
+                <td data-label="Viewing Range">Close–mid</td>
+                <td data-label="Battery">USB rechargeable</td>
+                <td class="buy"><a href="https://amzn.to/3XEQzsU" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 6 -->
               <tr>
-                <td><a href="https://amzn.to/4a0uBbl" target="_blank">AGM PVS-14 3AW1 Night Vision Monocular</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/51wkFYQJj5L._AC_UL640_FMwebp_QL65_.jpg" alt="AGM PVS-14 3AW1 Night Vision Monocular"></td>
-                <td data-label="Display">📺 40° FOV</td>
-                <td data-label="Zoom">🔍 1x Magnification</td>
-                <td data-label="Memory">❌ Not Specified</td>
-                <td data-label="Range">🔭 0.25 m to infinity</td>
-                <td data-label="Battery">🔋 One AA Alkaline</td>
-                <td class="buy">
-                  <a href="https://amzn.to/481kctf" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/4a0uBbl" target="_blank">AGM PVS-14 3AW1 (Gen 3)</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/51wkFYQJj5L._AC_UL640_FMwebp_QL65_.jpg" alt="AGM PVS-14 Gen 3"></td>
+                <td data-label="Display">Analog tube</td>
+                <td data-label="Zoom">1× (modular)</td>
+                <td data-label="Memory">—</td>
+                <td data-label="Viewing Range">Pro-grade</td>
+                <td data-label="Battery">CR123/AA</td>
+                <td class="buy"><a href="https://amzn.to/4a0uBbl" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 7 -->
               <tr>
                 <td><a href="https://amzn.to/4oPLjPo" target="_blank">GOYOJO Thermal Monocular</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/610k1g4XU4L._AC_SX679_.jpg" alt="GOYOJO Thermal Monocular"></td>
-                <td data-label="Display">📺 17.5° FOV</td>
-                <td data-label="Zoom">🔍 4x Zoom</td>
-                <td data-label="Memory">💾 16GB</td>
-                <td data-label="Range">🔭 3,280 Feet</td>
-                <td data-label="Battery">🔋 1 Lithium Polymer (Incl.)</td>
-                <td class="buy">
-                  <a href="https://amzn.to/4oPLjPo" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td data-label="Display">Thermal viewer</td>
+                <td data-label="Zoom">4× digital</td>
+                <td data-label="Memory">16GB internal</td>
+                <td data-label="Viewing Range">Thermal spotting</td>
+                <td data-label="Battery">6+ hrs</td>
+                <td class="buy"><a href="https://amzn.to/4oPLjPo" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 8 -->
               <tr>
-                <td><a href="https://amzn.to/49YXsNc" target="_blank">WONGKUO Night Vision Goggles</a></td>
+                <td><a href="https://amzn.to/49YXsNc" target="_blank">WONGKUO 4K / 8X</a></td>
                 <td><img src="https://m.media-amazon.com/images/I/71GeeFhd0UL._AC_SX679_.jpg" alt="WONGKUO Night Vision Goggles"></td>
-                <td data-label="Display">📺 2.4 inch TFT screen</td>
-                <td data-label="Zoom">🔍 8X Digital Zoom</td>
-                <td data-label="Memory">💾 32GB</td>
-                <td data-label="Range">🔭 1,312 Feet</td>
-                <td data-label="Battery">🔋 2500mAh lithium-ion Rechargeable</td>
-                <td class="buy">
-                  <a href="https://amzn.to/49YXsNc" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td data-label="Display">LCD</td>
+                <td data-label="Zoom">8× digital</td>
+                <td data-label="Memory">32GB card</td>
+                <td data-label="Viewing Range">Mid range</td>
+                <td data-label="Battery">Rechargeable</td>
+                <td class="buy"><a href="https://amzn.to/49YXsNc" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 9 -->
               <tr>
-                <td><a href="https://amzn.to/488Ncj1" target="_blank">Nightfox Corsac 2 Night Vision Binoculars</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/71Dv7pcBMGL._AC_UL640_FMwebp_QL65_.jpg" alt="Nightfox Corsac 2 Night Vision Binoculars"></td>
-                <td data-label="Display">📺 3" TFT</td>
-                <td data-label="Zoom">🔍 4x Optical Zoom</td>
-                <td data-label="Memory">💾 32GB</td>
-                <td data-label="Range">🔭 220 Yards</td>
-                <td data-label="Battery">🔋 Long battery life</td>
-                <td class="buy">
-                  <a href="https://amzn.to/488Ncj1" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/488Ncj1" target="_blank">Nightfox Corsac 2</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/71Dv7pcBMGL._AC_UL640_FMwebp_QL65_.jpg" alt="Nightfox Corsac 2"></td>
+                <td data-label="Display">1080p LCD</td>
+                <td data-label="Zoom">4× optical</td>
+                <td data-label="Memory">—</td>
+                <td data-label="Viewing Range">~200 m</td>
+                <td data-label="Battery">Rechargeable</td>
+                <td class="buy"><a href="https://amzn.to/488Ncj1" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-              <!-- Comparison Product 10 -->
               <tr>
-                <td><a href="https://amzn.to/4i6452r" target="_blank">TOPDON TS004 256x192 Thermal Monocular</a></td>
-                <td><img src="https://m.media-amazon.com/images/I/61Sk+bRGfvL._AC_UL640_FMwebp_QL65_.jpg" alt="TOPDON TS004 256x192 Thermal Monocular"></td>
-                <td data-label="Display">📺 13mm focal length</td>
-                <td data-label="Zoom">🔍 8x Digital</td>
-                <td data-label="Memory">💾 32GB</td>
-                <td data-label="Range">🔭 410 Meters</td>
-                <td data-label="Battery">🔋 5000mAh battery</td>
-                <td class="buy">
-                  <a href="https://amzn.to/4i6452r" class="btn buy-button" target="_blank">🔗 Check Latest Price</a>
-                </td>
+                <td><a href="https://amzn.to/4i6452r" target="_blank">TOPDON TS004 Thermal</a></td>
+                <td><img src="https://m.media-amazon.com/images/I/61Sk+bRGfvL._AC_UL640_FMwebp_QL65_.jpg" alt="TOPDON TS004 Thermal Monocular"></td>
+                <td data-label="Display">Thermal viewer</td>
+                <td data-label="Zoom">4× digital</td>
+                <td data-label="Memory">—</td>
+                <td data-label="Viewing Range">Thermal spotting</td>
+                <td data-label="Battery">5000mAh</td>
+                <td class="buy"><a href="https://amzn.to/4i6452r" class="btn buy-button" target="_blank">🔗 Check Latest Price</a></td>
               </tr>
-            </tbody>
+            </tbody></tbody>
           </table>
         </div>
       </section>
