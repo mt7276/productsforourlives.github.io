@@ -176,6 +176,44 @@
       <priority>0.8</priority>
    </url>
 
+   <!-- Blog Posts: Handheld GPS -->
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/multi-band-vs-single-band-handheld-gps</loc>
+      <lastmod>2025-12-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/handheld-gps-battery-cold-weather-tests</loc>
+      <lastmod>2025-12-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/how-to-load-gpx-on-handheld-gps</loc>
+      <lastmod>2025-12-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/handheld-gps-vs-smartphone-apps</loc>
+      <lastmod>2025-12-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/best-handheld-gps-settings-tracking</loc>
+      <lastmod>2025-12-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.productsforourlives.com/blogs/inreach-sos-setup-handheld-gps</loc>
+      <lastmod>2025-12-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
    <!-- Blog Posts: Outdoor Tech & Adventure -->
    <url>
       <loc>https://www.productsforourlives.com/blogs/outdoor-tech-kit-guide</loc>
