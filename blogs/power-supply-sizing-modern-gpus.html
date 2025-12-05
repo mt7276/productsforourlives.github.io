@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Supply Sizing for Modern GPUs (2025 Guide)</title>
+  <meta name="description" content="Right-size your PSU for modern GPUs. ATX 3.0/12VHPWR tips, wattage headroom, and safety guidance for reliable gaming PC builds.">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preload" href="../css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/styles.css"></noscript>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.productsforourlives.com/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FYC8MWDDS"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5FYC8MWDDS');</script>
+  <link rel="canonical" href="https://www.productsforourlives.com/blogs/power-supply-sizing-modern-gpus">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Power Supply Sizing for Modern GPUs (2025 Guide)">
+  <meta property="og:description" content="How to choose the right PSU wattage and connectors for modern GPUs, with safety headroom and ATX 3.0 tips.">
+  <meta property="og:url" content="https://www.productsforourlives.com/blogs/power-supply-sizing-modern-gpus">
+  <meta property="og:site_name" content="Products For Our Lives">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Power Supply Sizing for Modern GPUs">
+  <meta name="twitter:description" content="Wattage headroom, ATX 3.0, and 12VHPWR guidance for safe builds.">
+</head>
+<body>
+<header class="site-header">
+  <div class="top-line">
+    <div class="container top-line-row">
+      <span class="top-line-text">Independent picks with real-world feedback • No pay-for-play</span>
+      <div class="top-line-actions">
+        <a class="pill-link" href="#article-top">Skip to article</a>
+        <a class="pill-link ghost" href="#sources">Sources</a>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container masthead-row">
+      <button class="menu-toggle" id="toggleMenu" aria-label="Open Menu">☰</button>
+      <a class="brand-mark" href="https://www.productsforourlives.com/" title="Products for Our Lives">
+        <img src="../images/favicon-32x32.png" alt="Products for Our Lives logo">
+        <span>Products for Our Lives</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <button id="closeMenu" class="close-menu" aria-label="Close Menu">✕</button>
+        <ul>
+          <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+          <li><a href="https://www.productsforourlives.com/blog" title="Blog">Blog</a></li>
+          <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Gaming PCs</a></li>
+          <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Handheld GPS">Handheld GPS</a></li>
+          <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Walkie Talkies">Walkie Talkies</a></li>
+          <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision">Night Vision</a></li>
+          <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns">Radar Guns</a></li>
+          <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" title="Smart Writing Tablets">Smart Writing Tablets</a></li>
+          <li><a href="https://www.productsforourlives.com/about" title="About">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container header-intro">
+    <p class="eyebrow">Blog • Updated December 2025</p>
+    <h1>Power Supply Sizing for Modern GPUs</h1>
+    <h2>Wattage headroom, ATX 3.0, and 12VHPWR made simple</h2>
+    <p class="lede">A stable PSU keeps your gaming PC safe. Here’s how to size wattage, pick ATX 3.0/12VHPWR cables, and avoid tripping OCP with modern GPUs.</p>
+    <div class="hero-meta">
+      <span class="chip">Gaming PC Guide</span>
+      <span class="chip">PSU Sizing</span>
+      <span class="chip">4-minute read</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn primary" href="#article-top">Read the guide</a>
+      <a class="btn ghost" href="https://www.productsforourlives.com/best-gaming-computers">See top gaming PCs</a>
+    </div>
+  </div>
+</header>
+
+<main id="article-top" class="content">
+  <article class="blog-article">
+    <section>
+      <h2>Wattage headroom</h2>
+      <ul>
+        <li>Target 30–40% headroom over combined CPU+GPU draw to handle transient spikes.</li>
+        <li>Examples: RTX 4070S + i5 = quality 650–750W Gold. RTX 4080S/7900 XTX + i7/i9 = 850–1000W Gold/Platinum.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ATX 3.0 and 12VHPWR</h2>
+      <ul>
+        <li><strong>ATX 3.0 PSU:</strong> Designed for 2x transient loads; preferred for RTX 40 cards.</li>
+        <li><strong>Cable quality:</strong> Use native 12VHPWR/12V-2x6 from the PSU, not stacked adapters. Seat fully until it clicks.</li>
+        <li><strong>Bending:</strong> Avoid sharp bends within 35–40mm of the connector to prevent heat/brown-out.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Rails, efficiency, and safety</h2>
+      <ul>
+        <li><strong>Efficiency:</strong> 80+ Gold or better for lower heat and noise.</li>
+        <li><strong>Protections:</strong> OCP, OVP, OTP, SCP are musts. Stick with reputable brands.</li>
+        <li><strong>Cable count:</strong> Use separate PCIe cables for high-draw GPUs if using 8-pin connectors.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Case airflow and thermals</h2>
+      <p>Bottom-mounted PSU should have clear intake and a dust filter. Keep cables tidy to avoid blocking front intake to the GPU. Pair with two front intakes + one rear exhaust for balanced flow.</p>
+      <p>For vetted prebuilts with sane PSU choices, see our <a href="https://www.productsforourlives.com/best-gaming-computers">Best Gaming Computers</a> guide.</p>
+    </section>
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.intel.com/content/www/us/en/gaming/resources/power-supply.html" rel="noopener" target="_blank">Intel: PSU basics for gaming PCs</a></li>
+        <li><a href="https://www.nvidia.com/en-us/geforce/rtx-40-series/rtx-4090/" rel="noopener" target="_blank">NVIDIA: RTX 40 Series power guidance</a></li>
+        <li><a href="https://www.amd.com/en/products/graphics/desktop-graphics" rel="noopener" target="_blank">AMD: Radeon 7000 Series power specs</a></li>
+        <li><a href="https://www.tomshardware.com/reviews/best-psus,4229.html" rel="noopener" target="_blank">Tom’s Hardware: Best PSUs and transient testing</a></li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+<footer id="contact">
+  <p>&copy; 2025 Products For Our Lives. All rights reserved.</p>
+  <p>Affiliate Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
+  <nav class="footer-nav" id="footer-nav" aria-label="Footer Navigation">
+    <ul>
+      <li><a href="https://www.productsforourlives.com/" title="Home">Home</a></li>
+      <li><a href="https://www.productsforourlives.com/blog" title="Blog">Blog</a></li>
+      <li><a href="https://www.productsforourlives.com/best-gaming-computers" title="Best Gaming Computers">Gaming PCs</a></li>
+      <li><a href="https://www.productsforourlives.com/best-handheld-gps" title="Handheld GPS">Handheld GPS</a></li>
+      <li><a href="https://www.productsforourlives.com/best-long-range-walkie-talkies" title="Walkie Talkies">Walkie Talkies</a></li>
+      <li><a href="https://www.productsforourlives.com/top-night-vision-thermal-imaging" title="Night Vision">Night Vision</a></li>
+      <li><a href="https://www.productsforourlives.com/radar-guns-speed-sensors" title="Radar Guns">Radar Guns</a></li>
+      <li><a href="https://www.productsforourlives.com/best-digital-notebooks-smart-writing-tablets" title="Smart Writing Tablets">Smart Writing Tablets</a></li>
+      <li><a href="https://www.productsforourlives.com/about" title="About">About</a></li>
+    </ul>
+  </nav>
+  <p>Contact: <a href="mailto:productsforourlives@gmail.com">productsforourlives@gmail.com</a></p>
+</footer>
+<script src="../js/main.min.js"></script>
+</body>
+</html>

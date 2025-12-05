@@ -9,6 +9,8 @@
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="canonical" href="https://www.productsforourlives.com/about" />
 
     <!-- Google Analytics -->
@@ -20,13 +22,11 @@
         gtag('config', 'G-5FYC8MWDDS');   
     </script>
     <!-- Favicon -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     
       <link rel="apple-touch-icon" sizes="180x180" href="https://www.productsforourlives.com/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 </head>
 
 

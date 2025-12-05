@@ -19,6 +19,8 @@
   <!-- SEO Meta Tags -->
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://www.productsforourlives.com/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -784,11 +786,9 @@
     gtag('js', new Date());
     gtag('config', 'G-5FYC8MWDDS');   
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
   <link rel="canonical" href="https://www.productsforourlives.com/radar-guns-speed-sensors">
 </head>
 
@@ -977,9 +977,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B07JQWBXYV">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="399.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.7">
               <meta itemprop="reviewCount" content="1643">
@@ -1014,9 +1045,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B08LM8YVRK">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="119.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.3">
               <meta itemprop="reviewCount" content="486">
@@ -1051,9 +1113,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B0002X7V1Q">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="89.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.6">
               <meta itemprop="reviewCount" content="5825">
@@ -1088,9 +1181,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B07YYCN3JH">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="89.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.2">
               <meta itemprop="reviewCount" content="496">
@@ -1125,9 +1249,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B00GZ1GV3I">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="299.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.7">
               <meta itemprop="reviewCount" content="2217">
@@ -1162,9 +1317,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B0BXM5CL66">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="89.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.3">
               <meta itemprop="reviewCount" content="102">
@@ -1199,9 +1385,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B084GFLQSZ">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="109.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.1">
               <meta itemprop="reviewCount" content="267">
@@ -1236,9 +1453,40 @@
               <link itemprop="url" href="https://www.amazon.com/dp/B0894YBJHZ">
               <meta itemprop="priceCurrency" content="USD">
               <meta itemprop="price" content="49.99">
+      <meta itemprop="priceValidUntil" content="2026-12-31">
               <meta itemprop="availability" content="http://schema.org/InStock">
               <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
-            </div>
+                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
+      <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
+        <meta itemprop="value" content="0.00">
+        <meta itemprop="currency" content="USD">
+      </div>
+      <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
+        <meta itemprop="addressCountry" content="US">
+      </div>
+      <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
+        <div itemprop="handlingTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="1">
+          <meta itemprop="maxValue" content="1">
+          <meta itemprop="unitCode" content="d">
+        </div>
+        <div itemprop="transitTime" itemscope itemtype="https://schema.org/QuantitativeValue">
+          <meta itemprop="minValue" content="2">
+          <meta itemprop="maxValue" content="2">
+          <meta itemprop="unitCode" content="d">
+        </div>
+      </div>
+    </div>
+    <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
+      <div itemprop="applicableCountry" itemscope itemtype="https://schema.org/Country">
+        <meta itemprop="name" content="US">
+      </div>
+      <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">
+      <meta itemprop="merchantReturnDays" content="30">
+      <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail">
+      <meta itemprop="returnFees" content="https://schema.org/FreeReturn">
+    </div>
+  </div>
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
               <meta itemprop="ratingValue" content="4.1">
               <meta itemprop="reviewCount" content="503">
