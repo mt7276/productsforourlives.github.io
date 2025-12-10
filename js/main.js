@@ -38,4 +38,26 @@ document.addEventListener("DOMContentLoaded", function () {
       parent.classList.toggle("active");
     });
   });
+
+  // Keep product-more open on desktop, collapsed on mobile (no display: none)
+  const productMoreBlocks = document.querySelectorAll("details.product-more");
+  if (productMoreBlocks.length) {
+    const desktopQuery = window.matchMedia("(min-width: 900px)");
+    const syncProductMore = () => {
+      const isDesktop = desktopQuery.matches;
+      productMoreBlocks.forEach((detailsEl) => {
+        if (isDesktop) {
+          detailsEl.setAttribute("open", "");
+        } else {
+          detailsEl.removeAttribute("open");
+        }
+      });
+    };
+    desktopQuery.addEventListener
+      ? desktopQuery.addEventListener("change", syncProductMore)
+      : desktopQuery.addListener(syncProductMore);
+    syncProductMore();
+  }
 });
+
+  

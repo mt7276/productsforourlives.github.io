@@ -20,6 +20,12 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif;
 }
 
+/* Keep images from overflowing on small screens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html,
 body {
   width: 100%;
@@ -73,6 +79,7 @@ section,
 .product-info-wrapper {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   flex-grow: 1;
   gap: 0.5rem;
   position: relative;
@@ -444,7 +451,6 @@ header p.description {
   font-size: 0.95rem;
   max-width: 720px;
   margin: 0.35rem 0 0;
-  display: none; /* Hidden until toggled */
   color: var(--muted);
 }
 
@@ -480,14 +486,6 @@ header p.description {
   #toggleDesc {
     display: inline-block;
     width: auto;
-  }
-
-  header p.description {
-    display: none;
-  }
-
-  header p.description.active {
-    display: block;
   }
 }
 
@@ -935,8 +933,9 @@ button:focus {
 =================================================================*/
 #products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
+  grid-auto-rows: auto;
 }
 
 #products > h2,
@@ -944,6 +943,12 @@ button:focus {
 #products > ol,
 #products > p.disclosure {
   grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+  #products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .product {
@@ -954,6 +959,7 @@ button:focus {
   transition: transform 0.25s, box-shadow 0.25s;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .product .buy-button {
@@ -1006,10 +1012,11 @@ button:focus {
 
 .product figure {
   width: 100%;
-  height: 170px;
+  aspect-ratio: 4 / 3;
+  height: auto;
   overflow: hidden;
   border-radius: 6px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -1036,11 +1043,6 @@ button:focus {
 }
 
 /* Hide lengthy descriptions on very small screens */
-@media (max-width: 500px) {
-  .product p {
-    display: none;
-  }
-}
 
 .testing-gallery {
   display: grid;
@@ -1085,7 +1087,11 @@ button:focus {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 0.85rem 0.95rem;
-  margin-top: 0.75rem;
+  margin-top: auto;              /* align review blocks at the bottom of cards */
+  margin-bottom: 0;              /* avoid extra bottom creep */
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .pros-cons {
@@ -1161,7 +1167,12 @@ button:focus {
   }
 
   .comparison-table thead {
-    display: none;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
   .comparison-table tbody,
@@ -1248,11 +1259,15 @@ button:focus {
 .faq-item p {
   margin-top: 0.45rem;
   font-size: 0.9rem;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .faq-item.active p {
-  display: block;
+  max-height: 1200px;
+  opacity: 1;
 }
 
 /*=================================================================
@@ -1378,6 +1393,26 @@ footer {
   .hero-image figcaption {
     font-size: 0.9rem;
   }
+}
+
+/* Reviewer photos */
+.reviewer-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.reviewer-photo picture {
+  display: block;
+  max-width: 420px;
+  width: 100%;
+}
+.reviewer-photo img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /*=================================================================
