@@ -1012,7 +1012,7 @@ button:focus {
 
 .product figure {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 3;           /* mobile-friendly ratio */
   height: auto;
   overflow: hidden;
   border-radius: 6px;
@@ -1020,6 +1020,12 @@ button:focus {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+@media (min-width: 900px) {
+  .product figure {
+    aspect-ratio: 10 / 4;         /* wider desktop framing */
+  }
 }
 
 .product img {
